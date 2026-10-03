@@ -14,16 +14,17 @@
         <div class="brand-mark">ท</div>
         <div class="brand-text">
           <h1>ระบบสนับสนุนการตัดสินใจจัดลำดับความสำคัญการลงทุนท่าเรือ</h1>
-          <p>ตามปริมาณสินค้านำเข้า–ส่งออก · 23 พื้นที่ท่าเรือ</p>
+          <p id="brand-sub">ตามปริมาณสินค้านำเข้า–ส่งออก</p>
         </div>
       </div>
       <div id="conn-status" class="conn-status">กำลังเชื่อมต่อข้อมูล…</div>
     </div>
     <nav class="tabs">
-      <button class="tab-btn active" data-tab="overview">ภาพรวมข้อมูล</button>
-      <button class="tab-btn" data-tab="ranking">จัดลำดับความสำคัญ</button>
-      <button class="tab-btn" data-tab="whatif">จำลองสถานการณ์ (What-if)</button>
-      <button class="tab-btn" data-tab="detail">คะแนนตัวชี้วัดรายพื้นที่</button>
+      <button class="tab-btn" data-tab="import"><span class="step">1</span>นำเข้าข้อมูล</button>
+      <button class="tab-btn active" data-tab="overview"><span class="step">2</span>แนวโน้มปริมาณการค้า</button>
+      <button class="tab-btn" data-tab="whatif"><span class="step">3</span>ปรับน้ำหนัก (What-if)</button>
+      <button class="tab-btn" data-tab="ranking"><span class="step">4</span>จัดลำดับความสำคัญ</button>
+      <button class="tab-btn" data-tab="detail"><span class="step">5</span>คะแนนตัวชี้วัดรายพื้นที่</button>
     </nav>
   </header>
 
@@ -31,14 +32,15 @@
     <div id="loading" class="loading-box">กำลังโหลดข้อมูลจากเซิร์ฟเวอร์…</div>
     <div id="error-box" class="error-box" style="display:none"></div>
 
+    <section id="tab-import" class="tab-panel" style="display:none"></section>
     <section id="tab-overview" class="tab-panel"></section>
-    <section id="tab-ranking" class="tab-panel" style="display:none"></section>
     <section id="tab-whatif" class="tab-panel" style="display:none"></section>
+    <section id="tab-ranking" class="tab-panel" style="display:none"></section>
     <section id="tab-detail" class="tab-panel" style="display:none"></section>
   </main>
 
   <footer class="app-footer">
-    <p>Decision Support System · Project 2 · ข้อมูลปี 2565–2568 · คำนวณจากข้อมูลดิบทั้งหมด ไม่มีการกรองพื้นที่ออก (23/23 พื้นที่)</p>
+    <p id="footer-text">Decision Support System · Project 2</p>
   </footer>
 
   <script>

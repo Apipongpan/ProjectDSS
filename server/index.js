@@ -1,66 +1,136 @@
 'use strict';
 /**
  * DSS ท่าเรือ — Backend server
- * ใช้ Node.js core (`http`) ล้วน ๆ ไม่มี dependency ภายนอก (ไม่ต้องพึ่ง express/cors)
- * เหตุผล: สภาพแวดล้อมที่พัฒนาไม่สามารถเข้าถึง npm registry ได้ (นโยบายเครือข่าย)
- * และการไม่มี dependency ภายนอกเลยยังช่วยให้วันสาธิตสด รันได้ทันทีด้วย `node server/index.js`
- * โดยไม่ต้องมีอินเทอร์เน็ตหรือรอ `npm install` เลย — เชื่อถือได้กว่าเวลาขึ้นสาธิตจริง
+ * ใช้ Node.js core ล้วน ๆ (http + node:sqlite) ไม่มี dependency ภายนอก ไม่ต้อง npm install
+ * ต้องใช้ Node.js 22.13 ขึ้นไป (มี node:sqlite ในตัว)
+ *
+ * สถาปัตยกรรม 3 ชั้น:
+ *   Data Management  → server/lib/db.js (SQLite 4 ตารางตาม ER) + server/lib/importer.js (นำเข้า CSV)
+ *   Model/Analytics  → server/lib/calc.js (V,G,D,B,S + Weighted Scoring + ตารางกฎจัดชั้น)
+ *   UI/Visualization → public/
  */
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const { buildProvinceMetrics, rankProvinces } = require('./lib/calc');
+const { buildProvinceMetrics, rankProvinces, classifyTier } = require('./lib/calc');
+const { parseDataset, ImportError } = require('./lib/importer');
+const store = require('./lib/db');
 
 const DEFAULT_WEIGHTS = { V: 0.40, G: 0.25, D: 0.15, B: 0.10, S: 0.10 };
 
-// เกณฑ์ปริมาณสำหรับแยกชั้น 1/2 (ดู README_CALC_NOTES.md ว่าทำไมเลขนี้ไม่ใช่ 5 ล้านตันตามสไลด์เดิม)
-const VOLUME_THRESHOLD_TON = 20000;
+// เกณฑ์ปริมาณแยกชั้น 1/2 ตามตารางกฎสไลด์หน้า 11 (ปรับได้จากหน้า What-if)
+const DEFAULT_VOLUME_THRESHOLD_TON = 5000000;
 
 const PUBLIC_DIR = path.join(__dirname, '..', 'public');
+const SAMPLE_FILE = path.join(PUBLIC_DIR, 'samples', 'port-trade-2565-2568.csv');
 
-const records = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'trade-records.json'), 'utf8'));
-const slugMap = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'province-slug-map.json'), 'utf8'));
+// ---------------- Data ----------------
 
-// คำนวณ V/G/D/B/S ครั้งเดียวตอน start server (ไม่เปลี่ยนตามน้ำหนัก ขึ้นกับข้อมูลดิบเท่านั้น)
-const { years, metrics } = buildProvinceMetrics(records, slugMap);
+function importCsv(csvText, fileName) {
+  const dataset = parseDataset(csvText);
+  store.replaceDataset(
+    dataset,
+    fileName,
+    (records) => buildProvinceMetrics(records).metrics,
+    (metrics) => rankProvinces(metrics, DEFAULT_WEIGHTS, DEFAULT_VOLUME_THRESHOLD_TON),
+  );
+  return dataset;
+}
 
-function buildOverview() {
-  const totals = years.map((y) => {
-    let imp = 0;
-    let exp = 0;
-    for (const r of records) {
-      if (r.yearAD !== y) continue;
-      if (r.direction === 'import') imp += r.weightKg;
-      else exp += r.weightKg;
-    }
-    return { year: y, importTon: imp / 1000, exportTon: exp / 1000 };
+function loadSampleData() {
+  importCsv(fs.readFileSync(SAMPLE_FILE, 'utf8'), path.basename(SAMPLE_FILE));
+}
+
+if (store.isEmpty()) {
+  loadSampleData();
+  console.log('ฐานข้อมูลว่าง → โหลดชุดข้อมูลตัวอย่าง ' + path.basename(SAMPLE_FILE));
+}
+
+function withTier(list, threshold) {
+  return list.map((p) => ({ ...p, tier: classifyTier(p.finalScore, p.avgYearlyTotalTon, threshold) }));
+}
+
+const round1 = (x) => Math.round(x * 10) / 10;
+
+// FR1, FR2: ปริมาณนำเข้า/ส่งออกรายปี แยกจังหวัดและหมวดสินค้า (ไม่มีถ้าชุดข้อมูลเป็นแบบ "มีคะแนนมาแล้ว")
+function buildTrends(records) {
+  if (records.length === 0) return null;
+  const years = [...new Set(records.map((r) => r.yearAD))].sort();
+  const categories = [...new Set(records.map((r) => r.categoryTh))].sort();
+  const yi = new Map(years.map((y, i) => [y, i]));
+
+  const blank = () => ({
+    import: years.map(() => 0),
+    export: years.map(() => 0),
+    byCategory: Object.fromEntries(categories.map((c) => [c, years.map(() => 0)])),
   });
-  const latest = totals[totals.length - 1];
-  const first = totals[0];
-  const totalLatestTon = latest.importTon + latest.exportTon;
-  const totalFirstTon = first.importTon + first.exportTon;
-  const pctChange = totalFirstTon > 0 ? ((totalLatestTon - totalFirstTon) / totalFirstTon) * 100 : 0;
+  const all = blank();
+  const byProvince = new Map();
 
-  const byProvinceLatestYear = {};
   for (const r of records) {
-    if (r.yearAD !== latest.year) continue;
-    byProvinceLatestYear[r.provinceTh] = (byProvinceLatestYear[r.provinceTh] || 0) + r.weightKg;
+    if (!byProvince.has(r.provinceId)) {
+      byProvince.set(r.provinceId, { id: r.provinceId, nameTh: r.provinceTh, nameEn: r.provinceEn, ...blank() });
+    }
+    const i = yi.get(r.yearAD);
+    for (const t of [all, byProvince.get(r.provinceId)]) {
+      t[r.direction][i] += r.weightTon;
+      t.byCategory[r.categoryTh][i] += r.weightTon;
+    }
   }
-  const sortedProv = Object.entries(byProvinceLatestYear).sort((a, b) => b[1] - a[1]);
-  const top2Total = sortedProv.slice(0, 2).reduce((a, [, v]) => a + v, 0);
-  const grandTotal = sortedProv.reduce((a, [, v]) => a + v, 0);
-  const top2Share = grandTotal > 0 ? (top2Total / grandTotal) * 100 : 0;
+
+  const roundAll = (t) => {
+    t.import = t.import.map(Math.round);
+    t.export = t.export.map(Math.round);
+    for (const c of categories) t.byCategory[c] = t.byCategory[c].map(Math.round);
+    return t;
+  };
+  const provinces = [...byProvince.values()].map(roundAll).sort((a, b) => a.nameTh.localeCompare(b.nameTh, 'th'));
 
   return {
     years,
-    importByYear: totals.map((t) => Math.round(t.importTon)),
-    exportByYear: totals.map((t) => Math.round(t.exportTon)),
-    totalLatestYearTon: Math.round(totalLatestTon),
-    pctChangeVsFirstYear: Math.round(pctChange * 10) / 10,
-    top2ShareOfTotal: Math.round(top2Share * 10) / 10,
-    top2Provinces: sortedProv.slice(0, 2).map(([name]) => name),
+    yearsBE: years.map((y) => y + 543),
+    categories,
+    all: roundAll(all),
+    provinces,
   };
 }
+
+function buildOverview(trends, scores) {
+  if (!trends) return null;
+  const totals = trends.years.map((_, i) => trends.all.import[i] + trends.all.export[i]);
+  const first = totals[0];
+  const latest = totals[totals.length - 1];
+
+  // สัดส่วน 2 พื้นที่ที่ปริมาณสูงสุด คิดรวมทั้งช่วงปี (สไลด์หน้า 8: ชลบุรี+ระยอง 84.7%)
+  const provTotals = trends.provinces
+    .map((p) => ({ nameTh: p.nameTh, total: p.import.reduce((a, b) => a + b, 0) + p.export.reduce((a, b) => a + b, 0) }))
+    .sort((a, b) => b.total - a.total);
+  const grand = provTotals.reduce((a, p) => a + p.total, 0);
+  const top2 = provTotals.slice(0, 2);
+
+  return {
+    totalLatestYearTon: latest,
+    pctChangeVsFirstYear: first > 0 ? round1(((latest - first) / first) * 100) : 0,
+    top2Provinces: top2.map((p) => p.nameTh),
+    top2ShareOfTotal: grand > 0 ? round1((top2.reduce((a, p) => a + p.total, 0) / grand) * 100) : 0,
+    provinceCount: scores.length,
+  };
+}
+
+function buildDashboard() {
+  const records = store.loadTradeRecords();
+  const scores = store.loadScores();
+  const trends = buildTrends(records);
+  return {
+    dataset: store.loadDatasetInfo(),
+    defaults: { weights: DEFAULT_WEIGHTS, volumeThresholdTon: DEFAULT_VOLUME_THRESHOLD_TON },
+    overview: buildOverview(trends, scores),
+    trends,
+    provinces: withTier(scores, DEFAULT_VOLUME_THRESHOLD_TON),
+  };
+}
+
+// ---------------- Validation ----------------
 
 function validateWeights(weights) {
   if (!weights || typeof weights !== 'object') return 'ไม่พบ weights';
@@ -77,6 +147,8 @@ function validateWeights(weights) {
   return null;
 }
 
+// ---------------- HTTP helpers ----------------
+
 function sendJson(res, statusCode, payload) {
   const body = JSON.stringify(payload);
   res.writeHead(statusCode, {
@@ -89,21 +161,21 @@ function sendJson(res, statusCode, payload) {
   res.end(body);
 }
 
-function readJsonBody(req) {
+function readJsonBody(req, maxBytes) {
   return new Promise((resolve, reject) => {
-    let data = '';
+    const chunks = [];
     let size = 0;
-    const MAX = 1024 * 1024; // 1MB พอสำหรับ body นี้แล้ว
     req.on('data', (chunk) => {
       size += chunk.length;
-      if (size > MAX) {
-        reject(new Error('body ใหญ่เกินไป'));
+      if (size > maxBytes) {
+        reject(new Error(`ไฟล์/ข้อมูลใหญ่เกิน ${Math.round(maxBytes / 1024 / 1024)} MB`));
         req.destroy();
         return;
       }
-      data += chunk;
+      chunks.push(chunk);
     });
     req.on('end', () => {
+      const data = Buffer.concat(chunks).toString('utf8');
       if (!data) return resolve({});
       try {
         resolve(JSON.parse(data));
@@ -120,14 +192,14 @@ const MIME = {
   '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
+  '.csv': 'text/csv; charset=utf-8',
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
   '.ico': 'image/x-icon',
 };
 
 function serveStatic(req, res, pathname) {
-  let rel = pathname === '/' ? '/index.html' : pathname;
-  rel = rel.split('?')[0];
+  let rel = pathname === '/' ? '/index.html' : decodeURIComponent(pathname);
   const filePath = path.normalize(path.join(PUBLIC_DIR, rel));
   // กันการหลุดออกนอก public/ (path traversal)
   if (!filePath.startsWith(PUBLIC_DIR)) {
@@ -140,10 +212,14 @@ function serveStatic(req, res, pathname) {
       return res.end('ไม่พบไฟล์: ' + rel);
     }
     const ext = path.extname(filePath).toLowerCase();
-    res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
+    const headers = { 'Content-Type': MIME[ext] || 'application/octet-stream' };
+    if (ext === '.csv') headers['Content-Disposition'] = `attachment; filename="${path.basename(filePath)}"`;
+    res.writeHead(200, headers);
     res.end(content);
   });
 }
+
+// ---------------- Routes ----------------
 
 const server = http.createServer(async (req, res) => {
   const urlObj = new URL(req.url, `http://${req.headers.host}`);
@@ -158,62 +234,82 @@ const server = http.createServer(async (req, res) => {
     return res.end();
   }
 
-  if (pathname === '/api/dashboard-data' && req.method === 'GET') {
-    const ranked = rankProvinces(metrics, DEFAULT_WEIGHTS, VOLUME_THRESHOLD_TON);
-    return sendJson(res, 200, {
-      years,
-      weights: DEFAULT_WEIGHTS,
-      overview: buildOverview(),
-      provinces: ranked.map((r) => ({
-        id: r.id,
-        nameTh: r.nameTh,
-        nameEn: r.nameEn,
-        V: r.V, G: r.G, D: r.D, B: r.B, S: r.S,
-        finalScore: r.finalScore,
-        rank: r.rank,
-        tier: r.tier,
-      })),
-    });
-  }
-
-  if (pathname === '/api/recalculate' && req.method === 'POST') {
-    let body;
-    try {
-      body = await readJsonBody(req);
-    } catch (e) {
-      return sendJson(res, 400, { error: e.message });
-    }
-    const { weights } = body || {};
-    const err = validateWeights(weights);
-    if (err) {
-      return sendJson(res, 400, { error: err });
+  try {
+    if (pathname === '/api/dashboard-data' && req.method === 'GET') {
+      return sendJson(res, 200, buildDashboard());
     }
 
-    const baseRanked = rankProvinces(metrics, DEFAULT_WEIGHTS, VOLUME_THRESHOLD_TON);
-    const baseRankById = Object.fromEntries(baseRanked.map((r) => [r.id, r.rank]));
+    // FR3 + FR4 + FR5: คำนวณคะแนนและจัดอันดับใหม่ตามน้ำหนักที่ผู้ใช้กำหนด
+    if (pathname === '/api/recalculate' && req.method === 'POST') {
+      const body = await readJsonBody(req, 1024 * 1024);
+      const { weights } = body || {};
+      const err = validateWeights(weights);
+      if (err) return sendJson(res, 400, { error: err });
 
-    const ranked = rankProvinces(metrics, weights, VOLUME_THRESHOLD_TON);
-    return sendJson(res, 200, {
-      weights,
-      provinces: ranked.map((r) => ({
-        id: r.id,
-        nameTh: r.nameTh,
-        nameEn: r.nameEn,
-        V: r.V, G: r.G, D: r.D, B: r.B, S: r.S,
-        finalScore: r.finalScore,
-        rank: r.rank,
-        baseRank: baseRankById[r.id],
-        tier: r.tier,
-      })),
-    });
-  }
+      let threshold = DEFAULT_VOLUME_THRESHOLD_TON;
+      if (body.volumeThresholdTon !== undefined) {
+        threshold = Number(body.volumeThresholdTon);
+        if (!Number.isFinite(threshold) || threshold < 0) {
+          return sendJson(res, 400, { error: 'เกณฑ์ปริมาณต้องเป็นตัวเลข ≥ 0' });
+        }
+      }
 
-  if (pathname === '/api/health' && req.method === 'GET') {
-    return sendJson(res, 200, { ok: true, provinces: metrics.length, years });
-  }
+      const base = store.loadScores(); // คะแนนฐาน (น้ำหนักเริ่มต้น) จากตาราง PRIORITY_SCORE
+      const baseRankById = Object.fromEntries(base.map((r) => [r.id, r.rank]));
+      const ranked = rankProvinces(base, weights, threshold);
+      return sendJson(res, 200, {
+        weights,
+        volumeThresholdTon: threshold,
+        provinces: ranked.map((r) => ({
+          id: r.id,
+          nameTh: r.nameTh,
+          nameEn: r.nameEn,
+          V: r.V, G: r.G, D: r.D, B: r.B, S: r.S,
+          avgYearlyTotalTon: r.avgYearlyTotalTon,
+          finalScore: r.finalScore,
+          rank: r.rank,
+          baseRank: baseRankById[r.id],
+          tier: r.tier,
+        })),
+      });
+    }
 
-  if (pathname.startsWith('/api/')) {
-    return sendJson(res, 404, { error: 'ไม่พบ endpoint นี้' });
+    // Use Case: นำเข้า/ปรับปรุงข้อมูลการค้า — แทนที่ข้อมูลทั้งชุดแล้วคำนวณใหม่ทั้งหมด
+    if (pathname === '/api/import' && req.method === 'POST') {
+      const body = await readJsonBody(req, 30 * 1024 * 1024);
+      if (typeof body.csv !== 'string' || !body.csv.trim()) {
+        return sendJson(res, 400, { error: 'ไม่พบเนื้อหาไฟล์ CSV' });
+      }
+      try {
+        const ds = importCsv(body.csv, String(body.fileName || 'uploaded.csv'));
+        return sendJson(res, 200, {
+          ok: true,
+          mode: ds.mode,
+          rowsImported: ds.mode === 'raw' ? ds.records.length : ds.scores.length,
+          dataset: store.loadDatasetInfo(),
+        });
+      } catch (e) {
+        if (e instanceof ImportError) return sendJson(res, 400, { error: e.message, details: e.details });
+        throw e;
+      }
+    }
+
+    if (pathname === '/api/reset-sample' && req.method === 'POST') {
+      loadSampleData();
+      return sendJson(res, 200, { ok: true, dataset: store.loadDatasetInfo() });
+    }
+
+    if (pathname === '/api/health' && req.method === 'GET') {
+      const info = store.loadDatasetInfo();
+      return sendJson(res, 200, { ok: true, provinces: info.provinces, records: info.records, dataset: info.fileName });
+    }
+
+    if (pathname.startsWith('/api/')) {
+      return sendJson(res, 404, { error: 'ไม่พบ endpoint นี้' });
+    }
+  } catch (e) {
+    console.error(e);
+    return sendJson(res, 500, { error: 'เกิดข้อผิดพลาดในเซิร์ฟเวอร์: ' + e.message });
   }
 
   // ไม่ใช่ /api/* → เสิร์ฟไฟล์ static จาก public/

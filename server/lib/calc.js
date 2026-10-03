@@ -3,6 +3,7 @@
  * DSS ท่าเรือ — Calculation engine
  * คำนวณ V, G, D, B, S จากข้อมูลดิบ (ไม่ใช้คอลัมน์สำเร็จรูปจากชีต "อัตราการเติบโต")
  * อ้างอิงสูตรจากสไลด์ Project-1 หน้า 9 (Weighted Scoring) และหน้า 15-17 (Data Modeling / ER)
+ * หน่วยน้ำหนักทั้งหมดเป็น "ตัน" (TotalWeight ในตาราง TRADE_RECORD)
  */
 
 function mean(arr) {
@@ -28,10 +29,10 @@ function minMaxNormalize(values) {
 }
 
 /**
- * @param {Array} records - trade-records.json (แถวระดับ ปี/จังหวัด/ทิศทาง/หมวดสินค้า/น้ำหนัก)
- * @param {Object} slugMap - ชื่อจังหวัด TH -> id
+ * @param {Array} records - แถวจากตาราง TRADE_RECORD (join PROVINCE, GOODS_CATEGORY แล้ว)
+ *   { provinceId, provinceTh, provinceEn, yearAD, direction: 'import'|'export', categoryTh, weightTon }
  */
-function buildProvinceMetrics(records, slugMap) {
+function buildProvinceMetrics(records) {
   const years = [...new Set(records.map((r) => r.yearAD))].sort();
   const provincesTh = [...new Set(records.map((r) => r.provinceTh))].sort();
   const categories = [...new Set(records.map((r) => r.categoryTh))].sort();
@@ -39,7 +40,7 @@ function buildProvinceMetrics(records, slugMap) {
   const perProvince = {};
   for (const p of provincesTh) {
     perProvince[p] = {
-      id: slugMap[p],
+      id: records.find((r) => r.provinceTh === p).provinceId,
       nameTh: p,
       nameEn: records.find((r) => r.provinceTh === p).provinceEn,
       yearlyImport: {},
@@ -55,18 +56,18 @@ function buildProvinceMetrics(records, slugMap) {
 
   for (const r of records) {
     const bucket = perProvince[r.provinceTh];
-    if (r.direction === 'import') bucket.yearlyImport[r.yearAD] += r.weightKg;
-    else bucket.yearlyExport[r.yearAD] += r.weightKg;
-    bucket.categoryTotal[r.categoryTh] += r.weightKg;
+    if (r.direction === 'import') bucket.yearlyImport[r.yearAD] += r.weightTon;
+    else bucket.yearlyExport[r.yearAD] += r.weightTon;
+    bucket.categoryTotal[r.categoryTh] += r.weightTon;
   }
 
   const rawList = provincesTh.map((p) => {
     const b = perProvince[p];
     const yearlyTotal = years.map((y) => b.yearlyImport[y] + b.yearlyExport[y]);
-    const avgYearlyTotalKg = mean(yearlyTotal);
+    const avgYearlyTotalTon = mean(yearlyTotal);
 
     // --- V: ปริมาณเฉลี่ยต่อปี, log-scale (ลดผลของพื้นที่ปริมาณสูงผิดปกติ 1-2 แห่ง) ---
-    const V_raw = Math.log(avgYearlyTotalKg + 1);
+    const V_raw = Math.log(avgYearlyTotalTon + 1);
 
     // --- G: อัตราการเติบโตเฉลี่ยต่อปี (YoY) จากปริมาณรวมรายปี ---
     const growthRates = [];
@@ -108,8 +109,7 @@ function buildProvinceMetrics(records, slugMap) {
       id: b.id,
       nameTh: b.nameTh,
       nameEn: b.nameEn,
-      avgYearlyTotalKg,
-      avgYearlyTotalTon: avgYearlyTotalKg / 1000,
+      avgYearlyTotalTon,
       V_raw, G_raw, D_raw, B_raw, S_raw,
     };
   });
@@ -161,7 +161,7 @@ function rankProvinces(metrics, weights, volumeThresholdTon) {
     ...m,
     finalScore: Math.round(weightedScore(m, weights) * 10) / 10,
   }));
-  scored.sort((a, b) => b.finalScore - a.finalScore || a.id.localeCompare(b.id));
+  scored.sort((a, b) => b.finalScore - a.finalScore || a.id - b.id);
   scored.forEach((s, i) => {
     s.rank = i + 1;
     s.tier = classifyTier(s.finalScore, s.avgYearlyTotalTon, volumeThresholdTon);

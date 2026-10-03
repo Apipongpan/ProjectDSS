@@ -1,15 +1,23 @@
 'use strict';
 /**
  * DSS ท่าเรือ — Frontend (vanilla JS, ไม่มี framework/library ภายนอก)
- * ออกแบบใหม่ทั้งหมดตาม FR1-FR6 (ไม่ได้อิงจาก mockup หน้า 18-21 ของสไลด์เดิม)
+ * ลำดับหน้าจอตาม Use Case / Swim lane สไลด์หน้า 14:
+ *   1 นำเข้าข้อมูล → 2 ดูแนวโน้ม (FR1, FR2) → 3 กำหนดน้ำหนัก (FR3) → 4 จัดอันดับ (FR4, FR5) → 5 แสดงผล/ส่งออก (FR6)
+ *
+ * น้ำหนักที่ผู้ใช้ตั้งในหน้า What-if เป็น "สถานะกลาง" (state.weights) ทุกหน้าที่แสดงคะแนน/อันดับ
+ * ใช้ผลการคำนวณชุดเดียวกัน (state.ranking) — ปรับน้ำหนักแล้วทุกหน้าเปลี่ยนตามทันที
  */
 
+const KEYS = ['V', 'G', 'D', 'B', 'S'];
+
+// ความหมายของชั้นตามตารางกฎการตัดสินใจ สไลด์หน้า 11
 const TIER_LABEL = {
   1: 'ชั้น 1 · ขยายกำลังรองรับ',
   2: 'ชั้น 2 · พัฒนาเฉพาะทาง',
   3: 'ชั้น 3 · พัฒนาเฉพาะทาง',
   4: 'ชั้น 4 · ติดตาม',
 };
+const TIER_COLOR = { 1: '#0f5257', 2: '#2f9e8f', 3: '#e8a33d', 4: '#b8c4c2' };
 
 const IND_LABEL = {
   V: 'ปริมาณ (Volume)',
@@ -19,15 +27,23 @@ const IND_LABEL = {
   S: 'เสถียรภาพ (Stability)',
 };
 
+// โปรไฟล์น้ำหนักตัวอย่าง สไลด์หน้า 10
 const PRESETS = {
-  balanced: { key: 'balanced', label: 'ค่าเริ่มต้น (สมดุล)', weights: { V: 40, G: 25, D: 15, B: 10, S: 10 } },
-  capacity: { key: 'capacity', label: 'เน้นขยายกำลังรองรับ', weights: { V: 50, G: 20, D: 10, B: 10, S: 10 } },
-  stability: { key: 'stability', label: 'เน้นความเสถียรภาพ', weights: { V: 20, G: 15, D: 10, B: 15, S: 40 } },
+  balanced: { label: 'สมดุล (ค่าเริ่มต้น)', weights: { V: 40, G: 25, D: 15, B: 10, S: 10 } },
+  capacity: { label: 'เน้นขยายกำลังรองรับ', weights: { V: 50, G: 20, D: 10, B: 10, S: 10 } },
+  stability: { label: 'เน้นความเสถียรภาพ', weights: { V: 20, G: 15, D: 10, B: 15, S: 40 } },
 };
 
-let dashboardData = null;      // ผลลัพธ์จาก GET /api/dashboard-data (น้ำหนักเริ่มต้น)
-let whatifWeights = { V: 40, G: 25, D: 15, B: 10, S: 10 }; // หน่วย % (int)
-let whatifResult = null;       // ผลลัพธ์ล่าสุดจาก POST /api/recalculate
+const state = {
+  data: null,          // GET /api/dashboard-data
+  weights: { ...PRESETS.balanced.weights }, // หน่วย % (จำนวนเต็ม)
+  thresholdTon: 5000000,
+  ranking: [],         // ผลการจัดอันดับตามน้ำหนักปัจจุบัน (ใช้ร่วมกันทุกหน้า)
+  appliedWeights: { ...PRESETS.balanced.weights },
+  appliedThresholdTon: 5000000,
+  trendProvince: 'all',
+  trendCategory: 'all',
+};
 
 // ---------------- Bootstrapping ----------------
 
@@ -36,8 +52,9 @@ async function fetchJSON(url, options) {
   let body;
   try { body = await res.json(); } catch (e) { body = null; }
   if (!res.ok) {
-    const msg = (body && body.error) ? body.error : `HTTP ${res.status}`;
-    throw new Error(msg);
+    const err = new Error((body && body.error) ? body.error : `HTTP ${res.status}`);
+    err.details = body && body.details;
+    throw err;
   }
   return body;
 }
@@ -45,25 +62,36 @@ async function fetchJSON(url, options) {
 async function init() {
   setupTabs();
   try {
-    dashboardData = await fetchJSON('/api/dashboard-data');
+    await loadDashboard();
     document.getElementById('loading').style.display = 'none';
-    setConnStatus(true);
-    renderOverview(dashboardData);
-    renderRanking(dashboardData.provinces);
-    renderDetail(dashboardData.provinces);
-    initWhatIf();
+    state.thresholdTon = state.data.defaults.volumeThresholdTon;
+    state.appliedThresholdTon = state.thresholdTon;
+    renderImport();
+    renderWhatIfControls();
+    await applyWeights();
   } catch (err) {
     document.getElementById('loading').style.display = 'none';
-    showError('เชื่อมต่อเซิร์ฟเวอร์ไม่ได้: ' + err.message + ' — ตรวจสอบว่ารัน "npm start" (หรือ node server/index.js) อยู่หรือไม่');
+    showError('เชื่อมต่อเซิร์ฟเวอร์ไม่ได้: ' + err.message + ' — ตรวจสอบว่ารัน "node server/index.js" อยู่หรือไม่');
     setConnStatus(false);
   }
+}
+
+async function loadDashboard() {
+  state.data = await fetchJSON('/api/dashboard-data');
+  setConnStatus(true);
 }
 
 function setConnStatus(ok) {
   const el = document.getElementById('conn-status');
   if (ok) {
-    el.textContent = `เชื่อมต่อสำเร็จ · ${dashboardData.provinces.length} พื้นที่ · ปี ${dashboardData.years[0]}–${dashboardData.years[dashboardData.years.length - 1]}`;
+    const ds = state.data.dataset;
+    el.textContent = `เชื่อมต่อสำเร็จ · ${ds.provinces} พื้นที่`;
     el.className = 'conn-status ok';
+    const t = state.data.trends;
+    const range = t ? ` · ข้อมูลปี ${t.yearsBE[0]}–${t.yearsBE[t.yearsBE.length - 1]}` : '';
+    document.getElementById('brand-sub').textContent = `ตามปริมาณสินค้านำเข้า–ส่งออก · ${ds.provinces} พื้นที่${range}`;
+    document.getElementById('footer-text').textContent =
+      `Decision Support System · Project 2 · ชุดข้อมูล: ${ds.fileName || '-'}${range}`;
   } else {
     el.textContent = 'เชื่อมต่อเซิร์ฟเวอร์ไม่สำเร็จ';
     el.className = 'conn-status err';
@@ -77,330 +105,722 @@ function showError(msg) {
 }
 
 function setupTabs() {
-  const buttons = document.querySelectorAll('.tab-btn');
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      buttons.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelectorAll('.tab-panel').forEach((p) => (p.style.display = 'none'));
-      document.getElementById('tab-' + btn.dataset.tab).style.display = 'flex';
-    });
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => goTab(btn.dataset.tab));
+  });
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('[data-goto]');
+    if (link) { e.preventDefault(); goTab(link.dataset.goto); }
   });
 }
 
-// ---------------- Tab 1: ภาพรวม (FR1, FR2) ----------------
+function goTab(name) {
+  document.querySelectorAll('.tab-btn').forEach((b) => b.classList.toggle('active', b.dataset.tab === name));
+  document.querySelectorAll('.tab-panel').forEach((p) => (p.style.display = 'none'));
+  document.getElementById('tab-' + name).style.display = 'flex';
+  window.scrollTo({ top: 0 });
+}
 
-function renderOverview(data) {
+// ---------------- คำนวณตามน้ำหนักปัจจุบัน แล้ววาดทุกหน้าใหม่ ----------------
+
+async function applyWeights() {
+  const status = document.getElementById('whatif-status');
+  const sum = KEYS.reduce((a, k) => a + state.weights[k], 0);
+  if (sum !== 100) {
+    if (status) status.textContent = 'ผลรวมน้ำหนักต้องเท่ากับ 100% ก่อนคำนวณ';
+    return;
+  }
+  if (status) status.textContent = 'กำลังคำนวณ…';
+  const weights = Object.fromEntries(KEYS.map((k) => [k, state.weights[k] / 100]));
+  try {
+    const result = await fetchJSON('/api/recalculate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ weights, volumeThresholdTon: state.thresholdTon }),
+    });
+    state.ranking = result.provinces;
+    state.appliedWeights = { ...state.weights };
+    state.appliedThresholdTon = state.thresholdTon;
+    renderOverview();
+    renderWhatIfResult();
+    renderRanking();
+    renderDetail();
+    if (status) {
+      status.innerHTML = `คำนวณแล้ว ${new Date().toLocaleTimeString('th-TH')} · ใช้กับหน้า
+        <a href="#" data-goto="ranking">จัดลำดับความสำคัญ</a> และ
+        <a href="#" data-goto="detail">คะแนนตัวชี้วัด</a> แล้ว`;
+    }
+  } catch (err) {
+    if (status) status.textContent = 'คำนวณไม่สำเร็จ: ' + err.message;
+  }
+}
+
+function currentPresetLabel(w) {
+  const hit = Object.values(PRESETS).find((p) => KEYS.every((k) => p.weights[k] === w[k]));
+  return hit ? hit.label : 'กำหนดเอง';
+}
+
+function weightBanner() {
+  const w = state.appliedWeights;
+  return `
+    <div class="weight-banner no-print-link">
+      <div>
+        <strong>น้ำหนักที่ใช้อยู่:</strong>
+        ${KEYS.map((k) => `<span class="w-chip">${k} ${w[k]}%</span>`).join('')}
+        <span class="muted">· โปรไฟล์: ${currentPresetLabel(w)} · เกณฑ์ปริมาณชั้น 1: ${fmtTonShort(state.appliedThresholdTon)}/ปี</span>
+      </div>
+      <a href="#" class="btn btn-outline btn-sm no-print" data-goto="whatif">ปรับน้ำหนัก →</a>
+    </div>`;
+}
+
+// ---------------- 1) นำเข้าข้อมูล ----------------
+
+function renderImport() {
+  const el = document.getElementById('tab-import');
+  el.innerHTML = `
+    <div class="card">
+      <p class="section-title">ชุดข้อมูลที่ใช้อยู่ตอนนี้</p>
+      <div id="dataset-info"></div>
+    </div>
+
+    <div class="card">
+      <p class="section-title">นำเข้า / ปรับปรุงข้อมูลการค้า</p>
+      <p class="section-sub">อัปโหลดไฟล์ CSV (เช่น ข้อมูลจาก data.go.th) — ระบบจะ<strong>แทนที่ข้อมูลเดิมทั้งชุด</strong>แล้วคำนวณคะแนนและอันดับใหม่ทั้งหมดอัตโนมัติ
+        ถ้าต้องการเก็บข้อมูลปีเก่าไว้ ให้รวมข้อมูลปีเก่าไว้ในไฟล์เดียวกันด้วย</p>
+
+      <div class="format-grid">
+        <div class="format-card">
+          <p class="format-title">แบบที่ 1 · ข้อมูลดิบ <span class="muted">(ระบบคำนวณ V,G,D,B,S ให้)</span></p>
+          <p class="format-sub">1 แถว = ปริมาณสินค้า 1 รายการ ต้องมีอย่างน้อย 2 ปี</p>
+          <table class="mini-table">
+            <tr><td><code>Year_BE</code></td><td>ปี พ.ศ. หรือ ค.ศ.</td></tr>
+            <tr><td><code>ProvinceName_TH</code></td><td>จังหวัด/พื้นที่ท่าเรือ</td></tr>
+            <tr><td><code>ProcessingIndicator</code></td><td>นำเข้า / ส่งออก</td></tr>
+            <tr><td><code>CategoryName_TH</code></td><td>หมวดสินค้า</td></tr>
+            <tr><td><code>TotalWeight</code></td><td>น้ำหนัก (ตัน)</td></tr>
+          </table>
+          <p class="format-sub">ไม่บังคับ: ProvinceName_EN, CategoryName_EN, OriginalGoodsMapping · หัวคอลัมน์ภาษาไทย (ปี, จังหวัด, นำเข้า/ส่งออก, หมวดสินค้า, น้ำหนัก) ก็ได้</p>
+          <a class="btn btn-outline btn-sm" href="/samples/port-trade-2565-2568.csv" download>ดาวน์โหลดไฟล์ตัวอย่าง (ข้อมูลจริง 2565–2568)</a>
+        </div>
+        <div class="format-card">
+          <p class="format-title">แบบที่ 2 · มีคะแนนมาแล้ว <span class="muted">(ใช้ค่าตามไฟล์)</span></p>
+          <p class="format-sub">1 แถว = 1 พื้นที่ ใช้ V,G,D,B,S ตามไฟล์ ไม่คำนวณซ้ำ</p>
+          <table class="mini-table">
+            <tr><td><code>ProvinceName_TH</code></td><td>จังหวัด/พื้นที่ท่าเรือ</td></tr>
+            <tr><td><code>V, G, D, B, S</code></td><td>คะแนน 0–100</td></tr>
+            <tr><td><code>AvgVolumeTon</code></td><td>ปริมาณเฉลี่ย (ตัน/ปี) ใช้กับกฎจัดชั้น</td></tr>
+          </table>
+          <p class="format-sub">ไม่บังคับ: Year_BE, ProvinceName_EN · ไฟล์แบบนี้ไม่มีข้อมูลรายปี จึงไม่มีกราฟแนวโน้ม</p>
+          <a class="btn btn-outline btn-sm" href="/samples/template-scored.csv" download>ดาวน์โหลดไฟล์ตัวอย่าง (แบบมีคะแนน)</a>
+        </div>
+      </div>
+
+      <label class="drop-zone" id="drop-zone">
+        <input type="file" id="file-input" accept=".csv,text/csv" hidden>
+        <span id="drop-text"><strong>คลิกเพื่อเลือกไฟล์ CSV</strong> หรือลากไฟล์มาวางที่นี่</span>
+      </label>
+      <div id="import-preview"></div>
+      <div class="import-actions">
+        <button id="btn-import" class="btn btn-primary" disabled>นำเข้าและคำนวณใหม่</button>
+        <button id="btn-reset-sample" class="btn btn-outline">คืนค่าเป็นชุดข้อมูลตัวอย่าง</button>
+      </div>
+      <div id="import-result"></div>
+    </div>
+  `;
+  renderDatasetInfo();
+
+  const input = document.getElementById('file-input');
+  const drop = document.getElementById('drop-zone');
+  input.addEventListener('change', () => input.files[0] && pickFile(input.files[0]));
+  drop.addEventListener('dragover', (e) => { e.preventDefault(); drop.classList.add('over'); });
+  drop.addEventListener('dragleave', () => drop.classList.remove('over'));
+  drop.addEventListener('drop', (e) => {
+    e.preventDefault();
+    drop.classList.remove('over');
+    if (e.dataTransfer.files[0]) pickFile(e.dataTransfer.files[0]);
+  });
+  document.getElementById('btn-import').addEventListener('click', doImport);
+  document.getElementById('btn-reset-sample').addEventListener('click', doResetSample);
+}
+
+function renderDatasetInfo() {
+  const ds = state.data.dataset;
+  const modeText = ds.mode === 'scored' ? 'แบบมีคะแนนมาแล้ว (ใช้ V,G,D,B,S ตามไฟล์)' : 'ข้อมูลดิบ (ระบบคำนวณ V,G,D,B,S เอง)';
+  const t = state.data.trends;
+  document.getElementById('dataset-info').innerHTML = `
+    <div class="kpi-grid">
+      <div class="kpi-card"><p class="kpi-label">ไฟล์</p><p class="kpi-value small">${esc(ds.fileName || '-')}</p>
+        <p class="kpi-delta">นำเข้าเมื่อ ${ds.importedAt ? new Date(ds.importedAt).toLocaleString('th-TH') : '-'}</p></div>
+      <div class="kpi-card"><p class="kpi-label">รูปแบบ</p><p class="kpi-value small">${modeText}</p></div>
+      <div class="kpi-card"><p class="kpi-label">ขนาดข้อมูล (ตาราง)</p>
+        <p class="kpi-value small">${ds.provinces} พื้นที่ · ${fmtNum(ds.records)} รายการ</p>
+        <p class="kpi-delta">${ds.categories} หมวดสินค้า${t ? ` · ปี ${t.yearsBE.join(', ')}` : ''}</p></div>
+    </div>`;
+}
+
+let pendingFile = null;
+
+async function pickFile(file) {
+  const preview = document.getElementById('import-preview');
+  document.getElementById('import-result').innerHTML = '';
+  if (!/\.csv$/i.test(file.name)) {
+    pendingFile = null;
+    document.getElementById('btn-import').disabled = true;
+    preview.innerHTML = `<div class="msg msg-err">รองรับเฉพาะไฟล์ .csv — ถ้าเป็น Excel ให้เปิดแล้วกด File › Save As › "CSV UTF-8 (Comma delimited)"</div>`;
+    return;
+  }
+  const text = await readFileText(file);
+  pendingFile = { name: file.name, text };
+  document.getElementById('drop-text').innerHTML = `<strong>${esc(file.name)}</strong> · ${fmtNum(Math.round(file.size / 1024))} KB · คลิกเพื่อเปลี่ยนไฟล์`;
+  const rows = parseCsvPreview(text, 6);
+  const dataRows = Math.max(0, text.split(/\r?\n/).filter((l) => l.trim()).length - 1);
+  preview.innerHTML = `
+    <p class="section-sub" style="margin:14px 0 6px">ตัวอย่าง 5 แถวแรก (ทั้งหมดประมาณ ${fmtNum(dataRows)} แถว)</p>
+    <div class="table-wrap"><table class="data-table compact">
+      <thead><tr>${rows[0].map((h) => `<th>${esc(h)}</th>`).join('')}</tr></thead>
+      <tbody>${rows.slice(1).map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody>
+    </table></div>`;
+  document.getElementById('btn-import').disabled = false;
+}
+
+// Excel บน Windows ภาษาไทย บันทึก CSV เป็น windows-874 ได้ ถ้าอ่านเป็น UTF-8 ไม่ผ่านให้ลอง windows-874
+async function readFileText(file) {
+  const buf = await file.arrayBuffer();
+  try {
+    return new TextDecoder('utf-8', { fatal: true }).decode(buf);
+  } catch (e) {
+    return new TextDecoder('windows-874').decode(buf);
+  }
+}
+
+function parseCsvPreview(text, maxRows) {
+  const rows = [];
+  let row = [], field = '', q = false;
+  for (let i = 0; i < text.length && rows.length < maxRows; i++) {
+    const ch = text[i];
+    if (q) {
+      if (ch === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; } else field += ch;
+    } else if (ch === '"') q = true;
+    else if (ch === ',') { row.push(field); field = ''; }
+    else if (ch === '\n' || ch === '\r') {
+      if (ch === '\r' && text[i + 1] === '\n') i++;
+      row.push(field); field = '';
+      if (row.some((c) => c.trim())) rows.push(row);
+      row = [];
+    } else field += ch;
+  }
+  if (rows.length < maxRows && (field || row.length)) { row.push(field); rows.push(row); }
+  if (rows[0] && rows[0][0]) rows[0][0] = rows[0][0].replace(/^﻿/, '');
+  return rows.length ? rows : [['(ไฟล์ว่าง)']];
+}
+
+async function doImport() {
+  if (!pendingFile) return;
+  if (!confirm(`นำเข้า "${pendingFile.name}"?\nข้อมูลเดิมในระบบจะถูกแทนที่ทั้งหมด แล้วคำนวณคะแนนใหม่`)) return;
+  const btn = document.getElementById('btn-import');
+  const out = document.getElementById('import-result');
+  btn.disabled = true;
+  out.innerHTML = '<div class="msg">กำลังนำเข้าและคำนวณ…</div>';
+  try {
+    const r = await fetchJSON('/api/import', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fileName: pendingFile.name, csv: pendingFile.text }),
+    });
+    await afterDatasetChanged();
+    out.innerHTML = `<div class="msg msg-ok">นำเข้าสำเร็จ ${fmtNum(r.rowsImported)} แถว
+      (${r.mode === 'raw' ? 'ข้อมูลดิบ — คำนวณ V,G,D,B,S ใหม่แล้ว' : 'แบบมีคะแนน — ใช้ V,G,D,B,S ตามไฟล์'}) ·
+      ${r.dataset.provinces} พื้นที่ ·
+      <a href="#" data-goto="overview">ดูแนวโน้ม →</a> <a href="#" data-goto="ranking">ดูอันดับ →</a></div>`;
+    pendingFile = null;
+  } catch (err) {
+    const details = (err.details || []).map((d) => `<li>${esc(d)}</li>`).join('');
+    out.innerHTML = `<div class="msg msg-err"><strong>นำเข้าไม่สำเร็จ:</strong> ${esc(err.message)}
+      ${details ? `<ul>${details}</ul>` : ''}<p class="muted" style="margin:6px 0 0">ข้อมูลเดิมยังอยู่ครบ ไม่มีอะไรถูกเปลี่ยน</p></div>`;
+    btn.disabled = false;
+  }
+}
+
+async function doResetSample() {
+  if (!confirm('คืนค่าเป็นชุดข้อมูลตัวอย่าง (23 พื้นที่ ปี 2565–2568)?\nข้อมูลที่นำเข้าไว้จะถูกแทนที่')) return;
+  const out = document.getElementById('import-result');
+  try {
+    await fetchJSON('/api/reset-sample', { method: 'POST' });
+    await afterDatasetChanged();
+    out.innerHTML = '<div class="msg msg-ok">คืนค่าชุดข้อมูลตัวอย่างแล้ว</div>';
+  } catch (err) {
+    out.innerHTML = `<div class="msg msg-err">ไม่สำเร็จ: ${esc(err.message)}</div>`;
+  }
+}
+
+async function afterDatasetChanged() {
+  await loadDashboard();
+  state.trendProvince = 'all';
+  state.trendCategory = 'all';
+  renderDatasetInfo();
+  await applyWeights();
+}
+
+// ---------------- 2) แนวโน้มปริมาณการค้า (FR1, FR2) ----------------
+
+function renderOverview() {
   const el = document.getElementById('tab-overview');
-  const ov = data.overview;
+  const { overview: ov, trends } = state.data;
+  const top = state.ranking[0];
+
+  if (!trends) {
+    el.innerHTML = `
+      <div class="card">
+        <p class="section-title">แนวโน้มปริมาณการค้า</p>
+        <div class="hint-box">ชุดข้อมูลปัจจุบันเป็นแบบ "มีคะแนนมาแล้ว" ไม่มีข้อมูลการค้ารายปี จึงแสดงกราฟแนวโน้มไม่ได้ —
+          นำเข้าไฟล์ข้อมูลดิบในหน้า <a href="#" data-goto="import">นำเข้าข้อมูล</a> เพื่อดูแนวโน้ม</div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><p class="kpi-label">พื้นที่ในระบบ</p><p class="kpi-value">${state.ranking.length}</p></div>
+        <div class="kpi-card"><p class="kpi-label">พื้นที่อันดับ 1 (น้ำหนักปัจจุบัน)</p><p class="kpi-value small">${esc(top.nameTh)}</p>
+          <p class="kpi-delta">Priority Score ${top.finalScore}</p></div>
+      </div>`;
+    return;
+  }
+
+  const yBE = trends.yearsBE;
   const changeClass = ov.pctChangeVsFirstYear > 0 ? 'up' : (ov.pctChangeVsFirstYear < 0 ? 'down' : '');
   const changeSign = ov.pctChangeVsFirstYear > 0 ? '+' : '';
 
   el.innerHTML = `
     <div class="kpi-grid">
       <div class="kpi-card">
-        <p class="kpi-label">ปริมาณรวมปีล่าสุด (${ov.years[ov.years.length - 1]})</p>
-        <p class="kpi-value">${fmtNum(ov.totalLatestYearTon)} <span style="font-size:14px;font-weight:600;color:var(--muted)">ตัน</span></p>
-        <p class="kpi-delta ${changeClass}">${changeSign}${ov.pctChangeVsFirstYear}% เทียบปี ${ov.years[0]}</p>
+        <p class="kpi-label">ปริมาณรวมปี ${yBE[yBE.length - 1]}</p>
+        <p class="kpi-value">${fmtMillion(ov.totalLatestYearTon)} <span class="unit">ล้านตัน</span></p>
+        <p class="kpi-delta ${changeClass}">${changeSign}${ov.pctChangeVsFirstYear}% เทียบปี ${yBE[0]}</p>
       </div>
       <div class="kpi-card">
-        <p class="kpi-label">พื้นที่ในระบบ (ครบตามข้อมูลจริง)</p>
-        <p class="kpi-value">${data.provinces.length} <span style="font-size:14px;font-weight:600;color:var(--muted)">พื้นที่</span></p>
+        <p class="kpi-label">พื้นที่ในระบบ</p>
+        <p class="kpi-value">${ov.provinceCount} <span class="unit">พื้นที่</span></p>
+        <p class="kpi-delta">${trends.categories.length} หมวดสินค้า</p>
       </div>
       <div class="kpi-card">
-        <p class="kpi-label">สัดส่วน 2 พื้นที่สูงสุด</p>
+        <p class="kpi-label">สัดส่วน 2 พื้นที่สูงสุด (${yBE[0]}–${yBE[yBE.length - 1]})</p>
         <p class="kpi-value">${ov.top2ShareOfTotal}%</p>
-        <p class="kpi-delta">${ov.top2Provinces.join(' · ')}</p>
+        <p class="kpi-delta">${ov.top2Provinces.map(esc).join(' · ')}</p>
       </div>
       <div class="kpi-card">
-        <p class="kpi-label">พื้นที่อันดับ 1 (คะแนนรวม)</p>
-        <p class="kpi-value small">${data.provinces[0].nameTh}</p>
-        <p class="kpi-delta">Priority Score ${data.provinces[0].finalScore}</p>
+        <p class="kpi-label">พื้นที่อันดับ 1 (น้ำหนักปัจจุบัน)</p>
+        <p class="kpi-value small">${esc(top.nameTh)}</p>
+        <p class="kpi-delta">Priority Score ${top.finalScore} · <a href="#" data-goto="ranking">ดูอันดับ →</a></p>
       </div>
     </div>
 
     <div class="card">
-      <p class="section-title">ปริมาณนำเข้า–ส่งออกรายปี (FR1)</p>
-      <p class="section-sub">หน่วย: ตัน · รวมทั้ง 23 พื้นที่</p>
-      ${buildImportExportChart(ov)}
+      <div class="card-head">
+        <div>
+          <p class="section-title">ปริมาณสินค้านำเข้า–ส่งออกรายปี (FR1)</p>
+          <p class="section-sub" id="trend-sub"></p>
+        </div>
+        <div class="filters">
+          <label>พื้นที่
+            <select id="sel-province">
+              <option value="all">ทุกพื้นที่ (${trends.provinces.length})</option>
+              ${trends.provinces.map((p) => `<option value="${p.id}">${esc(p.nameTh)}</option>`).join('')}
+            </select>
+          </label>
+          <label>หมวดสินค้า
+            <select id="sel-category">
+              <option value="all">ทุกหมวด</option>
+              ${trends.categories.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join('')}
+            </select>
+          </label>
+        </div>
+      </div>
+      <div id="trend-chart"></div>
     </div>
 
     <div class="card">
-      <p class="section-title">อัตราการเติบโต (FR2)</p>
-      <p class="section-sub">คำนวณจากอัตราการเปลี่ยนแปลงปริมาณรวมรายปี (YoY) เฉลี่ยของแต่ละพื้นที่ แล้วปรับเป็นคะแนน 0–100 (คอลัมน์ G) — ดูค่าเต็มได้ในแท็บ "คะแนนตัวชี้วัดรายพื้นที่"</p>
-      <div class="hint-box">พื้นที่ที่มีคะแนน G สูงสุด ณ ขณะนี้คือ <strong>${topByMetric(data.provinces, 'G').nameTh}</strong> (G = ${topByMetric(data.provinces, 'G').G})</div>
+      <p class="section-title">อัตราการเติบโตรายปี (YoY Growth Rate) (FR2)</p>
+      <p class="section-sub">อัตราการเติบโต = (ปริมาณปีนี้ − ปีก่อน) ÷ ปีก่อน × 100 — ค่าเฉลี่ยของอัตรานี้คือค่าดิบที่ใช้คำนวณคะแนน G</p>
+      <div id="trend-table" class="table-wrap"></div>
+    </div>
+
+    <div class="card">
+      <p class="section-title">ปริมาณแยกตามหมวดสินค้า</p>
+      <p class="section-sub" id="cat-sub"></p>
+      <div id="cat-table" class="table-wrap"></div>
     </div>
   `;
+
+  const selP = document.getElementById('sel-province');
+  const selC = document.getElementById('sel-category');
+  selP.value = state.trendProvince;
+  selC.value = state.trendCategory;
+  selP.addEventListener('change', () => { state.trendProvince = selP.value; renderTrendBody(); });
+  selC.addEventListener('change', () => { state.trendCategory = selC.value; renderTrendBody(); });
+  renderTrendBody();
 }
 
-function buildImportExportChart(ov) {
-  const W = 720, H = 260, padL = 50, padB = 34, padT = 14, padR = 10;
-  const plotW = W - padL - padR, plotH = H - padT - padB;
-  const maxVal = Math.max(...ov.importByYear, ...ov.exportByYear) * 1.15 || 1;
-  const n = ov.years.length;
-  const groupW = plotW / n;
-  const barW = Math.min(34, groupW * 0.32);
+function renderTrendBody() {
+  const trends = state.data.trends;
+  const src = state.trendProvince === 'all'
+    ? { ...trends.all, nameTh: 'ทุกพื้นที่' }
+    : trends.provinces.find((p) => String(p.id) === String(state.trendProvince));
+  const cat = state.trendCategory;
+  const yBE = trends.yearsBE;
 
-  let bars = '';
-  ov.years.forEach((y, i) => {
-    const gx = padL + i * groupW + groupW / 2;
-    const impH = (ov.importByYear[i] / maxVal) * plotH;
-    const expH = (ov.exportByYear[i] / maxVal) * plotH;
-    const impX = gx - barW - 3;
-    const expX = gx + 3;
-    bars += `
-      <rect x="${impX}" y="${padT + plotH - impH}" width="${barW}" height="${impH}" fill="#16787f" rx="3"></rect>
-      <rect x="${expX}" y="${padT + plotH - expH}" width="${barW}" height="${expH}" fill="#e8a33d" rx="3"></rect>
-      <text x="${gx}" y="${H - 10}" text-anchor="middle" font-size="12" fill="#5f7674">${y}</text>
-      <text x="${impX + barW / 2}" y="${padT + plotH - impH - 6}" text-anchor="middle" font-size="10.5" fill="#0b3d3f">${fmtNum(ov.importByYear[i])}</text>
-      <text x="${expX + barW / 2}" y="${padT + plotH - expH - 6}" text-anchor="middle" font-size="10.5" fill="#0b3d3f">${fmtNum(ov.exportByYear[i])}</text>
-    `;
-  });
-
-  // gridlines
-  let grid = '';
-  const steps = 4;
-  for (let s = 0; s <= steps; s++) {
-    const yy = padT + plotH - (s / steps) * plotH;
-    grid += `<line x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}" stroke="#e3ecea" stroke-width="1"></line>
-      <text x="${padL - 8}" y="${yy + 4}" text-anchor="end" font-size="10.5" fill="#8aa19f">${fmtNum(Math.round((s / steps) * maxVal))}</text>`;
+  // หมวดสินค้ารวมทั้งนำเข้าและส่งออก จึงแสดงเป็นแท่งเดียว
+  let series;
+  if (cat === 'all') {
+    series = [
+      { name: 'นำเข้า', color: '#16787f', values: src.import },
+      { name: 'ส่งออก', color: '#e8a33d', values: src.export },
+    ];
+  } else {
+    series = [{ name: `${cat} (นำเข้า+ส่งออก)`, color: '#2f6f9e', values: src.byCategory[cat] }];
   }
+  const totals = yBE.map((_, i) => series.reduce((a, s) => a + s.values[i], 0));
 
-  return `
-    <div class="chart-legend">
-      <span><span class="legend-dot" style="background:#16787f"></span>นำเข้า</span>
-      <span><span class="legend-dot" style="background:#e8a33d"></span>ส่งออก</span>
-    </div>
-    <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; max-width:${W}px">${grid}${bars}</svg>
-  `;
-}
+  document.getElementById('trend-sub').textContent =
+    `${src.nameTh} · ${cat === 'all' ? 'ทุกหมวดสินค้า' : cat} · หน่วย: ล้านตัน`;
+  document.getElementById('trend-chart').innerHTML = buildBarChart(yBE, series);
 
-function topByMetric(provinces, key) {
-  return provinces.reduce((best, p) => (p[key] > best[key] ? p : best), provinces[0]);
-}
+  const yoy = totals.map((v, i) => (i === 0 || totals[i - 1] === 0 ? null : ((v - totals[i - 1]) / totals[i - 1]) * 100));
+  const valid = yoy.filter((x) => x !== null);
+  const avgYoy = valid.length ? valid.reduce((a, b) => a + b, 0) / valid.length : null;
+  const yoyCell = (v) => (v === null ? '<td class="muted">—</td>'
+    : `<td class="${v >= 0 ? 'change-up' : 'change-down'}">${v >= 0 ? '+' : ''}${v.toFixed(1)}%</td>`);
 
-// ---------------- Tab 2: จัดลำดับความสำคัญ (FR4, FR5) ----------------
-
-function renderRanking(provinces) {
-  const el = document.getElementById('tab-ranking');
-  el.innerHTML = `
-    <div class="card">
-      <p class="section-title">จัดลำดับความสำคัญพื้นที่ (น้ำหนักเริ่มต้น: สมดุล V40 G25 D15 B10 S10)</p>
-      <p class="section-sub">คำนวณจาก Priority Score = 0.40·V + 0.25·G + 0.15·D + 0.10·B + 0.10·S แล้วจัดชั้นตามกฎ 4 ข้อ (ดู "หมายเหตุการคำนวณ" ในเอกสารโครงการสำหรับเกณฑ์ปริมาณที่ใช้แยกชั้น 1/2)</p>
-      <div class="table-wrap">${buildRankingTable(provinces)}</div>
-    </div>
-    <div class="card">
-      <p class="section-title">ความหมายของแต่ละชั้น</p>
-      <div class="table-wrap">
-        <table class="data-table">
-          <tr><th>ชั้น</th><th>เกณฑ์</th><th>ความหมาย</th></tr>
-          <tr><td><span class="tier-badge tier-1">ชั้น 1</span></td><td>คะแนน ≥ 65 และปริมาณเฉลี่ย ≥ เกณฑ์ที่กำหนด</td><td>ขยายกำลังรองรับ — ควรลงทุนขยายท่าเรือ</td></tr>
-          <tr><td><span class="tier-badge tier-2">ชั้น 2</span></td><td>คะแนน ≥ 65 แต่ปริมาณเฉลี่ย &lt; เกณฑ์ที่กำหนด</td><td>พัฒนาเฉพาะทาง — พัฒนาแบบเจาะจงจุดแข็ง</td></tr>
-          <tr><td><span class="tier-badge tier-3">ชั้น 3</span></td><td>คะแนน 50–64.9</td><td>พัฒนาเฉพาะทาง — พัฒนาตามศักยภาพ</td></tr>
-          <tr><td><span class="tier-badge tier-4">ชั้น 4</span></td><td>คะแนน &lt; 50</td><td>ติดตาม — เฝ้าระวัง ยังไม่จัดลำดับความสำคัญลงทุน</td></tr>
-        </table>
-      </div>
-    </div>
-  `;
-}
-
-function buildRankingTable(provinces) {
-  const rows = provinces.map((p) => `
-    <tr>
-      <td class="rank-cell">${p.rank}</td>
-      <td>${p.nameTh}</td>
-      <td>${p.nameEn}</td>
-      <td><strong>${p.finalScore}</strong></td>
-      <td><span class="tier-badge tier-${p.tier}">${TIER_LABEL[p.tier]}</span></td>
-    </tr>
-  `).join('');
-  return `
+  document.getElementById('trend-table').innerHTML = `
     <table class="data-table">
-      <thead><tr><th>อันดับ</th><th>พื้นที่</th><th>Area (EN)</th><th>Priority Score</th><th>ชั้นความสำคัญ</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table>
-  `;
+      <thead><tr><th>${esc(src.nameTh)}</th>${yBE.map((y) => `<th class="num">${y}</th>`).join('')}<th class="num">เฉลี่ย</th></tr></thead>
+      <tbody>
+        ${series.map((s) => `<tr><td>${esc(s.name)} (ตัน)</td>${s.values.map((v) => `<td class="num">${fmtNum(v)}</td>`).join('')}<td></td></tr>`).join('')}
+        ${series.length > 1 ? `<tr><td><strong>รวม (ตัน)</strong></td>${totals.map((v) => `<td class="num"><strong>${fmtNum(v)}</strong></td>`).join('')}<td></td></tr>` : ''}
+        <tr class="yoy-row"><td><strong>อัตราการเติบโต YoY</strong></td>${yoy.map(yoyCell).join('')}${yoyCell(avgYoy)}</tr>
+      </tbody>
+    </table>`;
+
+  const catTotals = trends.categories.map((c) => ({ c, v: src.byCategory[c], sum: src.byCategory[c].reduce((a, b) => a + b, 0) }))
+    .sort((a, b) => b.sum - a.sum);
+  const grand = catTotals.reduce((a, x) => a + x.sum, 0);
+  document.getElementById('cat-sub').textContent =
+    `${src.nameTh} · รวมนำเข้า+ส่งออก หน่วยตัน · สัดส่วนนี้คือข้อมูลที่ใช้คำนวณความหลากหลาย (D)`;
+  document.getElementById('cat-table').innerHTML = `
+    <table class="data-table">
+      <thead><tr><th>หมวดสินค้า</th>${yBE.map((y) => `<th class="num">${y}</th>`).join('')}<th class="num">สัดส่วน</th></tr></thead>
+      <tbody>${catTotals.map((x) => `
+        <tr class="${x.c === cat ? 'row-hl' : ''}"><td>${esc(x.c)}</td>${x.v.map((v) => `<td class="num">${fmtNum(v)}</td>`).join('')}
+          <td class="num">${pctBar(grand ? (x.sum / grand) * 100 : 0)}</td></tr>`).join('')}
+      </tbody>
+    </table>`;
 }
 
-// ---------------- Tab 3: What-if (FR3) ----------------
+function buildBarChart(labels, series) {
+  const W = 720, H = 270, padL = 54, padB = 34, padT = 22, padR = 10;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const maxVal = Math.max(1, ...series.flatMap((s) => s.values)) * 1.12;
+  const groupW = plotW / labels.length;
+  const barW = Math.min(46, (groupW * 0.7) / series.length);
 
-function initWhatIf() {
+  let grid = '';
+  for (let s = 0; s <= 4; s++) {
+    const yy = padT + plotH - (s / 4) * plotH;
+    grid += `<line x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}" stroke="#e3ecea"></line>
+      <text x="${padL - 8}" y="${yy + 4}" text-anchor="end" font-size="11" fill="#8aa19f">${fmtMillion((s / 4) * maxVal)}</text>`;
+  }
+  let bars = '';
+  labels.forEach((lab, i) => {
+    const gx = padL + i * groupW + groupW / 2;
+    const startX = gx - (barW * series.length + 4 * (series.length - 1)) / 2;
+    series.forEach((s, j) => {
+      const v = s.values[i];
+      const h = (v / maxVal) * plotH;
+      const x = startX + j * (barW + 4);
+      bars += `<rect x="${x}" y="${padT + plotH - h}" width="${barW}" height="${h}" fill="${s.color}" rx="3"><title>${s.name} ${lab}: ${fmtNum(v)} ตัน</title></rect>
+        <text x="${x + barW / 2}" y="${padT + plotH - h - 6}" text-anchor="middle" font-size="11" fill="#0b3d3f">${fmtMillion(v)}</text>`;
+    });
+    bars += `<text x="${gx}" y="${H - 10}" text-anchor="middle" font-size="12" fill="#5f7674">${lab}</text>`;
+  });
+  return `
+    <div class="chart-legend">${series.map((s) => `<span><span class="legend-dot" style="background:${s.color}"></span>${esc(s.name)}</span>`).join('')}</div>
+    <svg viewBox="0 0 ${W} ${H}" class="chart-svg" style="max-width:${W}px">${grid}${bars}</svg>`;
+}
+
+// ---------------- 3) ปรับน้ำหนัก What-if (FR3) ----------------
+
+let recalcTimer = null;
+
+function renderWhatIfControls() {
   const el = document.getElementById('tab-whatif');
   el.innerHTML = `
     <div class="card">
-      <p class="section-title">ปรับน้ำหนักตัวชี้วัด (FR3)</p>
-      <p class="section-sub">ปรับสัดส่วนความสำคัญของแต่ละตัวชี้วัด แล้วกด "คำนวณใหม่" เพื่อดูอันดับที่เปลี่ยนไป — ผลรวมของน้ำหนักทั้ง 5 ตัวต้องเท่ากับ 100%</p>
+      <p class="section-title">กำหนดน้ำหนักเกณฑ์การให้คะแนน (FR3)</p>
+      <p class="section-sub">ลากปรับสัดส่วนความสำคัญของ 5 ตัวชี้วัด (รวมต้องได้ 100%) ระบบคำนวณใหม่ทันที
+        และ<strong>ทุกหน้า</strong> (จัดลำดับ, คะแนนตัวชี้วัด, พื้นที่อันดับ 1) จะใช้น้ำหนักนี้</p>
+      <div class="preset-row">
+        <span class="muted" style="align-self:center">โปรไฟล์ตัวอย่าง:</span>
+        ${Object.entries(PRESETS).map(([key, p]) => `<button class="btn btn-outline" data-preset="${key}">${p.label}</button>`).join('')}
+      </div>
       <div id="weight-grid" class="weight-grid"></div>
       <div class="weight-sum-row">
         <span id="weight-sum-badge" class="weight-sum-badge">รวม 100%</span>
-        <button id="btn-recalc" class="btn btn-primary">คำนวณใหม่</button>
+        <span id="weight-formula" class="muted"></span>
       </div>
-      <div class="preset-row">
-        <button class="btn btn-outline" data-preset="balanced">ค่าเริ่มต้น (สมดุล)</button>
-        <button class="btn btn-outline" data-preset="capacity">เน้นขยายกำลังรองรับ</button>
-        <button class="btn btn-outline" data-preset="stability">เน้นความเสถียรภาพ</button>
+      <div class="threshold-row">
+        <label for="threshold-input"><strong>เกณฑ์ปริมาณแยกชั้น 1/2</strong> (ตารางกฎหน้า 11 · ค่าตั้งต้นปรับได้)</label>
+        <span><input type="number" id="threshold-input" min="0" step="0.1" value="${state.thresholdTon / 1e6}"> ล้านตัน/ปี</span>
       </div>
       <p id="whatif-status" class="whatif-status"></p>
     </div>
     <div class="card">
-      <p class="section-title">ผลลัพธ์การจัดอันดับใหม่</p>
-      <p class="section-sub">คอลัมน์ "เปลี่ยนแปลง" เทียบกับอันดับตอนใช้น้ำหนักเริ่มต้น (สมดุล)</p>
-      <div id="whatif-table" class="table-wrap">
-        <p style="color:var(--muted); font-size:13.5px">ยังไม่ได้คำนวณ — ปรับน้ำหนักด้านบนแล้วกด "คำนวณใหม่"</p>
-      </div>
+      <p class="section-title">ผลกระทบต่ออันดับ</p>
+      <p class="section-sub">เทียบกับอันดับฐาน (น้ำหนักสมดุล V40 G25 D15 B10 S10 ที่บันทึกในตาราง PRIORITY_SCORE)</p>
+      <div id="whatif-table" class="table-wrap"></div>
     </div>
   `;
 
   renderWeightGrid();
-  document.getElementById('btn-recalc').addEventListener('click', doRecalculate);
-  document.querySelectorAll('[data-preset]').forEach((btn) => {
+  el.querySelectorAll('[data-preset]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      const preset = PRESETS[btn.dataset.preset];
-      whatifWeights = { ...preset.weights };
+      state.weights = { ...PRESETS[btn.dataset.preset].weights };
       renderWeightGrid();
-      doRecalculate();
+      applyWeights();
     });
   });
-
-  // เริ่มต้นด้วยโปรไฟล์สมดุล คำนวณให้เห็นผลทันที
-  doRecalculate();
+  document.getElementById('threshold-input').addEventListener('input', (e) => {
+    const v = parseFloat(e.target.value);
+    if (!Number.isFinite(v) || v < 0) return;
+    state.thresholdTon = Math.round(v * 1e6);
+    scheduleRecalc();
+  });
 }
 
 function renderWeightGrid() {
   const grid = document.getElementById('weight-grid');
-  const keys = ['V', 'G', 'D', 'B', 'S'];
-  grid.innerHTML = keys.map((k) => `
+  grid.innerHTML = KEYS.map((k) => `
     <div class="weight-item">
-      <label>
+      <label for="w-input-${k}">
         <span><span class="w-letter">${k}</span>${IND_LABEL[k]}</span>
-        <span id="w-val-${k}">${whatifWeights[k]}%</span>
+        <span id="w-val-${k}">${state.weights[k]}%</span>
       </label>
-      <input type="range" min="0" max="100" step="1" value="${whatifWeights[k]}" id="w-input-${k}" data-key="${k}">
+      <input type="range" min="0" max="100" step="5" value="${state.weights[k]}" id="w-input-${k}">
     </div>
   `).join('');
-
-  keys.forEach((k) => {
+  KEYS.forEach((k) => {
     document.getElementById(`w-input-${k}`).addEventListener('input', (e) => {
-      whatifWeights[k] = parseInt(e.target.value, 10);
-      document.getElementById(`w-val-${k}`).textContent = whatifWeights[k] + '%';
+      state.weights[k] = parseInt(e.target.value, 10);
+      document.getElementById(`w-val-${k}`).textContent = state.weights[k] + '%';
       updateSumBadge();
+      scheduleRecalc();
     });
   });
   updateSumBadge();
 }
 
+function scheduleRecalc() {
+  clearTimeout(recalcTimer);
+  recalcTimer = setTimeout(applyWeights, 250);
+}
+
 function updateSumBadge() {
-  const sum = ['V', 'G', 'D', 'B', 'S'].reduce((a, k) => a + whatifWeights[k], 0);
+  const sum = KEYS.reduce((a, k) => a + state.weights[k], 0);
   const badge = document.getElementById('weight-sum-badge');
-  const btn = document.getElementById('btn-recalc');
-  badge.textContent = `รวม ${sum}%`;
-  if (sum === 100) {
-    badge.classList.remove('bad');
-    btn.disabled = false;
-  } else {
-    badge.classList.add('bad');
-    btn.disabled = true;
-  }
+  badge.textContent = sum === 100 ? 'รวม 100% ✓' : `รวม ${sum}% — ต้องเท่ากับ 100% (${sum > 100 ? 'เกิน' : 'ขาด'} ${Math.abs(100 - sum)}%)`;
+  badge.classList.toggle('bad', sum !== 100);
+  document.getElementById('weight-formula').textContent =
+    'คะแนนรวม = ' + KEYS.map((k) => `${(state.weights[k] / 100).toFixed(2)}·${k}`).join(' + ');
 }
 
-async function doRecalculate() {
-  const status = document.getElementById('whatif-status');
-  const sum = ['V', 'G', 'D', 'B', 'S'].reduce((a, k) => a + whatifWeights[k], 0);
-  if (sum !== 100) {
-    status.textContent = 'ผลรวมน้ำหนักต้องเท่ากับ 100% ก่อนคำนวณ';
-    return;
-  }
-  status.textContent = 'กำลังคำนวณ…';
-  const weightsFraction = {
-    V: whatifWeights.V / 100, G: whatifWeights.G / 100, D: whatifWeights.D / 100,
-    B: whatifWeights.B / 100, S: whatifWeights.S / 100,
-  };
-  try {
-    whatifResult = await fetchJSON('/api/recalculate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ weights: weightsFraction }),
-    });
-    renderWhatIfTable(whatifResult.provinces);
-    status.textContent = `คำนวณสำเร็จ · ${new Date().toLocaleTimeString('th-TH')}`;
-  } catch (err) {
-    status.textContent = 'คำนวณไม่สำเร็จ: ' + err.message;
-  }
+function rankChangeHtml(p) {
+  const diff = p.baseRank - p.rank;
+  if (diff > 0) return `<span class="change-up">▲ ${diff}</span>`;
+  if (diff < 0) return `<span class="change-down">▼ ${Math.abs(diff)}</span>`;
+  return '<span class="change-flat">—</span>';
 }
 
-function renderWhatIfTable(provinces) {
+function renderWhatIfResult() {
   const box = document.getElementById('whatif-table');
-  const rows = provinces.map((p) => {
-    const diff = p.baseRank - p.rank; // ค่าบวก = อันดับดีขึ้น (เลขอันดับลดลง)
-    let changeHtml;
-    if (diff > 0) changeHtml = `<span class="change-up">▲ ขึ้น ${diff}</span>`;
-    else if (diff < 0) changeHtml = `<span class="change-down">▼ ลง ${Math.abs(diff)}</span>`;
-    else changeHtml = `<span class="change-flat">— คงที่</span>`;
-    return `
-      <tr>
-        <td class="rank-cell">${p.rank}</td>
-        <td>${p.nameTh}</td>
-        <td>${p.finalScore}</td>
-        <td>อันดับเดิม ${p.baseRank}</td>
-        <td>${changeHtml}</td>
-        <td><span class="tier-badge tier-${p.tier}">${TIER_LABEL[p.tier]}</span></td>
-      </tr>
-    `;
-  }).join('');
+  if (!box) return;
+  const moved = state.ranking.filter((p) => p.rank !== p.baseRank).length;
   box.innerHTML = `
+    <p class="muted" style="margin:0 0 10px">${moved === 0 ? 'อันดับเหมือนอันดับฐานทุกพื้นที่' : `อันดับเปลี่ยน ${moved} พื้นที่`}</p>
     <table class="data-table">
-      <thead><tr><th>อันดับใหม่</th><th>พื้นที่</th><th>Priority Score</th><th>เทียบฐาน</th><th>เปลี่ยนแปลง</th><th>ชั้น</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table>
-  `;
+      <thead><tr><th>พื้นที่</th><th class="num">อันดับฐาน</th><th class="num">อันดับใหม่</th><th>เปลี่ยน</th><th class="num">คะแนนใหม่</th><th>ชั้น</th></tr></thead>
+      <tbody>${state.ranking.map((p) => `
+        <tr><td>${esc(p.nameTh)}</td><td class="num">#${p.baseRank}</td><td class="num"><strong>#${p.rank}</strong></td>
+          <td>${rankChangeHtml(p)}</td><td class="num">${p.finalScore}</td>
+          <td><span class="tier-badge tier-${p.tier}">ชั้น ${p.tier}</span></td></tr>`).join('')}
+      </tbody>
+    </table>`;
 }
 
-// ---------------- Tab 4: คะแนนตัวชี้วัดรายพื้นที่ (FR6) ----------------
+// ---------------- 4) จัดลำดับความสำคัญ (FR4, FR5) + ส่งออกรายงาน ----------------
 
-function renderDetail(provinces) {
-  const el = document.getElementById('tab-detail');
-  const rows = provinces.map((p) => `
-    <tr>
-      <td class="rank-cell">${p.rank}</td>
-      <td>${p.nameTh}</td>
-      ${miniBarCell(p.V)}
-      ${miniBarCell(p.G)}
-      ${miniBarCell(p.D)}
-      ${miniBarCell(p.B)}
-      ${miniBarCell(p.S)}
-      <td><strong>${p.finalScore}</strong></td>
-      <td><span class="tier-badge tier-${p.tier}">ชั้น ${p.tier}</span></td>
-    </tr>
-  `).join('');
+function renderRanking() {
+  const el = document.getElementById('tab-ranking');
+  const byTier = { 1: [], 2: [], 3: [], 4: [] };
+  state.ranking.forEach((p) => byTier[p.tier].push(p.nameTh));
 
   el.innerHTML = `
+    <div class="print-only print-head">
+      <h2>รายงานผลการจัดลำดับความสำคัญการลงทุนท่าเรือ</h2>
+      <p>พิมพ์เมื่อ ${new Date().toLocaleString('th-TH')} · ชุดข้อมูล ${esc(state.data.dataset.fileName || '-')}</p>
+    </div>
+    ${weightBanner()}
     <div class="card">
-      <p class="section-title">คะแนนรายตัวชี้วัด (0–100) ต่อพื้นที่ (FR6)</p>
-      <p class="section-sub">V = ปริมาณ, G = การเติบโต, D = ความหลากหลายสินค้า, B = ความสมดุลนำเข้า-ส่งออก, S = เสถียรภาพ — ทุกค่าปรับสเกล 0–100 ด้วยวิธี min-max ข้ามทั้ง 23 พื้นที่</p>
+      <div class="card-head">
+        <div>
+          <p class="section-title">จัดอันดับพื้นที่ที่ควรพิจารณาลงทุนก่อน–หลัง (FR5)</p>
+          <p class="section-sub">Priority Score 0–100 = ${KEYS.map((k) => `${(state.appliedWeights[k] / 100).toFixed(2)}·${k}`).join(' + ')} (FR4)</p>
+        </div>
+        <div class="export-row no-print">
+          <button class="btn btn-outline btn-sm" id="btn-csv">ส่งออก CSV (Excel)</button>
+          <button class="btn btn-primary btn-sm" id="btn-pdf">พิมพ์ / บันทึก PDF</button>
+        </div>
+      </div>
+      <div class="rank-layout">
+        <div>${buildRankChart(state.ranking)}</div>
+        <div class="tier-cards">
+          ${[1, 2, 3, 4].map((t) => `
+            <div class="tier-card">
+              <p class="tier-card-title"><span class="legend-dot" style="background:${TIER_COLOR[t]}"></span>${TIER_LABEL[t]}
+                <span class="muted">(${byTier[t].length})</span></p>
+              <p class="tier-card-body">${byTier[t].length ? byTier[t].map(esc).join(' · ') : '<span class="muted">—</span>'}</p>
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="section-title">ตารางอันดับทั้งหมด</p>
       <div class="table-wrap">
         <table class="data-table">
-          <thead>
-            <tr><th>อันดับ</th><th>พื้นที่</th><th>V</th><th>G</th><th>D</th><th>B</th><th>S</th><th>Priority Score</th><th>ชั้น</th></tr>
-          </thead>
-          <tbody>${rows}</tbody>
+          <thead><tr><th class="num">อันดับ</th><th>พื้นที่</th><th>Area (EN)</th><th class="num">Priority Score</th>
+            <th class="num">ปริมาณเฉลี่ย (ล้านตัน/ปี)</th><th>ชั้นความสำคัญ</th><th>เทียบอันดับฐาน</th></tr></thead>
+          <tbody>${state.ranking.map((p) => `
+            <tr>
+              <td class="rank-cell num">${p.rank}</td>
+              <td>${esc(p.nameTh)}</td>
+              <td class="muted">${esc(p.nameEn || '')}</td>
+              <td class="num"><strong>${p.finalScore}</strong></td>
+              <td class="num">${fmtMillion(p.avgYearlyTotalTon, 2)}</td>
+              <td><span class="tier-badge tier-${p.tier}">${TIER_LABEL[p.tier]}</span></td>
+              <td>${rankChangeHtml(p)}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="section-title">ตารางกฎการตัดสินใจจัดชั้นความสำคัญ</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>ชั้น</th><th>เงื่อนไข</th><th>ความหมาย</th></tr></thead>
+          <tbody>
+            <tr><td><span class="tier-badge tier-1">กฎ 1 → ชั้น 1</span></td><td>คะแนน ≥ 65 และปริมาณเฉลี่ย ≥ ${fmtTonShort(state.appliedThresholdTon)}/ปี</td><td>ขยายกำลังรองรับ</td></tr>
+            <tr><td><span class="tier-badge tier-2">กฎ 2 → ชั้น 2</span></td><td>คะแนน ≥ 65 แต่ปริมาณเฉลี่ย &lt; ${fmtTonShort(state.appliedThresholdTon)}/ปี</td><td>พัฒนาเฉพาะทาง</td></tr>
+            <tr><td><span class="tier-badge tier-3">กฎ 3 → ชั้น 3</span></td><td>50 ≤ คะแนน &lt; 65</td><td>พัฒนาเฉพาะทาง</td></tr>
+            <tr><td><span class="tier-badge tier-4">กฎ 4 → ชั้น 4</span></td><td>คะแนน &lt; 50</td><td>ติดตาม</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+  document.getElementById('btn-csv').addEventListener('click', exportCsv);
+  document.getElementById('btn-pdf').addEventListener('click', () => window.print());
+}
+
+function buildRankChart(list) {
+  const rowH = 22, padL = 120, padR = 44, W = 560;
+  const H = list.length * rowH + 10;
+  const plotW = W - padL - padR;
+  const bars = list.map((p, i) => {
+    const y = 5 + i * rowH;
+    const w = Math.max(1, (p.finalScore / 100) * plotW);
+    return `<text x="${padL - 8}" y="${y + 15}" text-anchor="end" font-size="12" fill="#1c2b2a">${esc(p.nameTh)}</text>
+      <rect x="${padL}" y="${y + 3}" width="${w}" height="${rowH - 7}" rx="3" fill="${TIER_COLOR[p.tier]}"><title>${esc(p.nameTh)}: ${p.finalScore} (ชั้น ${p.tier})</title></rect>
+      <text x="${padL + w + 6}" y="${y + 15}" font-size="11.5" fill="#0b3d3f">${p.finalScore}</text>`;
+  }).join('');
+  const guides = [50, 65].map((v) => {
+    const x = padL + (v / 100) * plotW;
+    return `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="#c0524a" stroke-dasharray="3 3" opacity="0.5"></line>
+      <text x="${x + 3}" y="${H - 2}" font-size="10" fill="#c0524a">${v}</text>`;
+  }).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" class="chart-svg" style="max-width:${W}px">${guides}${bars}</svg>`;
+}
+
+function exportCsv() {
+  const w = state.appliedWeights;
+  const header = ['Rank', 'ProvinceName_TH', 'ProvinceName_EN', 'VolumeScore', 'GrowthScore', 'DiversityScore',
+    'BalanceScore', 'StabilityScore', 'FinalPriorityScore', 'Tier', 'TierMeaning', 'AvgVolumeTon', 'BaseRank'];
+  const rows = state.ranking.map((p) => [p.rank, p.nameTh, p.nameEn || '', p.V, p.G, p.D, p.B, p.S, p.finalScore,
+    p.tier, TIER_LABEL[p.tier].split('· ')[1], Math.round(p.avgYearlyTotalTon), p.baseRank]);
+  const escCsv = (v) => (/[",\r\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
+  const meta = `# weights V=${w.V}% G=${w.G}% D=${w.D}% B=${w.B}% S=${w.S}%; volume threshold ${state.appliedThresholdTon} ton/yr`;
+  const csv = '﻿' + [[meta], header, ...rows].map((r) => r.map(escCsv).join(',')).join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+  a.download = `port-priority-ranking-${new Date().toISOString().slice(0, 10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+// ---------------- 5) คะแนนตัวชี้วัดรายพื้นที่ (FR6) ----------------
+
+function renderDetail() {
+  const el = document.getElementById('tab-detail');
+  el.innerHTML = `
+    ${weightBanner()}
+    <div class="card">
+      <p class="section-title">คะแนนรายตัวชี้วัด (0–100) ต่อพื้นที่ (FR6)</p>
+      <p class="section-sub">ช่องยิ่งเข้ม = คะแนนสูง · V ปริมาณ, G การเติบโต, D ความหลากหลายสินค้า, B ความสมดุลนำเข้า–ส่งออก, S เสถียรภาพ ·
+        คะแนนแต่ละตัวมาจากข้อมูล ไม่ขึ้นกับน้ำหนัก แต่คะแนนรวม อันดับ และชั้น เปลี่ยนตามน้ำหนัก</p>
+      <div class="table-wrap">
+        <table class="data-table heat-table">
+          <thead><tr><th class="num">อันดับ</th><th>พื้นที่</th>
+            ${KEYS.map((k) => `<th class="num">${k}<span class="w-sub">×${state.appliedWeights[k]}%</span></th>`).join('')}
+            <th class="num">รวม</th><th>ชั้น</th><th>เทียบฐาน</th></tr></thead>
+          <tbody>${state.ranking.map((p) => `
+            <tr>
+              <td class="rank-cell num">${p.rank}</td>
+              <td><strong>${esc(p.nameTh)}</strong></td>
+              ${KEYS.map((k) => heatCell(p[k])).join('')}
+              <td class="num"><strong>${p.finalScore}</strong></td>
+              <td><span class="tier-badge tier-${p.tier}">ชั้น ${p.tier}</span></td>
+              <td>${rankChangeHtml(p)}</td>
+            </tr>`).join('')}
+          </tbody>
         </table>
       </div>
     </div>
   `;
 }
 
-function miniBarCell(value) {
-  const pct = Math.max(0, Math.min(100, value));
-  return `<td><div class="mini-bar-cell">
-      <span class="mini-bar-track"><span class="mini-bar-fill" style="width:${pct}%"></span></span>
-      <span class="mini-bar-num">${value}</span>
-    </div></td>`;
+function heatCell(v) {
+  const a = 0.08 + (Math.max(0, Math.min(100, v)) / 100) * 0.8;
+  const dark = a > 0.5;
+  return `<td class="num heat" style="background:rgba(22,120,127,${a.toFixed(2)});color:${dark ? '#fff' : '#0b3d3f'}">${Math.round(v)}</td>`;
 }
 
 // ---------------- Utils ----------------
 
 function fmtNum(n) {
-  return new Intl.NumberFormat('th-TH').format(n);
+  return new Intl.NumberFormat('th-TH').format(Math.round(n));
+}
+
+function fmtMillion(n, digits = 1) {
+  return (n / 1e6).toLocaleString('th-TH', { minimumFractionDigits: digits, maximumFractionDigits: digits });
+}
+
+function fmtTonShort(n) {
+  return n >= 1e6 ? `${fmtMillion(n, n % 1e6 === 0 ? 0 : 1)} ล้านตัน` : `${fmtNum(n)} ตัน`;
+}
+
+function pctBar(pct) {
+  return `<span class="pct-bar"><span style="width:${Math.min(100, pct)}%"></span></span> ${pct.toFixed(1)}%`;
+}
+
+function esc(s) {
+  return String(s === null || s === undefined ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 init();
