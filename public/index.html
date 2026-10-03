@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSS จัดลำดับความสำคัญการลงทุนท่าเรือ</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-mark">ท</div>
+        <div class="brand-text">
+          <h1>ระบบสนับสนุนการตัดสินใจจัดลำดับความสำคัญการลงทุนท่าเรือ</h1>
+          <p>ตามปริมาณสินค้านำเข้า–ส่งออก · 23 พื้นที่ท่าเรือ</p>
+        </div>
+      </div>
+      <div id="conn-status" class="conn-status">กำลังเชื่อมต่อข้อมูล…</div>
+    </div>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="overview">ภาพรวมข้อมูล</button>
+      <button class="tab-btn" data-tab="ranking">จัดลำดับความสำคัญ</button>
+      <button class="tab-btn" data-tab="whatif">จำลองสถานการณ์ (What-if)</button>
+      <button class="tab-btn" data-tab="detail">คะแนนตัวชี้วัดรายพื้นที่</button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <div id="loading" class="loading-box">กำลังโหลดข้อมูลจากเซิร์ฟเวอร์…</div>
+    <div id="error-box" class="error-box" style="display:none"></div>
+
+    <section id="tab-overview" class="tab-panel"></section>
+    <section id="tab-ranking" class="tab-panel" style="display:none"></section>
+    <section id="tab-whatif" class="tab-panel" style="display:none"></section>
+    <section id="tab-detail" class="tab-panel" style="display:none"></section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Decision Support System · Project 2 · ข้อมูลปี 2565–2568 · คำนวณจากข้อมูลดิบทั้งหมด ไม่มีการกรองพื้นที่ออก (23/23 พื้นที่)</p>
+  </footer>
+
+  <script>
+    // เปิดไฟล์ตรง ๆ (file://) จะโหลด CSS/JS/API ไม่ได้ ต้องเปิดผ่านเซิร์ฟเวอร์
+    if (location.protocol === 'file:') {
+      document.getElementById('loading').innerHTML =
+        '<b>ต้องเปิดผ่านเซิร์ฟเวอร์ ไม่ใช่ดับเบิลคลิกไฟล์</b><br>' +
+        '1) เปิด terminal ในโฟลเดอร์ dss-project2 แล้วพิมพ์ <code>node server/index.js</code><br>' +
+        '2) เปิดเบราว์เซอร์ไปที่ <a href="http://localhost:3000">http://localhost:3000</a>';
+    }
+  </script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

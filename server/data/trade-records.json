@@ -1,0 +1,6182 @@
+[
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 10779.16
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 312517.34
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 306869.61
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1729315
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 10990.16
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 103934.53
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3371.4
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 7304978.560000001
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 24270
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 533121.21
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 676819.32
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 301572.94
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 180089.69
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 61273.36
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 7929212.78
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 166769.87
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 7200
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 262725.38
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 73608.78
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 141202.56
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1039334.34
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 621500
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 1601
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 2700
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 13816.91
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 55175.72
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 33916.38
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 64501
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 7309.75
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 60588121.88
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 4393739.82
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 12363664.7
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 7248389.85
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 12946727.1
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1247648.04
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 15001635.08
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 53687747.43
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 5344653.66
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 3436435.71
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 36604180.59
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 4913681.24
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 6414206.68
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 18775968.16
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 505690.72
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 150.24
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1653704
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 104
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 39557.86
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 60521.44
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 2281.67
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 155137.54
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 809.21
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 17423.44
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 1507.32
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 207.74
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1.25
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 400.4
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 3663.42
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 304100
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 5000
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1190678
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 3500
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "นราธิวาส",
+    "provinceEn": "Narathiwat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 49500
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 30212.2
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 60421.94
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 6400
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 27433.6
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 67992.04
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 603491.61
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 50247.82
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 11821.94
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1094236.37
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ปัตตานี",
+    "provinceEn": "Pattani",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 74.73
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ปัตตานี",
+    "provinceEn": "Pattani",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 8800
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ปัตตานี",
+    "provinceEn": "Pattani",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 809.78
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "พังงา",
+    "provinceEn": "Phangnga",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 112000
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 133803.57
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 41025
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 540654.81
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 106099.95
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 504653.8
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 9999.82
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 60827.14
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 122437.59
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 293249.59
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 21899.95
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 32128.62
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 4999.82
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 54717.63
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 451870.16
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 728261.48
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3128.16
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 320122.69
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 3000
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 2370.14
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 135639.34
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 2762966.7
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 7479.95
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 53.2
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 41100
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 34
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1060072.37
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 36750
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 17003.16
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 6910715.84
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 392625.91
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 5761429.86
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 947228.82
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 286586.22
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 91502.71
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 37314078.65
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 7266521.98
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 7116483.39
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 2057327.17
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1820554.78
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 31333.3
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 4160
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 61560
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1106207.37
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1000
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 130
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 716988.5800000001
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 81802.32
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 54184.18
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 43348.76
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 41416.53
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 18907.13
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 21.31
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 2377411.71
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 57856.53
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 925036.38
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 106787.54
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 36189.65
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 256232.88
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 8330.37
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1459962.57
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 380098.89
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 125592.05
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 470294.79
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 45946.59
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1352718.52
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 17512.32
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 2239.81
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 92147.98
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 53400.32
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 98275.91
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 10267
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1215813.82
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 200500
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 27000
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 3696833
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 81532
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 215323.33
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 9279.95
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1040
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3635065.15
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 120000
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 130
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 333352.14
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 384.1
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 145782.29
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 3099.3
+  },
+  {
+    "yearBE": 2565,
+    "yearAD": 2022,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 1852644.09
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 493257.04
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 11500
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1802635
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 43557.59
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 6800
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 7901707.39
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 15626
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 732692.31
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 603632.73
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 334915.08
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 106289.94
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 599995.35
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 7720942.17
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 204584.03
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 5750
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 348519.19
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 3011.16
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 16922.22
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1236906.11
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 31348
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 7263
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 583800
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1967.7
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 1330
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 33953
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 18272
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 55377217.07
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 12942705.54
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 19794767.29
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 10372300.16
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 2525484.63
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 9068712.620000001
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 39945049.5
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 245019.9
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 11599569.15
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 36976062.57
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1944537.29
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 6995100.36
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 7958520.790000001
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 553101.74
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 5017.02
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1142848
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 5300
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 36997.57
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 151291.02
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 35749.69
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 2300
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 59339.71
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 1
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 8144.14
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 1221.07
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 128.38
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 13.5
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 43.26
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 205.92
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 379.17
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 19400
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1275425
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 162750
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 4900
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "นราธิวาส",
+    "provinceEn": "Narathiwat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 181000
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "นราธิวาส",
+    "provinceEn": "Narathiwat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 57100
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 60408.32
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 40700
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 21443.97
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 3150
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 598218.86
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 31461.32
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 14000
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 35295.84
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1100
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1424200.41
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "พระนครศรีอยุธยา",
+    "provinceEn": "Phra Nakhon Si Ayutthaya",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 19500
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "พังงา",
+    "provinceEn": "Phangnga",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 44000
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 12736.66
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 73.76
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 701631.6799999999
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 17500
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 641210.1
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 59505.12
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 12423.43
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 174.86
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 324942.24
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 14000
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 36527.53
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 74643.82
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 210026.79
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 45469.71
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 10.8
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 20930
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 11688.54
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 10
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1348.42
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 177404.35
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 17749.78
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 42.87
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 254.03
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 7500
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 121360.39
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 3140
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 31083649.11
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 537884
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 6767825.48
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 2686693.04
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 125438.74
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 93399.74
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 47141948.62
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 366713.93
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 5452178.42
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 2338712.52
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1957847.65
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 3397
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 2900
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 58780.24
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 944956.13
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 46611.67
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 45886.82
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 794604.49
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 49382.54
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 66950
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 54983.65
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 12111.75
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 60538.32
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 12184.45
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 16481.19
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 12281.48
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 2323108.35
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 79965.98
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 771572.18
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 230708.87
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 45377.22
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 972761.74
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 20584.59
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1346003.54
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 353553.05
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 195380.21
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 362198.59
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 29865.28
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1440617.72
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 24882.97
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรสงคราม",
+    "provinceEn": "Samut Songkram",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 7409.38
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรสงคราม",
+    "provinceEn": "Samut Songkram",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3100
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรสงคราม",
+    "provinceEn": "Samut Songkram",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 2550
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 17580.2
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 45892.85
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 121258.48
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 5750
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 9957.87
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 220030
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 5199.48
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 4039446.16
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 7814
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 12000
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 60615.91
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 21202.5
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 9768.5
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 17858.83
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 2970473.31
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 355426.68
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 1605350.97
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 67366
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 2700400.69
+  },
+  {
+    "yearBE": 2566,
+    "yearAD": 2023,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 4919.67
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 489664.47
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1669910
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 100078.64
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 7733118.55
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 11850.09
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 552739.55
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 415612.69
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 290245.26
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 24437.7
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 42443.02
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 7909653.31
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 215494.93
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 12200
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 344971.45
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 19800
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 62144.75
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1037108.07
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 14667
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 6299.89
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 434300
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 11357
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 14771.06
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 16503
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 2500
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 18915
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 66752176.09
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 33989.38
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 10785893.42
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 8259513.45
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 9860375.86
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 2277410.45
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 3113435.13
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 55893248.83000001
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 290824.66
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 11764969.58
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 36051929.54
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1797335.6
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 7434846.6
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 6989463.890000001
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 415009.44
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1471500
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 53150.43
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 113028
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 17564.35
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 5584.02
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 1
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 260.97
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 6.4
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 126.9
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 501.78
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 18000
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1526830
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "นราธิวาส",
+    "provinceEn": "Narathiwat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 171100
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "นราธิวาส",
+    "provinceEn": "Narathiwat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 90800
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 163346.07
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 16000
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 32783.4
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 10600
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 50468.89
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 45650.35
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 51082.6
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1473155.34
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 49208.17
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 768994.01
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 232802
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 563615.55
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 30567.9
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 62889.74
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 46001.5
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 404777.7
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 210989
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 27589.84
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 30567.9
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 62889.74
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 369578.75
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 76544.25
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3779
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 15000
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 2042.98
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 10945.69
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 248132.6
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 291818.56
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 8246.08
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 3070.3
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 252783.71
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 4400
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 10019137.84
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 386635.49
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 5528290.89
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 782241.53
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 72559.01
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 91123.95
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 49819837.95
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 81773.33
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 4081660.48
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1892274.48
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 2062132.59
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 9211.63
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 1820
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 84306.82
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 933289
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 15346.04
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 6370
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 971652.25
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 56635.04
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 114140
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 80758.74
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 36173.24
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 52057.65
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 13650
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1170.62
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 13558.65
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 2205396.54
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 11830.83
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 839788.47
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 65782.86
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 69146.92
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 275218.4
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1715
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1147758.87
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 457786.9
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 153207.05
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 423827.36
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 26309.98
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1394929.83
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 7555.05
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 676.8
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 7965.62
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 8350.75
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 26990.14
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 76535.01
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 8250
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 2303.76
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 187850
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 4547943
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1568
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 21000
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 54973.2
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 62530
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 12595.29
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 27559.86
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3731018.43
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 81.86
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 196193.86
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 35000
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 62734
+  },
+  {
+    "yearBE": 2567,
+    "yearAD": 2024,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3006563.42
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 410070.83
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1002195
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กระบี่",
+    "provinceEn": "Krabi",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 44958.09
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 6494314.82
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 4494.23
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 315890
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 475232.63
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 285589.64
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 17247.77
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 65983.91
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 7627436.439999999
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 169557.49
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 251419.55
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 6939.76
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "กรุงเทพมหานคร",
+    "provinceEn": "Bangkok",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1230041.33
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 18709
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 831.81
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 343000
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 825
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 49
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 7499.88
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 7389.09
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 5939.2
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ฉะเชิงเทรา",
+    "provinceEn": "Chachoengsao",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 22571
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 55504225.11
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 156857.33
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 12985556.23
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 5901005.9
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 9259870.56
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1877687.67
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 6562059.83
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 55864250.4
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 4922309.19
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 6618806.83
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 35648252.89
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1379369.37
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 6702941
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ชลบุรี",
+    "provinceEn": "Chon Buri",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 11719747.69
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 361619.72
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1192943
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 19160.07
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 102344
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 121119.72
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตรัง",
+    "provinceEn": "Trang",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 3017.8
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 3120.32
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 5208.5
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1500
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 86.4
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3927.71
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ตราด",
+    "provinceEn": "Trat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 491.6
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 68850
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "นครศรีธรรมราช",
+    "provinceEn": "Nakhon Si Thammarat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1584240
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "นราธิวาส",
+    "provinceEn": "Narathiwat",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 157800
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "นราธิวาส",
+    "provinceEn": "Narathiwat",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 94000
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 84130.8
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 129738.94
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 76670.78
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 12431.02
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 165631.01
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ประจวบคีรีขันธ์",
+    "provinceEn": "Prachuapkhiri Khan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1784845.91
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ปัตตานี",
+    "provinceEn": "Pattani",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 7500
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ปัตตานี",
+    "provinceEn": "Pattani",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 7500
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 59123
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 26
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 837050
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 599454.18
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 329907.14
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 55994.24
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 58478
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 159700
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 601954.18
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 45018.74
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ภูเก็ต",
+    "provinceEn": "Phuket",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 50968.73
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 673943.01
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 29075.81
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 22722.87
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 5720
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 2500
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 99211.46
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 196135.47
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 128010.1
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 509.73
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระนอง",
+    "provinceEn": "Ranong",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1208.81
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 51951.58
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 8681.49
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 10720859.61
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 343825
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 4189371.98
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 884632.01
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 42365.99
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 59365.3
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 51768910.1
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 380248.85
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 4358790.77
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "ระยอง",
+    "provinceEn": "Rayong",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 1969828.2
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1735816.59
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 12609.24
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 32522.17
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 1202105.26
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 3600
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 31486.48
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 809995.6499999999
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 41602.24
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 97554
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 93600
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 26982.17
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สงขลา",
+    "provinceEn": "Songkhla",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 48453.07
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1060
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 266.13
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สตูล",
+    "provinceEn": "Satun",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 16499.36
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 1671622.34
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 10948.46
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 841855.96
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 19289.61
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 167019.29
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 267460.82
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "export",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 254
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 824520.0599999999
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 374704.82
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 94488.13
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 690919.11
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 8800
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 1404817.8
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรปราการ",
+    "provinceEn": "Samut Prakan",
+    "direction": "import",
+    "categoryTh": "โลหะภัณฑ์และเครื่องมือ",
+    "categoryEn": "Metal Products & Tools/Equipment",
+    "weightKg": 2939.06
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 8479.34
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 2310
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 16457.61
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ปศุสัตว์และอาหาร",
+    "categoryEn": "Livestock & Food Products",
+    "weightKg": 37858.74
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 94593.22
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 4620
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สมุทรสาคร",
+    "provinceEn": "Samut Sakon",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 5050
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 20551.6
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 395378.15
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 4273979
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 2335.71
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "ผลผลิตเกษตรกรรม",
+    "categoryEn": "Agricultural Products",
+    "weightKg": 11200
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 121768.05
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "วัสดุก่อสร้างและแร่ธาตุ",
+    "categoryEn": "Construction Materials & Minerals",
+    "weightKg": 91200
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "สุราษฎร์ธานี",
+    "provinceEn": "Surat Thani",
+    "direction": "import",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 12823.56
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 6608
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 3028055.14
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "export",
+    "categoryTh": "เคมีภัณฑ์และปุ๋ย",
+    "categoryEn": "Chemicals & Fertilizers",
+    "weightKg": 40000
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "import",
+    "categoryTh": "คอนเทนเนอร์และสินค้าเบ็ดเตล็ด",
+    "categoryEn": "Containers & Miscellaneous Goods",
+    "weightKg": 6246
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "เขตเศรษฐกิจจำเพาะ",
+    "provinceEn": "Exclusive Economic Zone",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 304748.85
+  },
+  {
+    "yearBE": 2568,
+    "yearAD": 2025,
+    "provinceTh": "เพชรบุรี",
+    "provinceEn": "Phetchaburi",
+    "direction": "import",
+    "categoryTh": "พลังงานและเชื้อเพลิง",
+    "categoryEn": "Energy & Fuel",
+    "weightKg": 2922300.26
+  }
+]

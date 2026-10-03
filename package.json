@@ -1,0 +1,12 @@
+{
+  "name": "dss-port-priority",
+  "version": "1.0.0",
+  "description": "DSS จัดลำดับความสำคัญการลงทุนท่าเรือตามปริมาณสินค้านำเข้า-ส่งออก (ไม่มี dependency ภายนอก ใช้ Node.js core เท่านั้น)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
