@@ -31,8 +31,10 @@ function minMaxNormalize(values) {
 /**
  * @param {Array} records - แถวจากตาราง TRADE_RECORD (join PROVINCE, GOODS_CATEGORY แล้ว)
  *   { provinceId, provinceTh, provinceEn, yearAD, direction: 'import'|'export', categoryTh, weightTon }
+ * @param {Object} provided - ค่าตัวชี้วัดที่มากับไฟล์นำเข้า { "<ชื่อจังหวัด>": { G: 0.05, S: 0.91, ... } }
+ *   ตัวที่มีในไฟล์ใช้แทนค่าที่คำนวณเอง (ไม่ต้องคำนวณซ้ำ) ตัวที่ไม่มีคำนวณจากข้อมูลดิบ — แล้วปรับสเกลเหมือนกันทุกตัว
  */
-function buildProvinceMetrics(records) {
+function buildProvinceMetrics(records, provided = {}) {
   const years = [...new Set(records.map((r) => r.yearAD))].sort();
   const provincesTh = [...new Set(records.map((r) => r.provinceTh))].sort();
   const categories = [...new Set(records.map((r) => r.categoryTh))].sort();
@@ -105,35 +107,39 @@ function buildProvinceMetrics(records) {
     const cv = mean(yearlyTotal) > 0 ? stdev(yearlyTotal) / mean(yearlyTotal) : 0;
     const S_raw = 1 / (1 + cv);
 
+    const raw = { V: V_raw, G: G_raw, D: D_raw, B: B_raw, S: S_raw, ...(provided[p] || {}) };
     return {
       id: b.id,
       nameTh: b.nameTh,
       nameEn: b.nameEn,
       avgYearlyTotalTon,
-      V_raw, G_raw, D_raw, B_raw, S_raw,
+      raw,
     };
   });
 
-  // ปรับทุกตัวชี้วัดเป็นช่วง 0-100 แบบ min-max ข้ามทุกจังหวัด (ตามสไลด์หน้า 9)
-  const V = minMaxNormalize(rawList.map((r) => r.V_raw));
-  const G = minMaxNormalize(rawList.map((r) => r.G_raw));
-  const D = minMaxNormalize(rawList.map((r) => r.D_raw));
-  const B = minMaxNormalize(rawList.map((r) => r.B_raw));
-  const S = minMaxNormalize(rawList.map((r) => r.S_raw));
+  return { years, metrics: normalizeIndicators(rawList) };
+}
 
-  const metrics = rawList.map((r, i) => ({
+/**
+ * ปรับค่าตัวชี้วัดดิบทุกตัวเป็นช่วง 0-100 แบบ min-max ข้ามทุกจังหวัด (ตามสไลด์หน้า 9)
+ * ใช้ทั้งค่าที่ระบบคำนวณเองและค่าที่มากับไฟล์นำเข้า
+ * @param {Array} list - [{ id, nameTh, nameEn, avgYearlyTotalTon, raw: {V,G,D,B,S} }]
+ */
+function normalizeIndicators(list) {
+  const scaled = {};
+  for (const k of ['V', 'G', 'D', 'B', 'S']) scaled[k] = minMaxNormalize(list.map((r) => r.raw[k]));
+  return list.map((r, i) => ({
     id: r.id,
     nameTh: r.nameTh,
     nameEn: r.nameEn,
     avgYearlyTotalTon: r.avgYearlyTotalTon,
-    V: Math.round(V[i] * 10) / 10,
-    G: Math.round(G[i] * 10) / 10,
-    D: Math.round(D[i] * 10) / 10,
-    B: Math.round(B[i] * 10) / 10,
-    S: Math.round(S[i] * 10) / 10,
+    V: Math.round(scaled.V[i] * 10) / 10,
+    G: Math.round(scaled.G[i] * 10) / 10,
+    D: Math.round(scaled.D[i] * 10) / 10,
+    B: Math.round(scaled.B[i] * 10) / 10,
+    S: Math.round(scaled.S[i] * 10) / 10,
+    raw: r.raw, // ค่าดิบก่อนปรับสเกล (ไว้ตรวจสอบ/ส่งออก)
   }));
-
-  return { years, metrics };
 }
 
 /**
@@ -169,4 +175,4 @@ function rankProvinces(metrics, weights, volumeThresholdTon) {
   return scored;
 }
 
-module.exports = { buildProvinceMetrics, rankProvinces, classifyTier, weightedScore, mean, stdev, minMaxNormalize };
+module.exports = { buildProvinceMetrics, normalizeIndicators, rankProvinces, classifyTier, weightedScore, mean, stdev, minMaxNormalize };

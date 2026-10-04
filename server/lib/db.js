@@ -58,9 +58,15 @@ db.exec(`
     id          INTEGER PRIMARY KEY CHECK (id = 1),
     FileName    TEXT,
     ImportedAt  TEXT,
-    Mode        TEXT
+    Mode        TEXT,
+    ProvidedIndicators TEXT  -- ตัวชี้วัดที่มากับไฟล์ (ไม่ได้คำนวณเอง) เช่น "G,S"
   );
 `);
+
+// ฐานข้อมูลที่สร้างจากเวอร์ชันก่อนยังไม่มีคอลัมน์นี้
+if (!db.prepare('PRAGMA table_info(DATASET_INFO)').all().some((c) => c.name === 'ProvidedIndicators')) {
+  db.exec('ALTER TABLE DATASET_INFO ADD COLUMN ProvidedIndicators TEXT');
+}
 
 function isEmpty() {
   return db.prepare('SELECT COUNT(*) AS n FROM PROVINCE').get().n === 0;
@@ -68,11 +74,13 @@ function isEmpty() {
 
 /**
  * แทนที่ข้อมูลทั้งชุดด้วยชุดใหม่ (ใน transaction เดียว ถ้าพังกลางทางจะ rollback ข้อมูลเดิมยังอยู่ครบ)
- * @param {{mode, records, scores}} dataset - ผลจาก importer.parseDataset()
- * @param {Function} computeScores - (records with provinceId) => [{id, V,G,D,B,S, avgYearlyTotalTon}]
- * @param {Function} rank - (metrics) => ranked metrics (finalScore, rank)
+ * @param {{mode, records, indicators, provided, providedKeys}} dataset - ผลจาก importer.parseDataset()
+ * @param {{buildMetrics, normalize, rank}} model - ฟังก์ชันจาก calc.js
+ *   buildMetrics(records, provided) → คำนวณตัวชี้วัดจาก TRADE_RECORD (ใช้ค่าจากไฟล์แทนตัวที่มี) แล้วปรับสเกล
+ *   normalize(list) → ปรับสเกลค่าตัวชี้วัดที่มากับไฟล์ (กรณีไม่มีข้อมูลดิบ)
+ *   rank(metrics) → คะแนนรวมตามน้ำหนักเริ่มต้น + อันดับ
  */
-function replaceDataset(dataset, fileName, computeScores, rank) {
+function replaceDataset(dataset, fileName, model) {
   db.exec('BEGIN');
   try {
     db.exec('DELETE FROM PRIORITY_SCORE; DELETE FROM TRADE_RECORD; DELETE FROM GOODS_CATEGORY; DELETE FROM PROVINCE;');
@@ -108,17 +116,17 @@ function replaceDataset(dataset, fileName, computeScores, rank) {
         insRec.run(r.yearBE, r.yearAD, pid, r.direction, catIds.get(r.categoryTh), r.weightTon);
       }
 
-      metrics = computeScores(loadTradeRecords());
+      metrics = model.buildMetrics(loadTradeRecords(), dataset.provided);
       scoreYear = Math.max(...dataset.records.map((r) => r.yearAD));
     } else {
-      metrics = dataset.scores.map((s) => ({
+      metrics = model.normalize(dataset.indicators.map((s) => ({
         id: ensureProvince(s.provinceTh, s.provinceEn),
         nameTh: s.provinceTh,
         nameEn: s.provinceEn,
         avgYearlyTotalTon: s.avgYearlyTotalTon,
-        V: s.V, G: s.G, D: s.D, B: s.B, S: s.S,
-      }));
-      const years = dataset.scores.map((s) => s.yearAD).filter(Boolean);
+        raw: s.raw,
+      })));
+      const years = dataset.indicators.map((s) => s.yearAD).filter(Boolean);
       scoreYear = years.length ? Math.max(...years) : null;
     }
 
@@ -126,13 +134,14 @@ function replaceDataset(dataset, fileName, computeScores, rank) {
     const insScore = db.prepare(`INSERT INTO PRIORITY_SCORE
       (ProvinceID, Year_AD, VolumeScore, GrowthScore, DiversityScore, BalanceScore, StabilityScore, FinalPriorityScore, Rank, AvgVolumeTon)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
-    for (const m of rank(metrics)) {
+    for (const m of model.rank(metrics)) {
       insScore.run(m.id, scoreYear, m.V, m.G, m.D, m.B, m.S, m.finalScore, m.rank, m.avgYearlyTotalTon);
     }
 
-    db.prepare(`INSERT INTO DATASET_INFO (id, FileName, ImportedAt, Mode) VALUES (1, ?, ?, ?)
-                ON CONFLICT(id) DO UPDATE SET FileName = excluded.FileName, ImportedAt = excluded.ImportedAt, Mode = excluded.Mode`)
-      .run(fileName, new Date().toISOString(), dataset.mode);
+    db.prepare(`INSERT INTO DATASET_INFO (id, FileName, ImportedAt, Mode, ProvidedIndicators) VALUES (1, ?, ?, ?, ?)
+                ON CONFLICT(id) DO UPDATE SET FileName = excluded.FileName, ImportedAt = excluded.ImportedAt,
+                  Mode = excluded.Mode, ProvidedIndicators = excluded.ProvidedIndicators`)
+      .run(fileName, new Date().toISOString(), dataset.mode, dataset.providedKeys.join(','));
 
     db.exec('COMMIT');
   } catch (e) {
@@ -174,7 +183,7 @@ function loadScores() {
 }
 
 function loadDatasetInfo() {
-  const info = db.prepare('SELECT FileName AS fileName, ImportedAt AS importedAt, Mode AS mode FROM DATASET_INFO WHERE id = 1').get();
+  const info = db.prepare('SELECT FileName AS fileName, ImportedAt AS importedAt, Mode AS mode, ProvidedIndicators AS providedIndicators FROM DATASET_INFO WHERE id = 1').get();
   const counts = db.prepare(`SELECT
       (SELECT COUNT(*) FROM PROVINCE) AS provinces,
       (SELECT COUNT(*) FROM TRADE_RECORD) AS records,

@@ -27,7 +27,8 @@
 }
 ```
 
-- `mode`: `"raw"` (ข้อมูลดิบ คำนวณ V..S เอง) หรือ `"scored"` (คะแนนจากไฟล์) — ถ้าเป็น `"scored"` จะได้ `overview: null`, `trends: null`
+- `mode`: `"raw"` (มีข้อมูลดิบ) หรือ `"indicators"` (มีแต่ค่าตัวชี้วัดรายจังหวัด → `overview: null`, `trends: null`)
+- `providedIndicators`: ตัวชี้วัดที่มากับไฟล์ ไม่ได้คำนวณเอง เช่น `"G,S"` (ว่าง = คำนวณเองทั้งหมด)
 - `provinces`: อันดับฐานจากตาราง PRIORITY_SCORE (น้ำหนักเริ่มต้น) เรียงตาม `rank`
 - `id` = `ProvinceID` ในฐานข้อมูล (เปลี่ยนได้เมื่อนำเข้าชุดใหม่)
 
@@ -46,7 +47,7 @@ Response: `{ weights, volumeThresholdTon, provinces: [ ...เหมือนข�
 { "fileName": "my-data.csv", "csv": "<เนื้อหาไฟล์ CSV ทั้งไฟล์>" }
 ```
 - แทนที่ข้อมูลเดิมทั้งชุด แล้วคำนวณ PRIORITY_SCORE ใหม่ (ใน transaction เดียว)
-- สำเร็จ: `{ "ok": true, "mode": "raw", "rowsImported": 956, "dataset": {...} }`
+- สำเร็จ: `{ "ok": true, "mode": "raw", "rowsImported": 956, "providedIndicators": ["G", "S"], "dataset": {...} }`
 - ไฟล์ผิด: 400 `{ "error": "...", "details": ["แถว 3: น้ำหนัก \"abc\" ไม่ใช่ตัวเลข ≥ 0", ...] }` ข้อมูลเดิมไม่เปลี่ยน
 - ขนาดสูงสุด 30 MB
 

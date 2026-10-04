@@ -12,7 +12,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const { buildProvinceMetrics, rankProvinces, classifyTier } = require('./lib/calc');
+const { buildProvinceMetrics, normalizeIndicators, rankProvinces, classifyTier } = require('./lib/calc');
 const { parseDataset, ImportError } = require('./lib/importer');
 const store = require('./lib/db');
 
@@ -28,12 +28,11 @@ const SAMPLE_FILE = path.join(PUBLIC_DIR, 'samples', 'port-trade-2565-2568.csv')
 
 function importCsv(csvText, fileName) {
   const dataset = parseDataset(csvText);
-  store.replaceDataset(
-    dataset,
-    fileName,
-    (records) => buildProvinceMetrics(records).metrics,
-    (metrics) => rankProvinces(metrics, DEFAULT_WEIGHTS, DEFAULT_VOLUME_THRESHOLD_TON),
-  );
+  store.replaceDataset(dataset, fileName, {
+    buildMetrics: (records, provided) => buildProvinceMetrics(records, provided).metrics,
+    normalize: normalizeIndicators,
+    rank: (metrics) => rankProvinces(metrics, DEFAULT_WEIGHTS, DEFAULT_VOLUME_THRESHOLD_TON),
+  });
   return dataset;
 }
 
@@ -281,7 +280,8 @@ const server = http.createServer(async (req, res) => {
         return sendJson(res, 200, {
           ok: true,
           mode: ds.mode,
-          rowsImported: ds.mode === 'raw' ? ds.records.length : ds.scores.length,
+          rowsImported: ds.mode === 'raw' ? ds.records.length : ds.indicators.length,
+          providedIndicators: ds.providedKeys,
           dataset: store.loadDatasetInfo(),
         });
       } catch (e) {

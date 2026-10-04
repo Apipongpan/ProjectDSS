@@ -2,11 +2,14 @@
 /**
  * แปลงไฟล์ CSV ที่ผู้ใช้อัปโหลด → ข้อมูลพร้อมบันทึกลงฐานข้อมูล (Use Case: นำเข้า/ปรับปรุงข้อมูลการค้า)
  *
- * รองรับ 2 รูปแบบ (ระบบตรวจจากหัวคอลัมน์ให้อัตโนมัติ):
- *  1) "raw"    ข้อมูลดิบรายการค้า 1 แถว = ปี/จังหวัด/นำเข้า-ส่งออก/หมวดสินค้า/น้ำหนัก (ตัน)
- *              → ระบบคำนวณ V,G,D,B,S ให้เอง
- *  2) "scored" มีคอลัมน์ V,G,D,B,S มาแล้ว 1 แถว = 1 จังหวัด → ใช้ค่าตามไฟล์ ไม่คำนวณซ้ำ
- *              (ต้องมีปริมาณเฉลี่ยต่อปีด้วย เพราะกฎจัดชั้นข้อ 1/2 ต้องใช้)
+ * V,G,D,B,S คือ "ค่าตัวชี้วัด" ที่คำนวณจากข้อมูล (เช่น อัตราการเติบโต, ดัชนีเสถียร) ไม่ใช่คะแนนสำเร็จรูป
+ * ถ้าไฟล์มีคอลัมน์ตัวไหนมาแล้ว ระบบใช้ค่านั้นแทนการคำนวณเอง (แค่ไม่ต้องคำนวณซ้ำ) จากนั้นทุกตัวผ่านขั้นตอนเดียวกัน:
+ * ปรับสเกล 0-100 (min-max) → ถ่วงน้ำหนัก → จัดอันดับ → จัดชั้น
+ *
+ *  1) "raw"        ข้อมูลดิบรายการค้า (ปี/จังหวัด/นำเข้า-ส่งออก/หมวดสินค้า/น้ำหนัก ตัน)
+ *                  + คอลัมน์ V,G,D,B,S บางตัวหรือครบก็ได้ (ไม่บังคับ) → ตัวที่ไม่มี ระบบคำนวณเอง
+ *  2) "indicators" ไม่มีข้อมูลดิบ มีแต่ค่าตัวชี้วัดรายจังหวัด 1 แถว = 1 จังหวัด → ต้องมีครบ 5 ตัว
+ *                  และต้องมีปริมาณเฉลี่ยต่อปี (กฎจัดชั้นข้อ 1/2 ต้องใช้)
  */
 const { parseCsv } = require('./csv');
 
@@ -21,11 +24,11 @@ const ALIASES = {
   originalGoods: ['originalgoodsmapping', 'originalgoods', 'สินค้าเดิม', 'ชื่อสินค้าเดิม', 'สินค้า'],
   weight: ['totalweight', 'weight', 'weightton', 'น้ำหนัก', 'ปริมาณ', 'ปริมาณ(ตัน)', 'น้ำหนัก(ตัน)',
     'น้ำหนักรวม', 'น้ำหนักรวม(ตัน)', 'น้ำหนักรวม(กก.)'],
-  V: ['v', 'volumescore'],
-  G: ['g', 'growthscore'],
-  D: ['d', 'diversityscore'],
-  B: ['b', 'balancescore'],
-  S: ['s', 'stabilityscore'],
+  V: ['v', 'volume', 'volumescore', 'ปริมาณสินค้า'],
+  G: ['g', 'growth', 'growthrate', 'growthscore', 'อัตราการเติบโต', 'การเติบโต'],
+  D: ['d', 'diversity', 'diversityscore', 'ความหลากหลาย'],
+  B: ['b', 'balance', 'balancescore', 'ความสมดุล'],
+  S: ['s', 'stability', 'stabilityscore', 'ดัชนีความเสถียร', 'เสถียรภาพ', 'ความเสถียร'],
   avgVolume: ['avgvolumeton', 'avgyearlyvolumeton', 'ปริมาณเฉลี่ย', 'ปริมาณเฉลี่ยต่อปี', 'ปริมาณเฉลี่ย(ตัน/ปี)'],
 };
 
@@ -65,7 +68,11 @@ function toDirection(raw) {
   return null;
 }
 
+const cellText = (r, i) => (i === undefined ? '' : String(r[i] ?? '').trim());
+
 const MAX_ERRORS = 15;
+const KEYS = ['V', 'G', 'D', 'B', 'S'];
+const RAW_FIELDS = ['year', 'province', 'direction', 'category', 'weight'];
 
 function parseDataset(csvText) {
   const rows = parseCsv(csvText);
@@ -73,101 +80,129 @@ function parseDataset(csvText) {
 
   const header = rows[0];
   const col = mapHeader(header);
-  const hasScores = ['V', 'G', 'D', 'B', 'S'].every((k) => col[k] !== undefined);
-  const hasRaw = ['year', 'province', 'direction', 'category', 'weight'].every((k) => col[k] !== undefined);
+  const indicatorKeys = KEYS.filter((k) => col[k] !== undefined);
+  const hasRaw = RAW_FIELDS.every((k) => col[k] !== undefined);
 
-  if (hasScores) return parseScored(rows, col);
-  if (hasRaw) return parseRaw(rows, col);
+  if (hasRaw) return parseRaw(rows, col, indicatorKeys);
+  if (indicatorKeys.length === KEYS.length && col.province !== undefined) return parseIndicatorsOnly(rows, col);
 
-  const missingRaw = ['year', 'province', 'direction', 'category', 'weight'].filter((k) => col[k] === undefined);
+  if (indicatorKeys.length > 0) {
+    const missing = KEYS.filter((k) => !indicatorKeys.includes(k));
+    throw new ImportError(
+      'ไฟล์ไม่มีข้อมูลดิบให้คำนวณตัวชี้วัดที่ขาด — ต้องมีข้อมูลดิบ หรือมีคอลัมน์ V,G,D,B,S ครบทั้ง 5 ตัว',
+      [`ตัวชี้วัดที่ขาด: ${missing.join(', ')}`, `หัวคอลัมน์ที่พบ: ${header.join(', ')}`]
+    );
+  }
+  const missingRaw = RAW_FIELDS.filter((k) => col[k] === undefined);
   throw new ImportError(
-    'ไม่รู้จักรูปแบบไฟล์ — ต้องเป็นข้อมูลดิบ (ปี, จังหวัด, นำเข้า/ส่งออก, หมวดสินค้า, น้ำหนัก) ' +
-    'หรือไฟล์ที่มีคอลัมน์ V,G,D,B,S ครบ (ดาวน์โหลดไฟล์ตัวอย่างในหน้านี้ได้)',
+    'ไม่รู้จักรูปแบบไฟล์ — ต้องมีข้อมูลดิบ (ปี, จังหวัด, นำเข้า/ส่งออก, หมวดสินค้า, น้ำหนัก) ' +
+    'หรือค่าตัวชี้วัด V,G,D,B,S ครบรายจังหวัด (ดาวน์โหลดไฟล์ตัวอย่างในหน้านี้ได้)',
     [`หัวคอลัมน์ที่พบ: ${header.join(', ')}`, `คอลัมน์ข้อมูลดิบที่ขาด: ${missingRaw.join(', ')}`]
   );
 }
 
-function parseRaw(rows, col) {
+function parseRaw(rows, col, indicatorKeys) {
   const records = [];
   const errors = [];
-  for (let i = 1; i < rows.length; i++) {
+  const provided = {}; // { จังหวัด: { G: ..., S: ... } } ค่าตัวชี้วัดที่มากับไฟล์
+
+  for (let i = 1; i < rows.length && errors.length < MAX_ERRORS; i++) {
     const r = rows[i];
-    const line = i + 1;
     const years = toYears(r[col.year]);
-    const provinceTh = (r[col.province] || '').trim();
+    const provinceTh = cellText(r, col.province);
     const direction = toDirection(r[col.direction]);
-    const categoryTh = (r[col.category] || '').trim();
+    const categoryTh = cellText(r, col.category);
     const weight = toNumber(r[col.weight]);
 
     const problems = [];
-    if (!years) problems.push(`ปี "${r[col.year] || ''}" ไม่ถูกต้อง`);
+    if (!years) problems.push(`ปี "${cellText(r, col.year)}" ไม่ถูกต้อง`);
     if (!provinceTh) problems.push('ไม่มีชื่อจังหวัด');
-    if (!direction) problems.push(`นำเข้า/ส่งออก "${r[col.direction] || ''}" ไม่รู้จัก`);
+    if (!direction) problems.push(`นำเข้า/ส่งออก "${cellText(r, col.direction)}" ไม่รู้จัก`);
     if (!categoryTh) problems.push('ไม่มีหมวดสินค้า');
-    if (!Number.isFinite(weight) || weight < 0) problems.push(`น้ำหนัก "${r[col.weight] || ''}" ไม่ใช่ตัวเลข ≥ 0`);
-    if (problems.length) {
-      errors.push(`แถว ${line}: ${problems.join(', ')}`);
-      if (errors.length >= MAX_ERRORS) break;
-      continue;
+    if (!Number.isFinite(weight) || weight < 0) problems.push(`น้ำหนัก "${cellText(r, col.weight)}" ไม่ใช่ตัวเลข ≥ 0`);
+
+    // ค่าตัวชี้วัดเป็นค่าระดับจังหวัด: เว้นว่างบางแถวได้ แต่ถ้าใส่ ต้องเป็นตัวเลขและตรงกันทุกแถวของจังหวัดเดียวกัน
+    for (const k of indicatorKeys) {
+      const cell = cellText(r, col[k]);
+      if (cell === '' || !provinceTh) continue;
+      const v = toNumber(cell);
+      if (!Number.isFinite(v)) { problems.push(`${k} "${cell}" ไม่ใช่ตัวเลข`); continue; }
+      provided[provinceTh] = provided[provinceTh] || {};
+      const prev = provided[provinceTh][k];
+      if (prev !== undefined && Math.abs(prev - v) > 1e-9) {
+        problems.push(`ค่า ${k} ของ "${provinceTh}" ไม่ตรงกับแถวก่อนหน้า (${prev} กับ ${v})`);
+      } else provided[provinceTh][k] = v;
     }
+
+    if (problems.length) { errors.push(`แถว ${i + 1}: ${problems.join(', ')}`); continue; }
     records.push({
       ...years,
       provinceTh,
-      provinceEn: col.provinceEn !== undefined ? (r[col.provinceEn] || '').trim() : '',
+      provinceEn: cellText(r, col.provinceEn),
       direction,
       categoryTh,
-      categoryEn: col.categoryEn !== undefined ? (r[col.categoryEn] || '').trim() : '',
-      originalGoods: col.originalGoods !== undefined ? (r[col.originalGoods] || '').trim() : '',
+      categoryEn: cellText(r, col.categoryEn),
+      originalGoods: cellText(r, col.originalGoods),
       weightTon: weight,
     });
   }
   if (errors.length) throw new ImportError('ข้อมูลบางแถวไม่ถูกต้อง แก้ไขไฟล์แล้วนำเข้าใหม่', errors);
 
-  const years = new Set(records.map((r) => r.yearAD));
-  if (years.size < 2) {
-    throw new ImportError('ต้องมีข้อมูลอย่างน้อย 2 ปี จึงจะคำนวณการเติบโต (G) และเสถียรภาพ (S) ได้');
+  // คอลัมน์ตัวชี้วัดไหนที่มี ต้องมีค่าครบทุกจังหวัด ไม่งั้นค่าจากไฟล์กับค่าที่คำนวณเองจะปนกันในคอลัมน์เดียว
+  const provinces = [...new Set(records.map((r) => r.provinceTh))];
+  for (const k of indicatorKeys) {
+    const missing = provinces.filter((p) => !provided[p] || provided[p][k] === undefined);
+    if (missing.length) {
+      const more = missing.length > 8 ? ` และอีก ${missing.length - 8} จังหวัด` : '';
+      errors.push(`คอลัมน์ ${k} ไม่มีค่าของ: ${missing.slice(0, 8).join(', ')}${more}`);
+    }
   }
-  return { mode: 'raw', records, scores: null };
+  if (errors.length) {
+    throw new ImportError('ค่าตัวชี้วัดในไฟล์ไม่ครบทุกจังหวัด — ใส่ให้ครบ หรือลบคอลัมน์นั้นออกให้ระบบคำนวณเอง', errors);
+  }
+
+  const computedKeys = KEYS.filter((k) => !indicatorKeys.includes(k));
+  const yearCount = new Set(records.map((r) => r.yearAD)).size;
+  if (yearCount < 2 && (computedKeys.includes('G') || computedKeys.includes('S'))) {
+    throw new ImportError('ต้องมีข้อมูลอย่างน้อย 2 ปี จึงจะคำนวณการเติบโต (G) และเสถียรภาพ (S) ได้ (หรือใส่คอลัมน์ G, S มาในไฟล์)');
+  }
+  return { mode: 'raw', records, indicators: null, provided, providedKeys: indicatorKeys };
 }
 
-function parseScored(rows, col) {
-  if (col.province === undefined) throw new ImportError('ไฟล์แบบมีคะแนน V,G,D,B,S ต้องมีคอลัมน์ชื่อจังหวัด (ProvinceName_TH)');
+function parseIndicatorsOnly(rows, col) {
   if (col.avgVolume === undefined) {
-    throw new ImportError('ไฟล์แบบมีคะแนน V,G,D,B,S ต้องมีคอลัมน์ AvgVolumeTon (ปริมาณเฉลี่ย ตัน/ปี) เพราะกฎจัดชั้นข้อ 1/2 ใช้ค่านี้');
+    throw new ImportError('ไฟล์ที่มีแต่ค่าตัวชี้วัด (ไม่มีข้อมูลดิบ) ต้องมีคอลัมน์ AvgVolumeTon (ปริมาณเฉลี่ย ตัน/ปี) เพราะกฎจัดชั้นข้อ 1/2 ใช้ค่านี้');
   }
-  const scores = [];
+  const indicators = [];
   const errors = [];
   const seen = new Set();
-  for (let i = 1; i < rows.length; i++) {
+  for (let i = 1; i < rows.length && errors.length < MAX_ERRORS; i++) {
     const r = rows[i];
-    const line = i + 1;
-    const provinceTh = (r[col.province] || '').trim();
-    const vals = {};
+    const provinceTh = cellText(r, col.province);
+    const raw = {};
     const problems = [];
     if (!provinceTh) problems.push('ไม่มีชื่อจังหวัด');
-    else if (seen.has(provinceTh)) problems.push(`จังหวัด "${provinceTh}" ซ้ำ`);
-    for (const k of ['V', 'G', 'D', 'B', 'S']) {
-      vals[k] = toNumber(r[col[k]]);
-      if (!Number.isFinite(vals[k]) || vals[k] < 0 || vals[k] > 100) problems.push(`${k} ต้องเป็นตัวเลข 0–100`);
+    else if (seen.has(provinceTh)) problems.push(`จังหวัด "${provinceTh}" ซ้ำ (ไฟล์แบบนี้ 1 แถว = 1 จังหวัด)`);
+    for (const k of KEYS) {
+      raw[k] = toNumber(r[col[k]]);
+      if (!Number.isFinite(raw[k])) problems.push(`${k} "${cellText(r, col[k])}" ไม่ใช่ตัวเลข`);
     }
     const avgVolumeTon = toNumber(r[col.avgVolume]);
     if (!Number.isFinite(avgVolumeTon) || avgVolumeTon < 0) problems.push('AvgVolumeTon ต้องเป็นตัวเลข ≥ 0');
-    if (problems.length) {
-      errors.push(`แถว ${line}: ${problems.join(', ')}`);
-      if (errors.length >= MAX_ERRORS) break;
-      continue;
-    }
+    if (problems.length) { errors.push(`แถว ${i + 1}: ${problems.join(', ')}`); continue; }
     seen.add(provinceTh);
-    scores.push({
+    const years = col.year !== undefined ? toYears(r[col.year]) : null;
+    indicators.push({
       provinceTh,
-      provinceEn: col.provinceEn !== undefined ? (r[col.provinceEn] || '').trim() : '',
-      yearAD: col.year !== undefined && toYears(r[col.year]) ? toYears(r[col.year]).yearAD : null,
+      provinceEn: cellText(r, col.provinceEn),
+      yearAD: years ? years.yearAD : null,
       avgYearlyTotalTon: avgVolumeTon,
-      ...vals,
+      raw,
     });
   }
   if (errors.length) throw new ImportError('ข้อมูลบางแถวไม่ถูกต้อง แก้ไขไฟล์แล้วนำเข้าใหม่', errors);
-  return { mode: 'scored', records: [], scores };
+  if (indicators.length < 2) throw new ImportError('ต้องมีอย่างน้อย 2 จังหวัด จึงจะปรับสเกลและจัดอันดับได้');
+  return { mode: 'indicators', records: [], indicators, provided: {}, providedKeys: [...KEYS] };
 }
 
 class ImportError extends Error {

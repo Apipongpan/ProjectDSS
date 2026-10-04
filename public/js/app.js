@@ -231,20 +231,22 @@ function renderImport() {
             <tr><td><code>TotalWeight</code></td><td>น้ำหนัก (ตัน)</td></tr>
           </table>
           <p class="format-sub">ไม่บังคับ: ProvinceName_EN, CategoryName_EN, OriginalGoodsMapping · หัวคอลัมน์ภาษาไทย (ปี, จังหวัด, นำเข้า/ส่งออก, หมวดสินค้า, น้ำหนัก) ก็ได้</p>
+          <p class="format-sub"><strong>ถ้าไฟล์มีคอลัมน์ V, G, D, B หรือ S มาแล้ว</strong> (บางตัวหรือครบก็ได้) ระบบใช้ค่านั้นแทนการคำนวณตัวนั้นเอง ตัวที่ไม่มีคำนวณจากข้อมูลดิบ — ค่าต่อจังหวัดใส่แถวไหนก็ได้ แต่ต้องครบทุกจังหวัด</p>
           <a class="btn btn-outline btn-sm" href="/samples/port-trade-2565-2568.csv" download>ดาวน์โหลดไฟล์ตัวอย่าง (ข้อมูลจริง 2565–2568)</a>
         </div>
         <div class="format-card">
-          <p class="format-title">แบบที่ 2 · มีคะแนนมาแล้ว <span class="muted">(ใช้ค่าตามไฟล์)</span></p>
-          <p class="format-sub">1 แถว = 1 พื้นที่ ใช้ V,G,D,B,S ตามไฟล์ ไม่คำนวณซ้ำ</p>
+          <p class="format-title">แบบที่ 2 · มีแต่ค่าตัวชี้วัด <span class="muted">(ไม่มีข้อมูลดิบ)</span></p>
+          <p class="format-sub">1 แถว = 1 พื้นที่ ค่าตัวชี้วัดที่คำนวณไว้แล้ว เช่น อัตราการเติบโต −0.04, ดัชนีเสถียร 0.95</p>
           <table class="mini-table">
             <tr><td><code>ProvinceName_TH</code></td><td>จังหวัด/พื้นที่ท่าเรือ</td></tr>
-            <tr><td><code>V, G, D, B, S</code></td><td>คะแนน 0–100</td></tr>
+            <tr><td><code>V, G, D, B, S</code></td><td>ค่าตัวชี้วัด สเกลใดก็ได้ ต้องครบ 5 ตัว</td></tr>
             <tr><td><code>AvgVolumeTon</code></td><td>ปริมาณเฉลี่ย (ตัน/ปี) ใช้กับกฎจัดชั้น</td></tr>
           </table>
-          <p class="format-sub">ไม่บังคับ: Year_BE, ProvinceName_EN · ไฟล์แบบนี้ไม่มีข้อมูลรายปี จึงไม่มีกราฟแนวโน้ม</p>
-          <a class="btn btn-outline btn-sm" href="/samples/template-scored.csv" download>ดาวน์โหลดไฟล์ตัวอย่าง (แบบมีคะแนน)</a>
+          <p class="format-sub">ไม่บังคับ: Year_BE, ProvinceName_EN · ไม่มีข้อมูลรายปี จึงไม่มีกราฟแนวโน้ม</p>
+          <a class="btn btn-outline btn-sm" href="/samples/template-indicators.csv" download>ดาวน์โหลดไฟล์ตัวอย่าง (ค่าตัวชี้วัด)</a>
         </div>
       </div>
+      <p class="section-sub">ไม่ว่าค่าตัวชี้วัดจะคำนวณเองหรือมากับไฟล์ ระบบปรับสเกลเป็นคะแนน 0–100 (min-max) → ถ่วงน้ำหนัก → จัดอันดับ → จัดชั้น ด้วยขั้นตอนเดียวกันเสมอ</p>
 
       <label class="drop-zone" id="drop-zone">
         <input type="file" id="file-input" accept=".csv,text/csv" hidden>
@@ -284,7 +286,7 @@ function renderDatasetInfo() {
       '<div class="hint-box">ยังไม่มีข้อมูลในระบบ — เลือกไฟล์ CSV ด้านล่างเพื่อนำเข้า (หรือกด "โหลดชุดข้อมูลตัวอย่าง")</div>';
     return;
   }
-  const modeText = ds.mode === 'scored' ? 'แบบมีคะแนนมาแล้ว (ใช้ V,G,D,B,S ตามไฟล์)' : 'ข้อมูลดิบ (ระบบคำนวณ V,G,D,B,S เอง)';
+  const modeText = describeSource(ds.mode, ds.providedIndicators ? ds.providedIndicators.split(',') : []);
   const t = state.data.trends;
   document.getElementById('dataset-info').innerHTML = `
     <div class="kpi-grid">
@@ -295,6 +297,16 @@ function renderDatasetInfo() {
         <p class="kpi-value small">${ds.provinces} พื้นที่ · ${fmtNum(ds.records)} รายการ</p>
         <p class="kpi-delta">${ds.categories} หมวดสินค้า${t ? ` · ปี ${t.yearsBE.join(', ')}` : ''}</p></div>
     </div>`;
+}
+
+// บอกว่าตัวชี้วัดตัวไหนมาจากไฟล์ ตัวไหนระบบคำนวณเอง
+function describeSource(mode, providedKeys) {
+  const fromFile = (providedKeys || []).filter(Boolean);
+  const computed = KEYS.filter((k) => !fromFile.includes(k));
+  if (mode === 'indicators') return 'ค่าตัวชี้วัดรายจังหวัด — ใช้ V,G,D,B,S จากไฟล์ แล้วปรับสเกล 0–100';
+  if (fromFile.length === 0) return 'ข้อมูลดิบ — ระบบคำนวณ V,G,D,B,S เองทั้งหมด';
+  if (computed.length === 0) return 'ข้อมูลดิบ + ค่าตัวชี้วัดครบ — ใช้ V,G,D,B,S จากไฟล์ ไม่ต้องคำนวณ';
+  return `ข้อมูลดิบ — ใช้ ${fromFile.join(',')} จากไฟล์ · คำนวณ ${computed.join(',')} เอง`;
 }
 
 let pendingFile = null;
@@ -368,7 +380,7 @@ async function doImport() {
     });
     await afterDatasetChanged();
     out.innerHTML = `<div class="msg msg-ok">นำเข้าสำเร็จ ${fmtNum(r.rowsImported)} แถว
-      (${r.mode === 'raw' ? 'ข้อมูลดิบ — คำนวณ V,G,D,B,S ใหม่แล้ว' : 'แบบมีคะแนน — ใช้ V,G,D,B,S ตามไฟล์'}) ·
+      (${describeSource(r.mode, r.providedIndicators)}) ·
       ${r.dataset.provinces} พื้นที่ ·
       <a href="#" data-goto="overview">ดูแนวโน้ม →</a> <a href="#" data-goto="ranking">ดูอันดับ →</a></div>`;
     pendingFile = null;
@@ -424,7 +436,7 @@ function renderOverview() {
     el.innerHTML = `
       <div class="card">
         <p class="section-title">แนวโน้มปริมาณการค้า</p>
-        <div class="hint-box">ชุดข้อมูลปัจจุบันเป็นแบบ "มีคะแนนมาแล้ว" ไม่มีข้อมูลการค้ารายปี จึงแสดงกราฟแนวโน้มไม่ได้ —
+        <div class="hint-box">ชุดข้อมูลปัจจุบันมีแต่ค่าตัวชี้วัดรายจังหวัด ไม่มีข้อมูลการค้ารายปี จึงแสดงกราฟแนวโน้มไม่ได้ —
           นำเข้าไฟล์ข้อมูลดิบในหน้า <a href="#" data-goto="import">นำเข้าข้อมูล</a> เพื่อดูแนวโน้ม</div>
       </div>
       <div class="kpi-grid">
