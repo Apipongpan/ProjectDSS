@@ -9,7 +9,7 @@
 ```json
 {
   "dataset": { "fileName": "port-trade-2565-2568.csv", "importedAt": "2026-10-04T...", "mode": "raw",
-               "provinces": 23, "records": 618, "categories": 7 },
+               "provinces": 23, "records": 956, "categories": 7 },
   "defaults": { "weights": { "V": 0.4, "G": 0.25, "D": 0.15, "B": 0.1, "S": 0.1 }, "volumeThresholdTon": 5000000 },
   "overview": { "totalLatestYearTon": 340574900, "pctChangeVsFirstYear": -8.0,
                 "top2Provinces": ["ชลบุรี", "ระยอง"], "top2ShareOfTotal": 84.7, "provinceCount": 23 },
@@ -46,7 +46,7 @@ Response: `{ weights, volumeThresholdTon, provinces: [ ...เหมือนข�
 { "fileName": "my-data.csv", "csv": "<เนื้อหาไฟล์ CSV ทั้งไฟล์>" }
 ```
 - แทนที่ข้อมูลเดิมทั้งชุด แล้วคำนวณ PRIORITY_SCORE ใหม่ (ใน transaction เดียว)
-- สำเร็จ: `{ "ok": true, "mode": "raw", "rowsImported": 618, "dataset": {...} }`
+- สำเร็จ: `{ "ok": true, "mode": "raw", "rowsImported": 956, "dataset": {...} }`
 - ไฟล์ผิด: 400 `{ "error": "...", "details": ["แถว 3: น้ำหนัก \"abc\" ไม่ใช่ตัวเลข ≥ 0", ...] }` ข้อมูลเดิมไม่เปลี่ยน
 - ขนาดสูงสุด 30 MB
 
@@ -56,4 +56,4 @@ Response: `{ weights, volumeThresholdTon, provinces: [ ...เหมือนข�
 
 ## 5) GET /api/health
 
-`{ "ok": true, "provinces": 23, "records": 618, "dataset": "port-trade-2565-2568.csv" }`
+`{ "ok": true, "provinces": 23, "records": 956, "dataset": "port-trade-2565-2568.csv" }`

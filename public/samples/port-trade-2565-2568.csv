@@ -1,619 +1,957 @@
-﻿Year_BE,ProvinceName_TH,ProvinceName_EN,ProcessingIndicator,CategoryName_TH,CategoryName_EN,TotalWeight
-2565,กระบี่,Krabi,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,10779.16
-2565,กระบี่,Krabi,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,312517.34
-2565,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,306869.61
-2565,กระบี่,Krabi,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1729315
-2565,กระบี่,Krabi,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,10990.16
-2565,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,103934.53
-2565,กระบี่,Krabi,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,3371.4
-2565,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7304978.560000001
-2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,24270
-2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,533121.21
-2565,กรุงเทพมหานคร,Bangkok,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,676819.32
-2565,กรุงเทพมหานคร,Bangkok,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,301572.94
-2565,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,180089.69
-2565,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,61273.36
-2565,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7929212.78
-2565,กรุงเทพมหานคร,Bangkok,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,166769.87
-2565,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,7200
-2565,กรุงเทพมหานคร,Bangkok,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,262725.38
-2565,กรุงเทพมหานคร,Bangkok,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,73608.78
-2565,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,141202.56
-2565,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1039334.34
-2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,621500
-2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,1601
-2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2700
-2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,13816.91
-2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55175.72
-2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,33916.38
-2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,64501
-2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7309.75
-2565,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,60588121.88
-2565,ชลบุรี,Chon Buri,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,4393739.82
-2565,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,12363664.7
-2565,ชลบุรี,Chon Buri,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,7248389.85
-2565,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,12946727.1
-2565,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1247648.04
-2565,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,15001635.08
-2565,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,53687747.43
-2565,ชลบุรี,Chon Buri,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,5344653.66
-2565,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,3436435.71
-2565,ชลบุรี,Chon Buri,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,36604180.59
-2565,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4913681.24
-2565,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6414206.68
-2565,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,18775968.16
-2565,ตรัง,Trang,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,505690.72
-2565,ตรัง,Trang,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,150.24
-2565,ตรัง,Trang,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1653704
-2565,ตรัง,Trang,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,104
-2565,ตรัง,Trang,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,39557.86
-2565,ตรัง,Trang,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,60521.44
-2565,ตรัง,Trang,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2281.67
-2565,ตราด,Trat,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,155137.54
-2565,ตราด,Trat,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,809.21
-2565,ตราด,Trat,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,17423.44
-2565,ตราด,Trat,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,1507.32
-2565,ตราด,Trat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,207.74
-2565,ตราด,Trat,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1.25
-2565,ตราด,Trat,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,400.4
-2565,ตราด,Trat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3663.42
-2565,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,304100
-2565,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,5000
-2565,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1190678
-2565,นครศรีธรรมราช,Nakhon Si Thammarat,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,3500
-2565,นราธิวาส,Narathiwat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,49500
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,30212.2
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,60421.94
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,6400
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,27433.6
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,67992.04
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,603491.61
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,50247.82
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,11821.94
-2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1094236.37
-2565,ปัตตานี,Pattani,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,74.73
-2565,ปัตตานี,Pattani,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,8800
-2565,ปัตตานี,Pattani,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,809.78
-2565,พังงา,Phangnga,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,112000
-2565,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,133803.57
-2565,ภูเก็ต,Phuket,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,41025
-2565,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,540654.81
-2565,ภูเก็ต,Phuket,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,106099.95
-2565,ภูเก็ต,Phuket,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,504653.8
-2565,ภูเก็ต,Phuket,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,9999.82
-2565,ภูเก็ต,Phuket,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,60827.14
-2565,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,122437.59
-2565,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,293249.59
-2565,ภูเก็ต,Phuket,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,21899.95
-2565,ภูเก็ต,Phuket,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,32128.62
-2565,ภูเก็ต,Phuket,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4999.82
-2565,ภูเก็ต,Phuket,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,54717.63
-2565,ระนอง,Ranong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,451870.16
-2565,ระนอง,Ranong,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,728261.48
-2565,ระนอง,Ranong,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,3128.16
-2565,ระนอง,Ranong,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,320122.69
-2565,ระนอง,Ranong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3000
-2565,ระนอง,Ranong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2370.14
-2565,ระนอง,Ranong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,135639.34
-2565,ระนอง,Ranong,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,2762966.7
-2565,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,7479.95
-2565,ระนอง,Ranong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,53.2
-2565,ระนอง,Ranong,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,41100
-2565,ระนอง,Ranong,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,34
-2565,ระยอง,Rayong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1060072.37
-2565,ระยอง,Rayong,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,36750
-2565,ระยอง,Rayong,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,17003.16
-2565,ระยอง,Rayong,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,6910715.84
-2565,ระยอง,Rayong,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,392625.91
-2565,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5761429.86
-2565,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,947228.82
-2565,ระยอง,Rayong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,286586.22
-2565,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,91502.71
-2565,ระยอง,Rayong,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,37314078.65
-2565,ระยอง,Rayong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7266521.98
-2565,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,7116483.39
-2565,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2057327.17
-2565,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1820554.78
-2565,สงขลา,Songkhla,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,31333.3
-2565,สงขลา,Songkhla,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,4160
-2565,สงขลา,Songkhla,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,61560
-2565,สงขลา,Songkhla,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1106207.37
-2565,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1000
-2565,สงขลา,Songkhla,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,130
-2565,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,716988.5800000001
-2565,สงขลา,Songkhla,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,81802.32
-2565,สงขลา,Songkhla,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,54184.18
-2565,สงขลา,Songkhla,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,43348.76
-2565,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,41416.53
-2565,สตูล,Satun,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,18907.13
-2565,สตูล,Satun,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,21.31
-2565,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2377411.71
-2565,สมุทรปราการ,Samut Prakan,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,57856.53
-2565,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,925036.38
-2565,สมุทรปราการ,Samut Prakan,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,106787.54
-2565,สมุทรปราการ,Samut Prakan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,36189.65
-2565,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,256232.88
-2565,สมุทรปราการ,Samut Prakan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,8330.37
-2565,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1459962.57
-2565,สมุทรปราการ,Samut Prakan,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,380098.89
-2565,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,125592.05
-2565,สมุทรปราการ,Samut Prakan,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,470294.79
-2565,สมุทรปราการ,Samut Prakan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,45946.59
-2565,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1352718.52
-2565,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,17512.32
-2565,สมุทรสาคร,Samut Sakon,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,2239.81
-2565,สมุทรสาคร,Samut Sakon,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,92147.98
-2565,สมุทรสาคร,Samut Sakon,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,53400.32
-2565,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,98275.91
-2565,สมุทรสาคร,Samut Sakon,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,10267
-2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1215813.82
-2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,200500
-2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,27000
-2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3696833
-2565,สุราษฎร์ธานี,Surat Thani,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,81532
-2565,สุราษฎร์ธานี,Surat Thani,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,215323.33
-2565,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,9279.95
-2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1040
-2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,3635065.15
-2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,120000
-2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,130
-2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,333352.14
-2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,384.1
-2565,เพชรบุรี,Phetchaburi,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,145782.29
-2565,เพชรบุรี,Phetchaburi,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3099.3
-2565,เพชรบุรี,Phetchaburi,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,1852644.09
-2566,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,493257.04
-2566,กระบี่,Krabi,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,11500
-2566,กระบี่,Krabi,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1802635
-2566,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,43557.59
-2566,กระบี่,Krabi,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,6800
-2566,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7901707.39
-2566,กรุงเทพมหานคร,Bangkok,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,15626
-2566,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,732692.31
-2566,กรุงเทพมหานคร,Bangkok,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,603632.73
-2566,กรุงเทพมหานคร,Bangkok,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,334915.08
-2566,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,106289.94
-2566,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,599995.35
-2566,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7720942.17
-2566,กรุงเทพมหานคร,Bangkok,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,204584.03
-2566,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,5750
-2566,กรุงเทพมหานคร,Bangkok,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,348519.19
-2566,กรุงเทพมหานคร,Bangkok,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3011.16
-2566,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,16922.22
-2566,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1236906.11
-2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,31348
-2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,7263
-2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,583800
-2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1967.7
-2566,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,1330
-2566,ฉะเชิงเทรา,Chachoengsao,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,33953
-2566,ฉะเชิงเทรา,Chachoengsao,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,18272
-2566,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55377217.07
-2566,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,12942705.54
-2566,ชลบุรี,Chon Buri,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,19794767.29
-2566,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,10372300.16
-2566,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,2525484.63
-2566,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,9068712.620000001
-2566,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,39945049.5
-2566,ชลบุรี,Chon Buri,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,245019.9
-2566,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,11599569.15
-2566,ชลบุรี,Chon Buri,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,36976062.57
-2566,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1944537.29
-2566,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6995100.36
-2566,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7958520.790000001
-2566,ตรัง,Trang,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,553101.74
-2566,ตรัง,Trang,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,5017.02
-2566,ตรัง,Trang,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1142848
-2566,ตรัง,Trang,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,5300
-2566,ตรัง,Trang,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,36997.57
-2566,ตรัง,Trang,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,151291.02
-2566,ตรัง,Trang,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,35749.69
-2566,ตรัง,Trang,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2300
-2566,ตราด,Trat,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,59339.71
-2566,ตราด,Trat,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,1
-2566,ตราด,Trat,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,8144.14
-2566,ตราด,Trat,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,1221.07
-2566,ตราด,Trat,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,128.38
-2566,ตราด,Trat,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,13.5
-2566,ตราด,Trat,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,43.26
-2566,ตราด,Trat,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,205.92
-2566,ตราด,Trat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,379.17
-2566,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,19400
-2566,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1275425
-2566,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,162750
-2566,นครศรีธรรมราช,Nakhon Si Thammarat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4900
-2566,นราธิวาส,Narathiwat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,181000
-2566,นราธิวาส,Narathiwat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,57100
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,60408.32
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,40700
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,21443.97
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3150
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,598218.86
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,31461.32
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,14000
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,35295.84
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1100
-2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1424200.41
-2566,พระนครศรีอยุธยา,Phra Nakhon Si Ayutthaya,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,19500
-2566,พังงา,Phangnga,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,44000
-2566,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12736.66
-2566,ภูเก็ต,Phuket,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,73.76
-2566,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,701631.6799999999
-2566,ภูเก็ต,Phuket,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,17500
-2566,ภูเก็ต,Phuket,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,641210.1
-2566,ภูเก็ต,Phuket,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,59505.12
-2566,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12423.43
-2566,ภูเก็ต,Phuket,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,174.86
-2566,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,324942.24
-2566,ภูเก็ต,Phuket,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,14000
-2566,ภูเก็ต,Phuket,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,36527.53
-2566,ภูเก็ต,Phuket,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,74643.82
-2566,ระนอง,Ranong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,210026.79
-2566,ระนอง,Ranong,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,45469.71
-2566,ระนอง,Ranong,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,10.8
-2566,ระนอง,Ranong,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,20930
-2566,ระนอง,Ranong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,11688.54
-2566,ระนอง,Ranong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,10
-2566,ระนอง,Ranong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1348.42
-2566,ระนอง,Ranong,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,177404.35
-2566,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,17749.78
-2566,ระนอง,Ranong,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,42.87
-2566,ระนอง,Ranong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,254.03
-2566,ระนอง,Ranong,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,7500
-2566,ระยอง,Rayong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,121360.39
-2566,ระยอง,Rayong,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,3140
-2566,ระยอง,Rayong,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,31083649.11
-2566,ระยอง,Rayong,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,537884
-2566,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6767825.48
-2566,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2686693.04
-2566,ระยอง,Rayong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,125438.74
-2566,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,93399.74
-2566,ระยอง,Rayong,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,47141948.62
-2566,ระยอง,Rayong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,366713.93
-2566,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5452178.42
-2566,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2338712.52
-2566,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1957847.65
-2566,สงขลา,Songkhla,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,3397
-2566,สงขลา,Songkhla,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,2900
-2566,สงขลา,Songkhla,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,58780.24
-2566,สงขลา,Songkhla,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,944956.13
-2566,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,46611.67
-2566,สงขลา,Songkhla,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,45886.82
-2566,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,794604.49
-2566,สงขลา,Songkhla,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,49382.54
-2566,สงขลา,Songkhla,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,66950
-2566,สงขลา,Songkhla,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,54983.65
-2566,สงขลา,Songkhla,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,12111.75
-2566,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,60538.32
-2566,สตูล,Satun,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12184.45
-2566,สตูล,Satun,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,16481.19
-2566,สตูล,Satun,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12281.48
-2566,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2323108.35
-2566,สมุทรปราการ,Samut Prakan,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,79965.98
-2566,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,771572.18
-2566,สมุทรปราการ,Samut Prakan,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,230708.87
-2566,สมุทรปราการ,Samut Prakan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,45377.22
-2566,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,972761.74
-2566,สมุทรปราการ,Samut Prakan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,20584.59
-2566,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1346003.54
-2566,สมุทรปราการ,Samut Prakan,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,353553.05
-2566,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,195380.21
-2566,สมุทรปราการ,Samut Prakan,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,362198.59
-2566,สมุทรปราการ,Samut Prakan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,29865.28
-2566,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1440617.72
-2566,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,24882.97
-2566,สมุทรสงคราม,Samut Songkram,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,7409.38
-2566,สมุทรสงคราม,Samut Songkram,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,3100
-2566,สมุทรสงคราม,Samut Songkram,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2550
-2566,สมุทรสาคร,Samut Sakon,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,17580.2
-2566,สมุทรสาคร,Samut Sakon,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,45892.85
-2566,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,121258.48
-2566,สมุทรสาคร,Samut Sakon,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5750
-2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,9957.87
-2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,220030
-2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,5199.48
-2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4039446.16
-2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7814
-2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,12000
-2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,60615.91
-2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,21202.5
-2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,9768.5
-2566,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,17858.83
-2566,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,2970473.31
-2566,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,355426.68
-2566,เพชรบุรี,Phetchaburi,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,1605350.97
-2566,เพชรบุรี,Phetchaburi,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,67366
-2566,เพชรบุรี,Phetchaburi,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,2700400.69
-2566,เพชรบุรี,Phetchaburi,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4919.67
-2567,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,489664.47
-2567,กระบี่,Krabi,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1669910
-2567,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,100078.64
-2567,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7733118.55
-2567,กรุงเทพมหานคร,Bangkok,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,11850.09
-2567,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,552739.55
-2567,กรุงเทพมหานคร,Bangkok,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,415612.69
-2567,กรุงเทพมหานคร,Bangkok,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,290245.26
-2567,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,24437.7
-2567,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,42443.02
-2567,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7909653.31
-2567,กรุงเทพมหานคร,Bangkok,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,215494.93
-2567,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,12200
-2567,กรุงเทพมหานคร,Bangkok,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,344971.45
-2567,กรุงเทพมหานคร,Bangkok,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,19800
-2567,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,62144.75
-2567,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1037108.07
-2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,14667
-2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,6299.89
-2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,434300
-2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,11357
-2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,14771.06
-2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,16503
-2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2500
-2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,18915
-2567,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,66752176.09
-2567,ชลบุรี,Chon Buri,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,33989.38
-2567,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,10785893.42
-2567,ชลบุรี,Chon Buri,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,8259513.45
-2567,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,9860375.86
-2567,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,2277410.45
-2567,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,3113435.13
-2567,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55893248.83000001
-2567,ชลบุรี,Chon Buri,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,290824.66
-2567,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,11764969.58
-2567,ชลบุรี,Chon Buri,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,36051929.54
-2567,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1797335.6
-2567,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,7434846.6
-2567,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6989463.890000001
-2567,ตรัง,Trang,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,415009.44
-2567,ตรัง,Trang,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1471500
-2567,ตรัง,Trang,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,53150.43
-2567,ตรัง,Trang,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,113028
-2567,ตรัง,Trang,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,17564.35
-2567,ตราด,Trat,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,5584.02
-2567,ตราด,Trat,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,1
-2567,ตราด,Trat,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,260.97
-2567,ตราด,Trat,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6.4
-2567,ตราด,Trat,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,126.9
-2567,ตราด,Trat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,501.78
-2567,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,18000
-2567,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1526830
-2567,นราธิวาส,Narathiwat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,171100
-2567,นราธิวาส,Narathiwat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,90800
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,163346.07
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,16000
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,32783.4
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,10600
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,50468.89
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,45650.35
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,51082.6
-2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1473155.34
-2567,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,49208.17
-2567,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,768994.01
-2567,ภูเก็ต,Phuket,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,232802
-2567,ภูเก็ต,Phuket,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,563615.55
-2567,ภูเก็ต,Phuket,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,30567.9
-2567,ภูเก็ต,Phuket,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,62889.74
-2567,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,46001.5
-2567,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,404777.7
-2567,ภูเก็ต,Phuket,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,210989
-2567,ภูเก็ต,Phuket,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,27589.84
-2567,ภูเก็ต,Phuket,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,30567.9
-2567,ภูเก็ต,Phuket,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,62889.74
-2567,ระนอง,Ranong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,369578.75
-2567,ระนอง,Ranong,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,76544.25
-2567,ระนอง,Ranong,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,3779
-2567,ระนอง,Ranong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,15000
-2567,ระนอง,Ranong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2042.98
-2567,ระนอง,Ranong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,10945.69
-2567,ระนอง,Ranong,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,248132.6
-2567,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,291818.56
-2567,ระนอง,Ranong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8246.08
-2567,ระนอง,Ranong,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3070.3
-2567,ระยอง,Rayong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,252783.71
-2567,ระยอง,Rayong,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,4400
-2567,ระยอง,Rayong,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,10019137.84
-2567,ระยอง,Rayong,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,386635.49
-2567,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5528290.89
-2567,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,782241.53
-2567,ระยอง,Rayong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,72559.01
-2567,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,91123.95
-2567,ระยอง,Rayong,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,49819837.95
-2567,ระยอง,Rayong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,81773.33
-2567,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4081660.48
-2567,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1892274.48
-2567,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2062132.59
-2567,สงขลา,Songkhla,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,9211.63
-2567,สงขลา,Songkhla,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,1820
-2567,สงขลา,Songkhla,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,84306.82
-2567,สงขลา,Songkhla,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,933289
-2567,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,15346.04
-2567,สงขลา,Songkhla,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6370
-2567,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,971652.25
-2567,สงขลา,Songkhla,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,56635.04
-2567,สงขลา,Songkhla,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,114140
-2567,สงขลา,Songkhla,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,80758.74
-2567,สงขลา,Songkhla,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,36173.24
-2567,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,52057.65
-2567,สงขลา,Songkhla,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,13650
-2567,สตูล,Satun,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1170.62
-2567,สตูล,Satun,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,13558.65
-2567,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2205396.54
-2567,สมุทรปราการ,Samut Prakan,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,11830.83
-2567,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,839788.47
-2567,สมุทรปราการ,Samut Prakan,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,65782.86
-2567,สมุทรปราการ,Samut Prakan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,69146.92
-2567,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,275218.4
-2567,สมุทรปราการ,Samut Prakan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1715
-2567,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1147758.87
-2567,สมุทรปราการ,Samut Prakan,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,457786.9
-2567,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,153207.05
-2567,สมุทรปราการ,Samut Prakan,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,423827.36
-2567,สมุทรปราการ,Samut Prakan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,26309.98
-2567,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1394929.83
-2567,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7555.05
-2567,สมุทรสาคร,Samut Sakon,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,676.8
-2567,สมุทรสาคร,Samut Sakon,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7965.62
-2567,สมุทรสาคร,Samut Sakon,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,8350.75
-2567,สมุทรสาคร,Samut Sakon,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,26990.14
-2567,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,76535.01
-2567,สมุทรสาคร,Samut Sakon,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8250
-2567,สุราษฎร์ธานี,Surat Thani,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2303.76
-2567,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,187850
-2567,สุราษฎร์ธานี,Surat Thani,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4547943
-2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1568
-2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,21000
-2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,54973.2
-2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,62530
-2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,12595.29
-2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,27559.86
-2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,3731018.43
-2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,81.86
-2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,196193.86
-2567,เพชรบุรี,Phetchaburi,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,35000
-2567,เพชรบุรี,Phetchaburi,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,62734
-2567,เพชรบุรี,Phetchaburi,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,3006563.42
-2568,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,410070.83
-2568,กระบี่,Krabi,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1002195
-2568,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,44958.09
-2568,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6494314.82
-2568,กรุงเทพมหานคร,Bangkok,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,4494.23
-2568,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,315890
-2568,กรุงเทพมหานคร,Bangkok,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,475232.63
-2568,กรุงเทพมหานคร,Bangkok,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,285589.64
-2568,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,17247.77
-2568,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,65983.91
-2568,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7627436.439999999
-2568,กรุงเทพมหานคร,Bangkok,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,169557.49
-2568,กรุงเทพมหานคร,Bangkok,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,251419.55
-2568,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6939.76
-2568,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1230041.33
-2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,18709
-2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,831.81
-2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,343000
-2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,825
-2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,49
-2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,7499.88
-2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,7389.09
-2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5939.2
-2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,22571
-2568,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55504225.11
-2568,ชลบุรี,Chon Buri,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,156857.33
-2568,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,12985556.23
-2568,ชลบุรี,Chon Buri,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,5901005.9
-2568,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,9259870.56
-2568,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1877687.67
-2568,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6562059.83
-2568,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55864250.4
-2568,ชลบุรี,Chon Buri,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,4922309.19
-2568,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,6618806.83
-2568,ชลบุรี,Chon Buri,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,35648252.89
-2568,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1379369.37
-2568,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6702941
-2568,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,11719747.69
-2568,ตรัง,Trang,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,361619.72
-2568,ตรัง,Trang,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1192943
-2568,ตรัง,Trang,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,19160.07
-2568,ตรัง,Trang,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,102344
-2568,ตรัง,Trang,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,121119.72
-2568,ตรัง,Trang,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3017.8
-2568,ตราด,Trat,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,3120.32
-2568,ตราด,Trat,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,5208.5
-2568,ตราด,Trat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1500
-2568,ตราด,Trat,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,86.4
-2568,ตราด,Trat,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,3927.71
-2568,ตราด,Trat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,491.6
-2568,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,68850
-2568,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1584240
-2568,นราธิวาส,Narathiwat,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,157800
-2568,นราธิวาส,Narathiwat,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,94000
-2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,84130.8
-2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,129738.94
-2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,76670.78
-2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,12431.02
-2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,165631.01
-2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1784845.91
-2568,ปัตตานี,Pattani,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7500
-2568,ปัตตานี,Pattani,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7500
-2568,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,59123
-2568,ภูเก็ต,Phuket,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,26
-2568,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,837050
-2568,ภูเก็ต,Phuket,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,599454.18
-2568,ภูเก็ต,Phuket,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,329907.14
-2568,ภูเก็ต,Phuket,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,55994.24
-2568,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,58478
-2568,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,159700
-2568,ภูเก็ต,Phuket,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,601954.18
-2568,ภูเก็ต,Phuket,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,45018.74
-2568,ภูเก็ต,Phuket,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,50968.73
-2568,ระนอง,Ranong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,673943.01
-2568,ระนอง,Ranong,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,29075.81
-2568,ระนอง,Ranong,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,22722.87
-2568,ระนอง,Ranong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5720
-2568,ระนอง,Ranong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2500
-2568,ระนอง,Ranong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,99211.46
-2568,ระนอง,Ranong,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,196135.47
-2568,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,128010.1
-2568,ระนอง,Ranong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,509.73
-2568,ระนอง,Ranong,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1208.81
-2568,ระยอง,Rayong,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,51951.58
-2568,ระยอง,Rayong,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,8681.49
-2568,ระยอง,Rayong,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,10720859.61
-2568,ระยอง,Rayong,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,343825
-2568,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4189371.98
-2568,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,884632.01
-2568,ระยอง,Rayong,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,42365.99
-2568,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,59365.3
-2568,ระยอง,Rayong,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,51768910.1
-2568,ระยอง,Rayong,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,380248.85
-2568,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4358790.77
-2568,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1969828.2
-2568,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1735816.59
-2568,สงขลา,Songkhla,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,12609.24
-2568,สงขลา,Songkhla,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,32522.17
-2568,สงขลา,Songkhla,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1202105.26
-2568,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3600
-2568,สงขลา,Songkhla,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,31486.48
-2568,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,809995.6499999999
-2568,สงขลา,Songkhla,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,41602.24
-2568,สงขลา,Songkhla,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,97554
-2568,สงขลา,Songkhla,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,93600
-2568,สงขลา,Songkhla,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,26982.17
-2568,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,48453.07
-2568,สตูล,Satun,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1060
-2568,สตูล,Satun,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,266.13
-2568,สตูล,Satun,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,16499.36
-2568,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1671622.34
-2568,สมุทรปราการ,Samut Prakan,ส่งออก,ปศุสัตว์และอาหาร,Livestock & Food Products,10948.46
-2568,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,841855.96
-2568,สมุทรปราการ,Samut Prakan,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,19289.61
-2568,สมุทรปราการ,Samut Prakan,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,167019.29
-2568,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,267460.82
-2568,สมุทรปราการ,Samut Prakan,ส่งออก,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,254
-2568,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,824520.0599999999
-2568,สมุทรปราการ,Samut Prakan,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,374704.82
-2568,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,94488.13
-2568,สมุทรปราการ,Samut Prakan,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,690919.11
-2568,สมุทรปราการ,Samut Prakan,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8800
-2568,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1404817.8
-2568,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2939.06
-2568,สมุทรสาคร,Samut Sakon,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,8479.34
-2568,สมุทรสาคร,Samut Sakon,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,2310
-2568,สมุทรสาคร,Samut Sakon,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,16457.61
-2568,สมุทรสาคร,Samut Sakon,นำเข้า,ปศุสัตว์และอาหาร,Livestock & Food Products,37858.74
-2568,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,94593.22
-2568,สมุทรสาคร,Samut Sakon,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,4620
-2568,สมุทรสาคร,Samut Sakon,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5050
-2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,20551.6
-2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรกรรม,Agricultural Products,395378.15
-2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4273979
-2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,2335.71
-2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลผลิตเกษตรกรรม,Agricultural Products,11200
-2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,121768.05
-2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,91200
-2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,12823.56
-2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6608
-2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,พลังงานและเชื้อเพลิง,Energy & Fuel,3028055.14
-2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,40000
-2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6246
-2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,304748.85
-2568,เพชรบุรี,Phetchaburi,นำเข้า,พลังงานและเชื้อเพลิง,Energy & Fuel,2922300.26
+﻿Year_BE,ProvinceName_TH,ProvinceName_EN,ProcessingIndicator,OriginalGoodsMapping,CategoryName_TH,CategoryName_EN,TotalWeight
+2565,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,103934.53
+2565,กระบี่,Krabi,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3371.4
+2565,กระบี่,Krabi,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,10990.16
+2565,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,306869.61
+2565,กระบี่,Krabi,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,312517.34
+2565,กระบี่,Krabi,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,759700
+2565,กระบี่,Krabi,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,969615
+2565,กระบี่,Krabi,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,10779.16
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4209.97
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,7200
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,166769.87
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,262725.38
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1039334.34
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,69398.81
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,141202.56
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1571944.38
+2565,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6357268.4
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,242128
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,9000
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,14300
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,6400
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,267693.21
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,17870
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,676819.32
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,237000
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,61273.36
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2300
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,32742.81
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,29530.13
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,180089.69
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1560144.07
+2565,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,5744834.49
+2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,333352.14
+2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,384.1
+2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,130
+2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3635065.15
+2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,120000
+2565,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1040
+2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7309.75
+2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,33916.38
+2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,64501
+2565,ฉะเชิงเทรา,Chachoengsao,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55175.72
+2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,1601
+2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,13816.91
+2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2700
+2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,612000
+2565,ฉะเชิงเทรา,Chachoengsao,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,9500
+2565,ชลบุรี,Chon Buri,นำเข้า,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,1540799.94
+2565,ชลบุรี,Chon Buri,นำเข้า,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,154749.38
+2565,ชลบุรี,Chon Buri,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,3892.6
+2565,ชลบุรี,Chon Buri,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1176043.42
+2565,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,1306073.42
+2565,ชลบุรี,Chon Buri,นำเข้า,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,430920.37
+2565,ชลบุรี,Chon Buri,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,5344653.66
+2565,ชลบุรี,Chon Buri,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,9672438.39
+2565,ชลบุรี,Chon Buri,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,26931742.2
+2565,ชลบุรี,Chon Buri,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,41100
+2565,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6777407.66
+2565,ชลบุรี,Chon Buri,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,228903.2
+2565,ชลบุรี,Chon Buri,นำเข้า,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,15023
+2565,ชลบุรี,Chon Buri,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3425403.65
+2565,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,27207.97
+2565,ชลบุรี,Chon Buri,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4968953.42
+2565,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1445253.26
+2565,ชลบุรี,Chon Buri,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,11998560.5
+2565,ชลบุรี,Chon Buri,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,4014007.76
+2565,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,49673739.67
+2565,ชลบุรี,Chon Buri,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,5056034.63
+2565,ชลบุรี,Chon Buri,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,2772495.38
+2565,ชลบุรี,Chon Buri,ส่งออก,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,3892.6
+2565,ชลบุรี,Chon Buri,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5587492.18
+2565,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,163673.44
+2565,ชลบุรี,Chon Buri,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,4367568.65
+2565,ชลบุรี,Chon Buri,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,4393739.82
+2565,ชลบุรี,Chon Buri,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,209731
+2565,ชลบุรี,Chon Buri,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,7038658.85
+2565,ชลบุรี,Chon Buri,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,117694.6
+2565,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2299151.02
+2565,ชลบุรี,Chon Buri,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,234780
+2565,ชลบุรี,Chon Buri,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5967694.64
+2565,ชลบุรี,Chon Buri,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,900427.68
+2565,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,138638
+2565,ชลบุรี,Chon Buri,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,678867.2
+2565,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,568780.84
+2565,ชลบุรี,Chon Buri,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,12702484.06
+2565,ชลบุรี,Chon Buri,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,3851598.58
+2565,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,56736523.3
+2565,ตรัง,Trang,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,59908
+2565,ตรัง,Trang,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,613.44
+2565,ตรัง,Trang,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2281.67
+2565,ตรัง,Trang,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,10630.8
+2565,ตรัง,Trang,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,28927.06
+2565,ตรัง,Trang,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,150.24
+2565,ตรัง,Trang,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,889300
+2565,ตรัง,Trang,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,762800
+2565,ตรัง,Trang,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1604
+2565,ตรัง,Trang,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,104
+2565,ตรัง,Trang,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1597.68
+2565,ตรัง,Trang,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,504093.04
+2565,ตราด,Trat,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3663.42
+2565,ตราด,Trat,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,400.4
+2565,ตราด,Trat,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1.25
+2565,ตราด,Trat,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,200
+2565,ตราด,Trat,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,17423.44
+2565,ตราด,Trat,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,809.21
+2565,ตราด,Trat,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,1507.32
+2565,ตราด,Trat,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7.74
+2565,ตราด,Trat,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,155137.54
+2565,นครศรีธรรมราช,Nakhon Si Thammarat,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,3500
+2565,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,5000
+2565,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2400
+2565,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1188278
+2565,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,304100
+2565,นราธิวาส,Narathiwat,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,28700
+2565,นราธิวาส,Narathiwat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,20800
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1094236.37
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5900.22
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,44347.6
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,11821.94
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,603491.61
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,60421.94
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,6400
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,67992.04
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,27433.6
+2565,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,30212.2
+2565,ปัตตานี,Pattani,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,809.78
+2565,ปัตตานี,Pattani,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,8800
+2565,ปัตตานี,Pattani,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,74.73
+2565,พังงา,Phangnga,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,112000
+2565,เพชรบุรี,Phetchaburi,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,1852644.09
+2565,เพชรบุรี,Phetchaburi,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,145782.29
+2565,เพชรบุรี,Phetchaburi,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3099.3
+2565,ภูเก็ต,Phuket,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,176000
+2565,ภูเก็ต,Phuket,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,25645.42
+2565,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,117249.59
+2565,ภูเก็ต,Phuket,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,21899.95
+2565,ภูเก็ต,Phuket,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5000
+2565,ภูเก็ต,Phuket,นำเข้า,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1483.2
+2565,ภูเก็ต,Phuket,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4999.82
+2565,ภูเก็ต,Phuket,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,54717.63
+2565,ภูเก็ต,Phuket,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2837.59
+2565,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,119600
+2565,ภูเก็ต,Phuket,ส่งออก,สิ่งมีชีวิต,ปศุสัตว์และอาหาร,Livestock & Food Products,25
+2565,ภูเก็ต,Phuket,ส่งออก,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,267000
+2565,ภูเก็ต,Phuket,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,504653.8
+2565,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,273654.81
+2565,ภูเก็ต,Phuket,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,41000
+2565,ภูเก็ต,Phuket,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,106099.95
+2565,ภูเก็ต,Phuket,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,9999.82
+2565,ภูเก็ต,Phuket,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,60827.14
+2565,ภูเก็ต,Phuket,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,8703.57
+2565,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,125100
+2565,ระนอง,Ranong,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,5300
+2565,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,2179.95
+2565,ระนอง,Ranong,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,17369.48
+2565,ระนอง,Ranong,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,2745597.22
+2565,ระนอง,Ranong,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,53.2
+2565,ระนอง,Ranong,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,41100
+2565,ระนอง,Ranong,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,34
+2565,ระนอง,Ranong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,135639.34
+2565,ระนอง,Ranong,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,4930
+2565,ระนอง,Ranong,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,723331.48
+2565,ระนอง,Ranong,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3128.16
+2565,ระนอง,Ranong,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2331
+2565,ระนอง,Ranong,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,320122.69
+2565,ระนอง,Ranong,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3000
+2565,ระนอง,Ranong,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,39.14
+2565,ระนอง,Ranong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,451870.16
+2565,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,91502.71
+2565,ระยอง,Rayong,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,476097
+2565,ระยอง,Rayong,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,36837981.65
+2565,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2042679.1
+2565,ระยอง,Rayong,นำเข้า,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,74442.04
+2565,ระยอง,Rayong,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7192079.94
+2565,ระยอง,Rayong,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,56254
+2565,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,7060229.39
+2565,ระยอง,Rayong,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,14648.07
+2565,ระยอง,Rayong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,286586.22
+2565,ระยอง,Rayong,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,17003.16
+2565,ระยอง,Rayong,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,36750
+2565,ระยอง,Rayong,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,6910715.84
+2565,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,905318.6
+2565,ระยอง,Rayong,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,392625.91
+2565,ระยอง,Rayong,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,25163
+2565,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5736266.86
+2565,ระยอง,Rayong,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,41910.22
+2565,ระยอง,Rayong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1060072.37
+2565,สงขลา,Songkhla,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,43348.76
+2565,สงขลา,Songkhla,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,81802.32
+2565,สงขลา,Songkhla,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,54184.18
+2565,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,41416.53
+2565,สงขลา,Songkhla,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,319866.58
+2565,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,397122
+2565,สงขลา,Songkhla,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,605252.22
+2565,สงขลา,Songkhla,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,4160
+2565,สงขลา,Songkhla,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,31333.3
+2565,สงขลา,Songkhla,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,61560
+2565,สงขลา,Songkhla,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,500761.15
+2565,สงขลา,Songkhla,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,194
+2565,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1000
+2565,สงขลา,Songkhla,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,130
+2565,สงขลา,Songkhla,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,946756.21
+2565,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,873798.57
+2565,สตูล,Satun,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,21.31
+2565,สตูล,Satun,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,18907.13
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,สิ่งมีชีวิต,ปศุสัตว์และอาหาร,Livestock & Food Products,577.56
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,5500
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,12813.08
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,120092.05
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,379521.33
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,3319.32
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,466975.47
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,17512.32
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3700
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,29433.51
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,52090.64
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1300627.88
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,228108.47
+2565,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1231854.1
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,สิ่งมีชีวิต,ปศุสัตว์และอาหาร,Livestock & Food Products,577.56
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,215876.99
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,241802.9
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,10300
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,457056.49
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,57278.97
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,106787.54
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,8330.37
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,36189.65
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,7750
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,248482.88
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,365751.26
+2565,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2011660.45
+2565,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,98275.91
+2565,สมุทรสาคร,Samut Sakon,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,53400.32
+2565,สมุทรสาคร,Samut Sakon,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,10267
+2565,สมุทรสาคร,Samut Sakon,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,92147.98
+2565,สมุทรสาคร,Samut Sakon,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,2239.81
+2565,สุราษฎร์ธานี,Surat Thani,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,171000
+2565,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,44323.33
+2565,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,9279.95
+2565,สุราษฎร์ธานี,Surat Thani,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,81532
+2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,22849
+2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,200500
+2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,27000
+2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,869010
+2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2804974
+2565,สุราษฎร์ธานี,Surat Thani,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1215813.82
+2566,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,43557.59
+2566,กระบี่,Krabi,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,6800
+2566,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,493257.04
+2566,กระบี่,Krabi,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,11500
+2566,กระบี่,Krabi,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,145775
+2566,กระบี่,Krabi,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1135560
+2566,กระบี่,Krabi,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,521300
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,4300
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,1450
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,204584.03
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,348519.19
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1234265.92
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3011.16
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,16922.22
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2640.19
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,78352.45
+2566,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7642589.72
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,425113.82
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,21620.8
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,890.89
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,5300
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,280657.69
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,15626
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,3642
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,599990.73
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,599995.35
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,9850
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,324174.19
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,106289.94
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,337774.84
+2566,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7563932.55
+2566,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,355426.68
+2566,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,2970473.31
+2566,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,17858.83
+2566,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,1330
+2566,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,33953
+2566,ฉะเชิงเทรา,Chachoengsao,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,18272
+2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,7263
+2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1967.7
+2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,583800
+2566,ฉะเชิงเทรา,Chachoengsao,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,31348
+2566,ชลบุรี,Chon Buri,นำเข้า,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,785213.76
+2566,ชลบุรี,Chon Buri,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,177830
+2566,ชลบุรี,Chon Buri,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,1020
+2566,ชลบุรี,Chon Buri,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1069730.69
+2566,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,10168569.25
+2566,ชลบุรี,Chon Buri,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,245019.9
+2566,ชลบุรี,Chon Buri,นำเข้า,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,466936.14
+2566,ชลบุรี,Chon Buri,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,12430714.94
+2566,ชลบุรี,Chon Buri,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,24545347.63
+2566,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6787775.98
+2566,ชลบุรี,Chon Buri,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,857850
+2566,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,16956.6
+2566,ชลบุรี,Chon Buri,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4583691.11
+2566,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,2411409.25
+2566,ชลบุรี,Chon Buri,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1170744.81
+2566,ชลบุรี,Chon Buri,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,964086.47
+2566,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,38980963.03
+2566,ชลบุรี,Chon Buri,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,4109474.88
+2566,ชลบุรี,Chon Buri,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,4448515.76
+2566,ชลบุรี,Chon Buri,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5200929.74
+2566,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,459709.3
+2566,ชลบุรี,Chon Buri,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,3925005.6
+2566,ชลบุรี,Chon Buri,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,1208233.96
+2566,ชลบุรี,Chon Buri,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,18586533.33
+2566,ชลบุรี,Chon Buri,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,60000
+2566,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7169253.28
+2566,ชลบุรี,Chon Buri,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3658027.72
+2566,ชลบุรี,Chon Buri,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1452416.1
+2566,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,926.6
+2566,ชลบุรี,Chon Buri,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,661937.28
+2566,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1863547.35
+2566,ชลบุรี,Chon Buri,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1899459.34
+2566,ชลบุรี,Chon Buri,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2262898.62
+2566,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,53114318.45
+2566,ตรัง,Trang,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,145451
+2566,ตรัง,Trang,นำเข้า,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,5017.02
+2566,ตรัง,Trang,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,823
+2566,ตรัง,Trang,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2300
+2566,ตรัง,Trang,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,35749.69
+2566,ตรัง,Trang,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,3046.98
+2566,ตรัง,Trang,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,33950.59
+2566,ตรัง,Trang,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,5017.02
+2566,ตรัง,Trang,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2038
+2566,ตรัง,Trang,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,5300
+2566,ตรัง,Trang,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,523010
+2566,ตรัง,Trang,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,617800
+2566,ตรัง,Trang,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,93298.11
+2566,ตรัง,Trang,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,459803.63
+2566,ตราด,Trat,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,379.17
+2566,ตราด,Trat,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,2.2
+2566,ตราด,Trat,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,203.72
+2566,ตราด,Trat,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,43.26
+2566,ตราด,Trat,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,8144.14
+2566,ตราด,Trat,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,1
+2566,ตราด,Trat,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,1221.07
+2566,ตราด,Trat,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,13.5
+2566,ตราด,Trat,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,128.38
+2566,ตราด,Trat,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,58829.19
+2566,ตราด,Trat,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,510.52
+2566,นครศรีธรรมราช,Nakhon Si Thammarat,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4900
+2566,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,19400
+2566,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1275425
+2566,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,162750
+2566,นราธิวาส,Narathiwat,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,57100
+2566,นราธิวาส,Narathiwat,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4000
+2566,นราธิวาส,Narathiwat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,177000
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,14000
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1421782.94
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,35295.84
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1100
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2417.47
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,21080.74
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,10380.58
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,40700
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,10000
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,598218.86
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,11443.97
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3150
+2566,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,60408.32
+2566,พระนครศรีอยุธยา,Phra Nakhon Si Ayutthaya,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,19500
+2566,พังงา,Phangnga,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,44000
+2566,เพชรบุรี,Phetchaburi,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,2700400.69
+2566,เพชรบุรี,Phetchaburi,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4919.67
+2566,เพชรบุรี,Phetchaburi,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,1605350.97
+2566,เพชรบุรี,Phetchaburi,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,67366
+2566,ภูเก็ต,Phuket,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,214800
+2566,ภูเก็ต,Phuket,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,30000.24
+2566,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,110142.24
+2566,ภูเก็ต,Phuket,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,174.86
+2566,ภูเก็ต,Phuket,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,14000
+2566,ภูเก็ต,Phuket,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,14990.27
+2566,ภูเก็ต,Phuket,นำเข้า,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,6500
+2566,ภูเก็ต,Phuket,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,27.29
+2566,ภูเก็ต,Phuket,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,59653.55
+2566,ภูเก็ต,Phuket,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1423.43
+2566,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,11000
+2566,ภูเก็ต,Phuket,ส่งออก,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,309900
+2566,ภูเก็ต,Phuket,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,626896.45
+2566,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,391731.68
+2566,ภูเก็ต,Phuket,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,73.76
+2566,ภูเก็ต,Phuket,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,17500
+2566,ภูเก็ต,Phuket,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7800
+2566,ภูเก็ต,Phuket,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,340
+2566,ภูเก็ต,Phuket,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,6500
+2566,ภูเก็ต,Phuket,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,13.65
+2566,ภูเก็ต,Phuket,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,59165.12
+2566,ภูเก็ต,Phuket,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1736.66
+2566,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,11000
+2566,ระนอง,Ranong,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,15000
+2566,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,2749.78
+2566,ระนอง,Ranong,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,26728.56
+2566,ระนอง,Ranong,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,150675.79
+2566,ระนอง,Ranong,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,27.87
+2566,ระนอง,Ranong,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,15
+2566,ระนอง,Ranong,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,254.03
+2566,ระนอง,Ranong,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,7500
+2566,ระนอง,Ranong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1348.42
+2566,ระนอง,Ranong,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,4297
+2566,ระนอง,Ranong,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,41172.71
+2566,ระนอง,Ranong,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,10.8
+2566,ระนอง,Ranong,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,10
+2566,ระนอง,Ranong,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,20930
+2566,ระนอง,Ranong,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,11688.54
+2566,ระนอง,Ranong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,210026.79
+2566,ระยอง,Rayong,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,15000
+2566,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,93399.74
+2566,ระยอง,Rayong,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,5258104
+2566,ระยอง,Rayong,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,41883844.62
+2566,ระยอง,Rayong,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5821
+2566,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2287582.91
+2566,ระยอง,Rayong,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,202508.93
+2566,ระยอง,Rayong,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,143384
+2566,ระยอง,Rayong,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,107909
+2566,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5344269.42
+2566,ระยอง,Rayong,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,51129.61
+2566,ระยอง,Rayong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,125438.74
+2566,ระยอง,Rayong,ส่งออก,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,1100
+2566,ระยอง,Rayong,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,2040
+2566,ระยอง,Rayong,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,540395
+2566,ระยอง,Rayong,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,30543254.11
+2566,ระยอง,Rayong,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,37500
+2566,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2680792.05
+2566,ระยอง,Rayong,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,464884
+2566,ระยอง,Rayong,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,35500
+2566,ระยอง,Rayong,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,79680
+2566,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6688145.48
+2566,ระยอง,Rayong,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,5900.99
+2566,ระยอง,Rayong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,121360.39
+2566,สงขลา,Songkhla,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,59550
+2566,สงขลา,Songkhla,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7611.75
+2566,สงขลา,Songkhla,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,7400
+2566,สงขลา,Songkhla,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,49382.54
+2566,สงขลา,Songkhla,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,54983.65
+2566,สงขลา,Songkhla,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4500
+2566,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,60538.32
+2566,สงขลา,Songkhla,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,198998.49
+2566,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,595606
+2566,สงขลา,Songkhla,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,529456.13
+2566,สงขลา,Songkhla,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,2900
+2566,สงขลา,Songkhla,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,3397
+2566,สงขลา,Songkhla,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,58780.24
+2566,สงขลา,Songkhla,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,45626.82
+2566,สงขลา,Songkhla,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,411000
+2566,สงขลา,Songkhla,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4500
+2566,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,46611.67
+2566,สงขลา,Songkhla,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,260
+2566,สงขลา,Songkhla,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,671306.32
+2566,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1286541.33
+2566,สตูล,Satun,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12281.48
+2566,สตูล,Satun,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,16481.19
+2566,สตูล,Satun,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12184.45
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,4800
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4965.28
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,190580.21
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,353553.05
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,362198.59
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,24882.97
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,24900
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,29263.5
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1411354.22
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,36326.2
+2566,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1309677.34
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,391559.57
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,4500
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,23752.4
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,88300
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,263460.21
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,79965.98
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,230708.87
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,13000
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,20584.59
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2700
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,22243.45
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7433.77
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,972761.74
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,33755.11
+2566,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2289353.24
+2566,สมุทรสงคราม,Samut Songkram,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,7409.38
+2566,สมุทรสงคราม,Samut Songkram,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3100
+2566,สมุทรสงคราม,Samut Songkram,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2550
+2566,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,121258.48
+2566,สมุทรสาคร,Samut Sakon,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,45892.85
+2566,สมุทรสาคร,Samut Sakon,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5750
+2566,สมุทรสาคร,Samut Sakon,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,17580.2
+2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4702.5
+2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,12000
+2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,21464
+2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,39151.91
+2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,16500
+2566,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,9768.5
+2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,87750.16
+2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,220030
+2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,5199.48
+2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7814
+2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3951696
+2566,สุราษฎร์ธานี,Surat Thani,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,9957.87
+2567,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,100078.64
+2567,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,489664.47
+2567,กระบี่,Krabi,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1012910
+2567,กระบี่,Krabi,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,657000
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,12200
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,215494.93
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,344971.45
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1035691.07
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,19800
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,62144.75
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1417
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,884585.35
+2567,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7025067.96
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,312698.35
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,5000
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,235041.2
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,11850.09
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,415612.69
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,30443.02
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,13945.26
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,243550
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,32750
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,24437.7
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,12000
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,866834.04
+2567,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6866284.51
+2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,196193.86
+2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3731018.43
+2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,81.86
+2567,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,27559.86
+2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,14771.06
+2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,16503
+2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2500
+2567,ฉะเชิงเทรา,Chachoengsao,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,18915
+2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,6299.89
+2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,138
+2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,20000
+2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,414300
+2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,11219
+2567,ฉะเชิงเทรา,Chachoengsao,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,14667
+2567,ชลบุรี,Chon Buri,นำเข้า,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,615266.02
+2567,ชลบุรี,Chon Buri,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,660529
+2567,ชลบุรี,Chon Buri,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,873317.53
+2567,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,10154680.95
+2567,ชลบุรี,Chon Buri,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,182473.66
+2567,ชลบุรี,Chon Buri,นำเข้า,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,334493.61
+2567,ชลบุรี,Chon Buri,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,108351
+2567,ชลบุรี,Chon Buri,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,11553913.42
+2567,ชลบุรี,Chon Buri,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,24498016.12
+2567,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,5879738.74
+2567,ชลบุรี,Chon Buri,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,921789.07
+2567,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2229
+2567,ชลบุรี,Chon Buri,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5012105.06
+2567,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,2422741.54
+2567,ชลบุรี,Chon Buri,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1109725.15
+2567,ชลบุรี,Chon Buri,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1018232.63
+2567,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,54875016.2
+2567,ชลบุรี,Chon Buri,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,6025220.23
+2567,ชลบุรี,Chon Buri,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,2088700.06
+2567,ชลบุรี,Chon Buri,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5593281.17
+2567,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,609972.23
+2567,ชลบุรี,Chon Buri,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,33989.38
+2567,ชลบุรี,Chon Buri,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,2062000.9
+2567,ชลบุรี,Chon Buri,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,187049
+2567,ชลบุรี,Chon Buri,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,8072464.45
+2567,ชลบุรี,Chon Buri,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,44800
+2567,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1610542.73
+2567,ชลบุรี,Chon Buri,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2944890.73
+2567,ชลบุรี,Chon Buri,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1153452.5
+2567,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,123951.46
+2567,ชลบุรี,Chon Buri,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1154192.75
+2567,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1123217.7
+2567,ชลบุรี,Chon Buri,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1502892.4
+2567,ชลบุรี,Chon Buri,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12741021.55
+2567,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,54011154.54
+2567,ตรัง,Trang,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,113028
+2567,ตรัง,Trang,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,17564.35
+2567,ตรัง,Trang,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,23656
+2567,ตรัง,Trang,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,29494.43
+2567,ตรัง,Trang,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,719500
+2567,ตรัง,Trang,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,752000
+2567,ตรัง,Trang,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,4113.51
+2567,ตรัง,Trang,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,410895.93
+2567,ตราด,Trat,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,501.78
+2567,ตราด,Trat,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,3.5
+2567,ตราด,Trat,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,123.4
+2567,ตราด,Trat,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6.4
+2567,ตราด,Trat,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,260.97
+2567,ตราด,Trat,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,1
+2567,ตราด,Trat,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,5577.11
+2567,ตราด,Trat,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6.91
+2567,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,18000
+2567,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1526830
+2567,นราธิวาส,Narathiwat,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,90800
+2567,นราธิวาส,Narathiwat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,171100
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1473155.34
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,51082.6
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,45650.35
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,16000
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,10000
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,50468.89
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5804.4
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,16979
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,10600
+2567,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,163346.07
+2567,เพชรบุรี,Phetchaburi,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3006563.42
+2567,เพชรบุรี,Phetchaburi,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,62734
+2567,เพชรบุรี,Phetchaburi,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,35000
+2567,ภูเก็ต,Phuket,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,338392
+2567,ภูเก็ต,Phuket,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,19289.84
+2567,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,66385.7
+2567,ภูเก็ต,Phuket,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,4400
+2567,ภูเก็ต,Phuket,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,206589
+2567,ภูเก็ต,Phuket,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8300
+2567,ภูเก็ต,Phuket,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,62889.74
+2567,ภูเก็ต,Phuket,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,30567.9
+2567,ภูเก็ต,Phuket,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,34001.5
+2567,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12000
+2567,ภูเก็ต,Phuket,ส่งออก,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,353392
+2567,ภูเก็ต,Phuket,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,555315.55
+2567,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,415602.01
+2567,ภูเก็ต,Phuket,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,232802
+2567,ภูเก็ต,Phuket,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8300
+2567,ภูเก็ต,Phuket,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,62889.74
+2567,ภูเก็ต,Phuket,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,30567.9
+2567,ภูเก็ต,Phuket,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,37208.17
+2567,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,12000
+2567,ระนอง,Ranong,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,290524.76
+2567,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,1293.8
+2567,ระนอง,Ranong,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,25482.42
+2567,ระนอง,Ranong,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,222650.18
+2567,ระนอง,Ranong,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8246.08
+2567,ระนอง,Ranong,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3070.3
+2567,ระนอง,Ranong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1189.59
+2567,ระนอง,Ranong,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,9756.1
+2567,ระนอง,Ranong,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,3254
+2567,ระนอง,Ranong,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,73290.25
+2567,ระนอง,Ranong,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3779
+2567,ระนอง,Ranong,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,15000
+2567,ระนอง,Ranong,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2042.98
+2567,ระนอง,Ranong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,339781.29
+2567,ระนอง,Ranong,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,29797.46
+2567,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,91123.95
+2567,ระยอง,Rayong,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,6623965
+2567,ระยอง,Rayong,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,43195872.95
+2567,ระยอง,Rayong,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,27353.33
+2567,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1892274.48
+2567,ระยอง,Rayong,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,54420
+2567,ระยอง,Rayong,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,28652
+2567,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4053008.48
+2567,ระยอง,Rayong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,72559.01
+2567,ระยอง,Rayong,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,4400
+2567,ระยอง,Rayong,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,55000
+2567,ระยอง,Rayong,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,9964137.84
+2567,ระยอง,Rayong,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,59635.49
+2567,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,775955.18
+2567,ระยอง,Rayong,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,12000
+2567,ระยอง,Rayong,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,315000
+2567,ระยอง,Rayong,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,25282
+2567,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5503008.89
+2567,ระยอง,Rayong,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6286.35
+2567,ระยอง,Rayong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,155411.62
+2567,ระยอง,Rayong,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,97372.09
+2567,สงขลา,Songkhla,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,114140
+2567,สงขลา,Songkhla,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,36173.24
+2567,สงขลา,Songkhla,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,56635.04
+2567,สงขลา,Songkhla,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,80758.74
+2567,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,52057.65
+2567,สงขลา,Songkhla,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,13650
+2567,สงขลา,Songkhla,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,352152.25
+2567,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,619500
+2567,สงขลา,Songkhla,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,524195.04
+2567,สงขลา,Songkhla,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,1820
+2567,สงขลา,Songkhla,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,9211.63
+2567,สงขลา,Songkhla,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,84306.82
+2567,สงขลา,Songkhla,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5500
+2567,สงขลา,Songkhla,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,58693.96
+2567,สงขลา,Songkhla,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,344900
+2567,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,15346.04
+2567,สงขลา,Songkhla,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6370
+2567,สงขลา,Songkhla,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1182110.59
+2567,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,880022
+2567,สตูล,Satun,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,13558.65
+2567,สตูล,Satun,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1170.62
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,809.98
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,153207.05
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,457786.9
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,423827.36
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6700
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,25500
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,69948.8
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1324981.03
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,855.05
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,64862.56
+2567,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1082896.31
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,586037.42
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,13200
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,23801.05
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,65550
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,151200
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,11830.83
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,65782.86
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,17100
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,44986
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7060.92
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,275218.4
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1715
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,67596.95
+2567,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2137799.59
+2567,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,76535.01
+2567,สมุทรสาคร,Samut Sakon,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,26990.14
+2567,สมุทรสาคร,Samut Sakon,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8250
+2567,สมุทรสาคร,Samut Sakon,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,8350.75
+2567,สมุทรสาคร,Samut Sakon,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,676.8
+2567,สมุทรสาคร,Samut Sakon,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7965.62
+2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,21000
+2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,21698.17
+2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,33275.03
+2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,62530
+2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,12595.29
+2567,สุราษฎร์ธานี,Surat Thani,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1568
+2567,สุราษฎร์ธานี,Surat Thani,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,84755
+2567,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,187850
+2567,สุราษฎร์ธานี,Surat Thani,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4463188
+2567,สุราษฎร์ธานี,Surat Thani,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2303.76
+2568,กระบี่,Krabi,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,44958.09
+2568,กระบี่,Krabi,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,738320
+2568,กระบี่,Krabi,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,410070.83
+2568,กระบี่,Krabi,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,263875
+2568,กรุงเทพมหานคร,Bangkok,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,7561343.1
+2568,กรุงเทพมหานคร,Bangkok,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6939.76
+2568,กรุงเทพมหานคร,Bangkok,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,169557.49
+2568,กรุงเทพมหานคร,Bangkok,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,251419.55
+2568,กรุงเทพมหานคร,Bangkok,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1230041.33
+2568,กรุงเทพมหานคร,Bangkok,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,66093.34
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,138000
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6493854.82
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,12207.77
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,4494.23
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,30940
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,172890
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5040
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,475232.63
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,5000
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,254649.64
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,65983.91
+2568,กรุงเทพมหานคร,Bangkok,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,460
+2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,304748.85
+2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6246
+2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,40000
+2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3028055.14
+2568,เขตเศรษฐกิจจำเพาะ,Exclusive Economic Zone,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6608
+2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,22571
+2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,7499.88
+2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,7389.09
+2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3269.2
+2568,ฉะเชิงเทรา,Chachoengsao,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2670
+2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,825
+2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,49
+2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,343000
+2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,831.81
+2568,ฉะเชิงเทรา,Chachoengsao,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,18709
+2568,ชลบุรี,Chon Buri,นำเข้า,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,455307.5
+2568,ชลบุรี,Chon Buri,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,735106.49
+2568,ชลบุรี,Chon Buri,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55278841.48
+2568,ชลบุรี,Chon Buri,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1163643.13
+2568,ชลบุรี,Chon Buri,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,4343220.21
+2568,ชลบุรี,Chon Buri,นำเข้า,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,195098.13
+2568,ชลบุรี,Chon Buri,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5539297.87
+2568,ชลบุรี,Chon Buri,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,5209884.71
+2568,ชลบุรี,Chon Buri,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,24068626.63
+2568,ชลบุรี,Chon Buri,นำเข้า,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,23410
+2568,ชลบุรี,Chon Buri,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,514934.87
+2568,ชลบุรี,Chon Buri,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,11579626.26
+2568,ชลบุรี,Chon Buri,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,843694.54
+2568,ชลบุรี,Chon Buri,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,7376527.48
+2568,ชลบุรี,Chon Buri,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8644.38
+2568,ชลบุรี,Chon Buri,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,12095.58
+2568,ชลบุรี,Chon Buri,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,585408.92
+2568,ชลบุรี,Chon Buri,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,4922309.19
+2568,ชลบุรี,Chon Buri,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,3821319.82
+2568,ชลบุรี,Chon Buri,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,55233189.4
+2568,ชลบุรี,Chon Buri,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,839865.71
+2568,ชลบุรี,Chon Buri,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,385
+2568,ชลบุรี,Chon Buri,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,4951858.96
+2568,ชลบุรี,Chon Buri,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3636076.6
+2568,ชลบุรี,Chon Buri,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,3564108.55
+2568,ชลบุรี,Chon Buri,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1037821.96
+2568,ชลบุรี,Chon Buri,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,935507.58
+2568,ชลบุรี,Chon Buri,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,5795147.19
+2568,ชลบุรี,Chon Buri,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,4664620.28
+2568,ชลบุรี,Chon Buri,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4586956.28
+2568,ชลบุรี,Chon Buri,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,105858.71
+2568,ชลบุรี,Chon Buri,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,997169.68
+2568,ชลบุรี,Chon Buri,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1610200.87
+2568,ชลบุรี,Chon Buri,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,497
+2568,ชลบุรี,Chon Buri,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,39171
+2568,ชลบุรี,Chon Buri,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,271035.71
+2568,ชลบุรี,Chon Buri,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,156472.33
+2568,ตรัง,Trang,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,102344
+2568,ตรัง,Trang,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,16720.87
+2568,ตรัง,Trang,นำเข้า,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,3017.8
+2568,ตรัง,Trang,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,18000
+2568,ตรัง,Trang,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,103119.72
+2568,ตรัง,Trang,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,2439.2
+2568,ตรัง,Trang,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,355375.28
+2568,ตรัง,Trang,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,533358
+2568,ตรัง,Trang,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,659585
+2568,ตรัง,Trang,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,6244.44
+2568,ตราด,Trat,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,3927.71
+2568,ตราด,Trat,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,491.6
+2568,ตราด,Trat,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,86.4
+2568,ตราด,Trat,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,5208.5
+2568,ตราด,Trat,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1500
+2568,ตราด,Trat,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,3120.32
+2568,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,12600
+2568,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,56250
+2568,นครศรีธรรมราช,Nakhon Si Thammarat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,1584240
+2568,นราธิวาส,Narathiwat,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,94000
+2568,นราธิวาส,Narathiwat,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,157800
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,27000
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,12431.02
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,138631.01
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1784845.91
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,54800
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,84130.8
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,64938.94
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,76670.78
+2568,ประจวบคีรีขันธ์,Prachuapkhiri Khan,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,10000
+2568,ปัตตานี,Pattani,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7500
+2568,ปัตตานี,Pattani,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,7500
+2568,เพชรบุรี,Phetchaburi,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,2922300.26
+2568,ภูเก็ต,Phuket,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,50282
+2568,ภูเก็ต,Phuket,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,50968.73
+2568,ภูเก็ต,Phuket,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,6500
+2568,ภูเก็ต,Phuket,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,601954.18
+2568,ภูเก็ต,Phuket,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,44818.74
+2568,ภูเก็ต,Phuket,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,153200
+2568,ภูเก็ต,Phuket,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,200
+2568,ภูเก็ต,Phuket,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,8196
+2568,ภูเก็ต,Phuket,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,50407
+2568,ภูเก็ต,Phuket,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,55994.24
+2568,ภูเก็ต,Phuket,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,605250
+2568,ภูเก็ต,Phuket,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,599454.18
+2568,ภูเก็ต,Phuket,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,321190.67
+2568,ภูเก็ต,Phuket,ส่งออก,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,231800
+2568,ภูเก็ต,Phuket,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8716.47
+2568,ภูเก็ต,Phuket,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,8716
+2568,ภูเก็ต,Phuket,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,26
+2568,ระนอง,Ranong,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,126882.5
+2568,ระนอง,Ranong,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,26574.24
+2568,ระนอง,Ranong,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,176983.06
+2568,ระนอง,Ranong,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1208.81
+2568,ระนอง,Ranong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,1099.6
+2568,ระนอง,Ranong,นำเข้า,ยางพารา,ผลผลิตเกษตรกรรม,Agricultural Products,28
+2568,ระนอง,Ranong,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,509.73
+2568,ระนอง,Ranong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,72637.22
+2568,ระนอง,Ranong,นำเข้า,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,19152.41
+2568,ระนอง,Ranong,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,34425
+2568,ระนอง,Ranong,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,28115.81
+2568,ระนอง,Ranong,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,22510
+2568,ระนอง,Ranong,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,5720
+2568,ระนอง,Ranong,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,212.87
+2568,ระนอง,Ranong,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2500
+2568,ระนอง,Ranong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,639518.01
+2568,ระนอง,Ranong,ส่งออก,อาหารสัตว์,ปศุสัตว์และอาหาร,Livestock & Food Products,960
+2568,ระยอง,Rayong,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4314962.77
+2568,ระยอง,Rayong,นำเข้า,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6763.87
+2568,ระยอง,Rayong,นำเข้า,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,6600
+2568,ระยอง,Rayong,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,43828
+2568,ระยอง,Rayong,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,52765.3
+2568,ระยอง,Rayong,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,44832087.1
+2568,ระยอง,Rayong,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,6936823
+2568,ระยอง,Rayong,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,317024
+2568,ระยอง,Rayong,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,1963064.33
+2568,ระยอง,Rayong,นำเข้า,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,5727.41
+2568,ระยอง,Rayong,นำเข้า,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,57497.44
+2568,ระยอง,Rayong,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,42365.99
+2568,ระยอง,Rayong,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,4106555.98
+2568,ระยอง,Rayong,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,6613.22
+2568,ระยอง,Rayong,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,216500
+2568,ระยอง,Rayong,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,82816
+2568,ระยอง,Rayong,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,8681.49
+2568,ระยอง,Rayong,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,10720859.61
+2568,ระยอง,Rayong,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,43900
+2568,ระยอง,Rayong,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,878018.79
+2568,ระยอง,Rayong,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,83425
+2568,ระยอง,Rayong,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,51951.58
+2568,สงขลา,Songkhla,นำเข้า,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,93741
+2568,สงขลา,Songkhla,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,748444.2
+2568,สงขลา,Songkhla,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,48453.07
+2568,สงขลา,Songkhla,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,41602.24
+2568,สงขลา,Songkhla,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,3813
+2568,สงขลา,Songkhla,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,93600
+2568,สงขลา,Songkhla,นำเข้า,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,26982.17
+2568,สงขลา,Songkhla,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,61551.45
+2568,สงขลา,Songkhla,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,990352.64
+2568,สงขลา,Songkhla,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,3600
+2568,สงขลา,Songkhla,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,12609.24
+2568,สงขลา,Songkhla,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,730
+2568,สงขลา,Songkhla,ส่งออก,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,545700
+2568,สงขลา,Songkhla,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,32522.17
+2568,สงขลา,Songkhla,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,656275.26
+2568,สงขลา,Songkhla,ส่งออก,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,30756.48
+2568,สงขลา,Songkhla,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,130
+2568,สงขลา,Songkhla,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,745463.95
+2568,สตูล,Satun,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,266.13
+2568,สตูล,Satun,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,16499.36
+2568,สตูล,Satun,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1060
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,809899.49
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,1338309.05
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,374704.82
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,8800
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,66508.75
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,94488.13
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,690919.11
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,โลหะภัณฑ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,2939.06
+2568,สมุทรปราการ,Samut Prakan,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,14620.57
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,ข้าว,ผลผลิตเกษตรกรรม,Agricultural Products,356212.52
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,ข้าวโพด,ผลผลิตเกษตรกรรม,Agricultural Products,8800
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,คอนเทนเนอร์,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,1633592.48
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,260515.82
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,10948.46
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,เครื่องมือ/อุปกรณ์,โลหะภัณฑ์และเครื่องมือ,Metal Products & Tools/Equipment,254
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,ซีเมนต์,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,19966
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,น้ำตาล,ผลผลิตเกษตรกรรม,Agricultural Products,388143.92
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,ปุ๋ย,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,6945
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,49641.32
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,19289.61
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,มันสำปะหลัง,ผลผลิตเกษตรกรรม,Agricultural Products,39058.2
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,56500
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,วัสดุก่อสร้าง,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,50253.29
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,เศษโลหะและแร่,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,40300
+2568,สมุทรปราการ,Samut Prakan,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,38029.86
+2568,สมุทรสาคร,Samut Sakon,นำเข้า,เครื่องบริโภคอื่นๆ,ปศุสัตว์และอาหาร,Livestock & Food Products,37858.74
+2568,สมุทรสาคร,Samut Sakon,นำเข้า,ดิน หิน ทราย,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2550
+2568,สมุทรสาคร,Samut Sakon,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,94593.22
+2568,สมุทรสาคร,Samut Sakon,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,4620
+2568,สมุทรสาคร,Samut Sakon,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,2500
+2568,สมุทรสาคร,Samut Sakon,นำเข้า,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,16457.61
+2568,สมุทรสาคร,Samut Sakon,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,8479.34
+2568,สมุทรสาคร,Samut Sakon,ส่งออก,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,2310
+2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,12823.56
+2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,11200
+2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,ผลิตภัณฑ์ปิโตรเลียม,พลังงานและเชื้อเพลิง,Energy & Fuel,43745.5
+2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,แร่เชื้อเพลิง,พลังงานและเชื้อเพลิง,Energy & Fuel,78022.55
+2568,สุราษฎร์ธานี,Surat Thani,นำเข้า,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,91200
+2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,เคมีภัณฑ์,เคมีภัณฑ์และปุ๋ย,Chemicals & Fertilizers,2335.71
+2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,ผลผลิตเกษตรอื่นๆ,ผลผลิตเกษตรกรรม,Agricultural Products,395378.15
+2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,ไม้,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,81760
+2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,แร่ธาตุอื่นๆ,วัสดุก่อสร้างและแร่ธาตุ,Construction Materials & Minerals,4192219
+2568,สุราษฎร์ธานี,Surat Thani,ส่งออก,สินค้าเบ็ดเตล็ด,คอนเทนเนอร์และสินค้าเบ็ดเตล็ด,Containers & Miscellaneous Goods,20551.6
