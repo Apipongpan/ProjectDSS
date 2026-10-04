@@ -194,7 +194,14 @@ const MIME = {
 };
 
 function serveStatic(req, res, pathname) {
-  let rel = pathname === '/' ? '/index.html' : decodeURIComponent(pathname);
+  let rel;
+  try {
+    rel = pathname === '/' ? '/index.html' : decodeURIComponent(pathname);
+  } catch (e) {
+    // URL ที่ encode ผิดรูป (เช่น %E0%A) ไม่ให้เซิร์ฟเวอร์ล่ม
+    res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+    return res.end('URL ไม่ถูกต้อง');
+  }
   const filePath = path.normalize(path.join(PUBLIC_DIR, rel));
   // กันการหลุดออกนอก public/ (path traversal)
   if (!filePath.startsWith(PUBLIC_DIR)) {
@@ -207,7 +214,8 @@ function serveStatic(req, res, pathname) {
       return res.end('ไม่พบไฟล์: ' + rel);
     }
     const ext = path.extname(filePath).toLowerCase();
-    const headers = { 'Content-Type': MIME[ext] || 'application/octet-stream' };
+    // no-cache: เบราว์เซอร์ต้องถามเซิร์ฟเวอร์ทุกครั้ง กันเห็น CSS/JS เวอร์ชันเก่าบนเครื่องที่เคยเปิดมาก่อน
+    const headers = { 'Content-Type': MIME[ext] || 'application/octet-stream', 'Cache-Control': 'no-cache' };
     if (ext === '.csv') headers['Content-Disposition'] = `attachment; filename="${path.basename(filePath)}"`;
     res.writeHead(200, headers);
     res.end(content);
