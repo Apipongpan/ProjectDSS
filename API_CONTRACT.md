@@ -54,6 +54,10 @@ Response: `{ weights, volumeThresholdTon, provinces: [ ...เหมือนข�
 
 คืนค่าชุดข้อมูลตัวอย่าง `public/samples/port-trade-2565-2568.csv` → `{ "ok": true, "dataset": {...} }`
 
-## 5) GET /api/health
+## 5) POST /api/clear
+
+ล้างข้อมูลทั้ง 4 ตาราง → `{ "ok": true, "dataset": { "provinces": 0, ... } }` (หลังจากนี้ dashboard-data คืน `provinces: []`, `overview/trends: null`)
+
+## 6) GET /api/health
 
 `{ "ok": true, "provinces": 23, "records": 956, "dataset": "port-trade-2565-2568.csv" }`

@@ -314,3 +314,6 @@ table.data-table.compact td, table.data-table.compact th { padding: 6px 10px; fo
   .tier-badge, .legend-dot, .heat, .w-chip, .pct-bar span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   table.data-table th { position: static; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+.btn-danger { background: #fde7e5; color: var(--bad); margin-left: auto; }
+.btn-danger:hover { background: #f8d3cf; }
+.empty-card { text-align: center; padding: 40px 24px; }

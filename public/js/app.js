@@ -69,11 +69,26 @@ async function init() {
     renderImport();
     renderWhatIfControls();
     await applyWeights();
+    if (!hasData()) goTab('import');
   } catch (err) {
     document.getElementById('loading').style.display = 'none';
     showError('เชื่อมต่อเซิร์ฟเวอร์ไม่ได้: ' + err.message + ' — ตรวจสอบว่ารัน "node server/index.js" อยู่หรือไม่');
     setConnStatus(false);
   }
+}
+
+function hasData() {
+  return !!(state.data && state.data.provinces.length > 0);
+}
+
+// การ์ดแสดงแทนเนื้อหา เมื่อยังไม่ได้นำเข้าข้อมูล
+function emptyState(title) {
+  return `
+    <div class="card empty-card">
+      <p class="section-title">${title}</p>
+      <p class="section-sub">ยังไม่มีข้อมูลในระบบ — เริ่มจากขั้นที่ 1 นำเข้าไฟล์ข้อมูลการค้า (CSV) ระบบจะคำนวณและแสดงผลหน้านี้ให้อัตโนมัติ</p>
+      <a href="#" class="btn btn-primary btn-sm" data-goto="import">ไปหน้านำเข้าข้อมูล →</a>
+    </div>`;
 }
 
 async function loadDashboard() {
@@ -83,7 +98,12 @@ async function loadDashboard() {
 
 function setConnStatus(ok) {
   const el = document.getElementById('conn-status');
-  if (ok) {
+  if (ok && !hasData()) {
+    el.textContent = 'เชื่อมต่อสำเร็จ · ยังไม่มีข้อมูล';
+    el.className = 'conn-status ok';
+    document.getElementById('brand-sub').textContent = 'ตามปริมาณสินค้านำเข้า–ส่งออก';
+    document.getElementById('footer-text').textContent = 'Decision Support System · Project 2 · ยังไม่ได้นำเข้าข้อมูล';
+  } else if (ok) {
     const ds = state.data.dataset;
     el.textContent = `เชื่อมต่อสำเร็จ · ${ds.provinces} พื้นที่`;
     el.className = 'conn-status ok';
@@ -128,6 +148,17 @@ async function applyWeights() {
   const sum = KEYS.reduce((a, k) => a + state.weights[k], 0);
   if (sum !== 100) {
     if (status) status.textContent = 'ผลรวมน้ำหนักต้องเท่ากับ 100% ก่อนคำนวณ';
+    return;
+  }
+  if (!hasData()) {
+    state.ranking = [];
+    state.appliedWeights = { ...state.weights };
+    state.appliedThresholdTon = state.thresholdTon;
+    renderOverview();
+    renderWhatIfResult();
+    renderRanking();
+    renderDetail();
+    if (status) status.textContent = 'ยังไม่มีข้อมูล — นำเข้าข้อมูลก่อนจึงจะเห็นผลการจัดอันดับ';
     return;
   }
   if (status) status.textContent = 'กำลังคำนวณ…';
@@ -222,7 +253,8 @@ function renderImport() {
       <div id="import-preview"></div>
       <div class="import-actions">
         <button id="btn-import" class="btn btn-primary" disabled>นำเข้าและคำนวณใหม่</button>
-        <button id="btn-reset-sample" class="btn btn-outline">คืนค่าเป็นชุดข้อมูลตัวอย่าง</button>
+        <button id="btn-reset-sample" class="btn btn-outline">โหลดชุดข้อมูลตัวอย่าง</button>
+        <button id="btn-clear" class="btn btn-danger">ล้างข้อมูลทั้งหมด</button>
       </div>
       <div id="import-result"></div>
     </div>
@@ -241,10 +273,17 @@ function renderImport() {
   });
   document.getElementById('btn-import').addEventListener('click', doImport);
   document.getElementById('btn-reset-sample').addEventListener('click', doResetSample);
+  document.getElementById('btn-clear').addEventListener('click', doClear);
 }
 
 function renderDatasetInfo() {
   const ds = state.data.dataset;
+  document.getElementById('btn-clear').style.display = hasData() ? '' : 'none';
+  if (!hasData()) {
+    document.getElementById('dataset-info').innerHTML =
+      '<div class="hint-box">ยังไม่มีข้อมูลในระบบ — เลือกไฟล์ CSV ด้านล่างเพื่อนำเข้า (หรือกด "โหลดชุดข้อมูลตัวอย่าง")</div>';
+    return;
+  }
   const modeText = ds.mode === 'scored' ? 'แบบมีคะแนนมาแล้ว (ใช้ V,G,D,B,S ตามไฟล์)' : 'ข้อมูลดิบ (ระบบคำนวณ V,G,D,B,S เอง)';
   const t = state.data.trends;
   document.getElementById('dataset-info').innerHTML = `
@@ -316,7 +355,7 @@ function parseCsvPreview(text, maxRows) {
 
 async function doImport() {
   if (!pendingFile) return;
-  if (!confirm(`นำเข้า "${pendingFile.name}"?\nข้อมูลเดิมในระบบจะถูกแทนที่ทั้งหมด แล้วคำนวณคะแนนใหม่`)) return;
+  if (hasData() && !confirm(`นำเข้า "${pendingFile.name}"?\nข้อมูลเดิมในระบบจะถูกแทนที่ทั้งหมด แล้วคำนวณคะแนนใหม่`)) return;
   const btn = document.getElementById('btn-import');
   const out = document.getElementById('import-result');
   btn.disabled = true;
@@ -341,13 +380,25 @@ async function doImport() {
   }
 }
 
+async function doClear() {
+  if (!confirm('ล้างข้อมูลทั้งหมดในระบบ? ทุกหน้าจะว่างจนกว่าจะนำเข้าข้อมูลใหม่')) return;
+  const out = document.getElementById('import-result');
+  try {
+    await fetchJSON('/api/clear', { method: 'POST' });
+    await afterDatasetChanged();
+    out.innerHTML = '<div class="msg msg-ok">ล้างข้อมูลแล้ว ระบบพร้อมนำเข้าข้อมูลใหม่</div>';
+  } catch (err) {
+    out.innerHTML = `<div class="msg msg-err">ไม่สำเร็จ: ${esc(err.message)}</div>`;
+  }
+}
+
 async function doResetSample() {
-  if (!confirm('คืนค่าเป็นชุดข้อมูลตัวอย่าง (23 พื้นที่ ปี 2565–2568)?\nข้อมูลที่นำเข้าไว้จะถูกแทนที่')) return;
+  if (hasData() && !confirm('โหลดชุดข้อมูลตัวอย่าง (23 พื้นที่ ปี 2565–2568)?\nข้อมูลที่มีอยู่จะถูกแทนที่')) return;
   const out = document.getElementById('import-result');
   try {
     await fetchJSON('/api/reset-sample', { method: 'POST' });
     await afterDatasetChanged();
-    out.innerHTML = '<div class="msg msg-ok">คืนค่าชุดข้อมูลตัวอย่างแล้ว</div>';
+    out.innerHTML = '<div class="msg msg-ok">โหลดชุดข้อมูลตัวอย่างแล้ว · <a href="#" data-goto="overview">ดูแนวโน้ม →</a></div>';
   } catch (err) {
     out.innerHTML = `<div class="msg msg-err">ไม่สำเร็จ: ${esc(err.message)}</div>`;
   }
@@ -365,6 +416,7 @@ async function afterDatasetChanged() {
 
 function renderOverview() {
   const el = document.getElementById('tab-overview');
+  if (!hasData()) { el.innerHTML = emptyState('แนวโน้มปริมาณการค้า (FR1, FR2)'); return; }
   const { overview: ov, trends } = state.data;
   const top = state.ranking[0];
 
@@ -638,6 +690,10 @@ function rankChangeHtml(p) {
 function renderWhatIfResult() {
   const box = document.getElementById('whatif-table');
   if (!box) return;
+  if (!hasData()) {
+    box.innerHTML = '<p class="muted" style="margin:0">ยังไม่มีข้อมูล — <a href="#" data-goto="import">นำเข้าข้อมูล</a> ก่อน แล้วผลการจัดอันดับจะแสดงที่นี่</p>';
+    return;
+  }
   const moved = state.ranking.filter((p) => p.rank !== p.baseRank).length;
   box.innerHTML = `
     <p class="muted" style="margin:0 0 10px">${moved === 0 ? 'อันดับเหมือนอันดับฐานทุกพื้นที่' : `อันดับเปลี่ยน ${moved} พื้นที่`}</p>
@@ -655,6 +711,7 @@ function renderWhatIfResult() {
 
 function renderRanking() {
   const el = document.getElementById('tab-ranking');
+  if (!hasData()) { el.innerHTML = emptyState('จัดลำดับความสำคัญ (FR4, FR5)'); return; }
   const byTier = { 1: [], 2: [], 3: [], 4: [] };
   state.ranking.forEach((p) => byTier[p.tier].push(p.nameTh));
 
@@ -767,6 +824,7 @@ function exportCsv() {
 
 function renderDetail() {
   const el = document.getElementById('tab-detail');
+  if (!hasData()) { el.innerHTML = emptyState('คะแนนตัวชี้วัดรายพื้นที่ (FR6)'); return; }
   el.innerHTML = `
     ${weightBanner()}
     <div class="card">

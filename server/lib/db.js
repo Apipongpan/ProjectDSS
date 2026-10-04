@@ -141,6 +141,17 @@ function replaceDataset(dataset, fileName, computeScores, rank) {
   }
 }
 
+function clearAll() {
+  db.exec('BEGIN');
+  try {
+    db.exec('DELETE FROM PRIORITY_SCORE; DELETE FROM TRADE_RECORD; DELETE FROM GOODS_CATEGORY; DELETE FROM PROVINCE; DELETE FROM DATASET_INFO;');
+    db.exec('COMMIT');
+  } catch (e) {
+    db.exec('ROLLBACK');
+    throw e;
+  }
+}
+
 function loadTradeRecords() {
   return db.prepare(`
     SELECT t.ProvinceID AS provinceId, p.ProvinceName_TH AS provinceTh, p.ProvinceName_EN AS provinceEn,
@@ -171,4 +182,4 @@ function loadDatasetInfo() {
   return { ...(info || {}), ...counts };
 }
 
-module.exports = { isEmpty, replaceDataset, loadTradeRecords, loadScores, loadDatasetInfo, DB_PATH };
+module.exports = { isEmpty, replaceDataset, clearAll, loadTradeRecords, loadScores, loadDatasetInfo, DB_PATH };

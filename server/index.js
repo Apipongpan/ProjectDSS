@@ -41,10 +41,6 @@ function loadSampleData() {
   importCsv(fs.readFileSync(SAMPLE_FILE, 'utf8'), path.basename(SAMPLE_FILE));
 }
 
-if (store.isEmpty()) {
-  loadSampleData();
-  console.log('ฐานข้อมูลว่าง → โหลดชุดข้อมูลตัวอย่าง ' + path.basename(SAMPLE_FILE));
-}
 
 function withTier(list, threshold) {
   return list.map((p) => ({ ...p, tier: classifyTier(p.finalScore, p.avgYearlyTotalTon, threshold) }));
@@ -294,6 +290,12 @@ const server = http.createServer(async (req, res) => {
       }
     }
 
+    // ล้างข้อมูลทั้งหมด (ใช้เตรียมสาธิตขั้น "นำเข้าข้อมูล" ตั้งแต่ระบบว่าง)
+    if (pathname === '/api/clear' && req.method === 'POST') {
+      store.clearAll();
+      return sendJson(res, 200, { ok: true, dataset: store.loadDatasetInfo() });
+    }
+
     if (pathname === '/api/reset-sample' && req.method === 'POST') {
       loadSampleData();
       return sendJson(res, 200, { ok: true, dataset: store.loadDatasetInfo() });
@@ -319,4 +321,5 @@ const server = http.createServer(async (req, res) => {
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`DSS ท่าเรือ server running: http://localhost:${PORT}`);
+  if (store.isEmpty()) console.log('ฐานข้อมูลยังว่าง → เปิดหน้า "นำเข้าข้อมูล" เพื่อนำเข้าไฟล์ CSV');
 });
