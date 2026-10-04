@@ -4,6 +4,17 @@ Project 2 · T1-2569-273453 Decision Support Systems (Sec1)
 
 ระบบสนับสนุนการตัดสินใจจัดลำดับความสำคัญการลงทุนท่าเรือ ตามปริมาณสินค้านำเข้า-ส่งออก ผู้ใช้นำเข้าข้อมูลการค้า (CSV) → ดูแนวโน้ม → ปรับน้ำหนักเกณฑ์ → ระบบคำนวณคะแนน Weighted Scoring (V/G/D/B/S) จัดอันดับ และจัดชั้นตามตารางกฎการตัดสินใจ 4 ข้อ → ดูผล/ส่งออกรายงาน
 
+## ดาวน์โหลดโค้ด
+
+ใช้ git:
+
+```bash
+git clone https://github.com/Apipongpan/ProjectDSS.git
+cd ProjectDSS
+```
+
+หรือไม่ใช้ git: ในหน้า GitHub กดปุ่มสีเขียว **Code › Download ZIP** แล้วแตกไฟล์ · ดึงโค้ดล่าสุดภายหลังด้วย `git pull`
+
 ## วิธีรัน (ไม่ต้องติดตั้งอะไรเพิ่ม)
 
 ใช้ **Node.js core เท่านั้น ไม่มี dependency ภายนอก** (ไม่ต้อง `npm install`) ฐานข้อมูลใช้ SQLite ที่มากับ Node.js (`node:sqlite`)

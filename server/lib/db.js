@@ -6,11 +6,14 @@
  *   PROVINCE 1──< TRADE_RECORD >──1 GOODS_CATEGORY
  *   PROVINCE 1──< PRIORITY_SCORE
  */
+const fs = require('fs');
 const path = require('path');
 const { DatabaseSync } = require('node:sqlite');
 
 const DB_PATH = process.env.DSS_DB || path.join(__dirname, '..', 'data', 'dss.db');
 
+// โฟลเดอร์ data ไม่ได้อยู่ใน git (มีแต่ไฟล์ .db) ต้องสร้างเองตอนรันครั้งแรกหลัง clone
+fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
 const db = new DatabaseSync(DB_PATH);
 db.exec('PRAGMA foreign_keys = ON;');
 
