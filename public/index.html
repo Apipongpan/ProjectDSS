@@ -3,45 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#091632">
 <title>DSS จัดลำดับความสำคัญการลงทุนท่าเรือ</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand">
-        <div class="brand-mark">ท</div>
-        <div class="brand-text">
-          <h1>ระบบสนับสนุนการตัดสินใจจัดลำดับความสำคัญการลงทุนท่าเรือ</h1>
-          <p id="brand-sub">ตามปริมาณสินค้านำเข้า–ส่งออก</p>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10.2V2"/><path d="M8 4h8"/><path d="M5 14V9a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v5"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.4 19a10 10 0 0 0 1.6-5l-9-4-9 4c0 1.8.6 3.5 1.6 5"/></svg>
+      </div>
+      <div>
+        <div class="brand-title">PORT INTELLIGENCE</div>
+        <div class="brand-sub" id="brand-sub">DSS ท่าเรือ</div>
+      </div>
+    </div>
+
+    <div class="sidebar-label">ขั้นตอนการใช้งาน</div>
+    <nav class="tabs" aria-label="เมนูหลัก">
+      <button class="tab-btn" data-tab="import">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+        <span class="tab-text">นำเข้าข้อมูล</span><span class="step">1</span>
+      </button>
+      <button class="tab-btn active" data-tab="overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+        <span class="tab-text">แนวโน้มปริมาณการค้า</span><span class="step">2</span>
+      </button>
+      <button class="tab-btn" data-tab="whatif">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4h-7"/><path d="M10 4H3"/><path d="M21 12h-9"/><path d="M8 12H3"/><path d="M21 20h-5"/><path d="M12 20H3"/><path d="M14 2v4"/><path d="M8 10v4"/><path d="M16 18v4"/></svg>
+        <span class="tab-text">ปรับน้ำหนัก (What-if)</span><span class="step">3</span>
+      </button>
+      <button class="tab-btn" data-tab="ranking">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+        <span class="tab-text">จัดลำดับความสำคัญ</span><span class="step">4</span>
+      </button>
+      <button class="tab-btn" data-tab="detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 5-10 5L2 7z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/></svg>
+        <span class="tab-text">คะแนนตัวชี้วัดรายพื้นที่</span><span class="step">5</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+          ข้อมูลจากกรมเจ้าท่า
+        </div>
+        <p>ระบบสนับสนุนการตัดสินใจจัดลำดับความสำคัญการลงทุนท่าเรือ ตามปริมาณสินค้านำเข้า–ส่งออก</p>
+        <div class="sidebar-card-meta">PROJECT 2 · DSS SEC 1</div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-btn" id="menu-btn" aria-label="เปิดเมนู">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div>
+          <div class="crumb">ระบบสนับสนุนการตัดสินใจ <span>/</span> <b id="crumb-page">แนวโน้มปริมาณการค้า</b></div>
+          <div class="topbar-title">การลงทุนโครงสร้างพื้นฐานท่าเรือ</div>
         </div>
       </div>
       <div id="conn-status" class="conn-status">กำลังเชื่อมต่อข้อมูล…</div>
-    </div>
-    <nav class="tabs">
-      <button class="tab-btn" data-tab="import"><span class="step">1</span>นำเข้าข้อมูล</button>
-      <button class="tab-btn active" data-tab="overview"><span class="step">2</span>แนวโน้มปริมาณการค้า</button>
-      <button class="tab-btn" data-tab="whatif"><span class="step">3</span>ปรับน้ำหนัก (What-if)</button>
-      <button class="tab-btn" data-tab="ranking"><span class="step">4</span>จัดลำดับความสำคัญ</button>
-      <button class="tab-btn" data-tab="detail"><span class="step">5</span>คะแนนตัวชี้วัดรายพื้นที่</button>
-    </nav>
-  </header>
+    </header>
 
-  <main id="app">
-    <div id="loading" class="loading-box">กำลังโหลดข้อมูลจากเซิร์ฟเวอร์…</div>
-    <div id="error-box" class="error-box" style="display:none"></div>
+    <main id="app">
+      <div class="page-heading" id="page-heading">
+        <div class="eyebrow" id="page-eyebrow">DASHBOARD / 02</div>
+        <h1 id="page-title">แนวโน้มปริมาณการค้า</h1>
+        <p id="page-desc"></p>
+      </div>
 
-    <section id="tab-import" class="tab-panel" style="display:none"></section>
-    <section id="tab-overview" class="tab-panel"></section>
-    <section id="tab-whatif" class="tab-panel" style="display:none"></section>
-    <section id="tab-ranking" class="tab-panel" style="display:none"></section>
-    <section id="tab-detail" class="tab-panel" style="display:none"></section>
-  </main>
+      <div id="loading" class="loading-box">กำลังโหลดข้อมูลจากเซิร์ฟเวอร์…</div>
+      <div id="error-box" class="error-box" style="display:none"></div>
 
-  <footer class="app-footer">
-    <p id="footer-text">Decision Support System · Project 2</p>
-  </footer>
+      <section id="tab-import" class="tab-panel" style="display:none"></section>
+      <section id="tab-overview" class="tab-panel"></section>
+      <section id="tab-whatif" class="tab-panel" style="display:none"></section>
+      <section id="tab-ranking" class="tab-panel" style="display:none"></section>
+      <section id="tab-detail" class="tab-panel" style="display:none"></section>
+
+      <footer class="app-footer">
+        <span>ข้อมูลอ้างอิง: กรมเจ้าท่า กระทรวงคมนาคม · dataset_21_01_03</span>
+        <span id="footer-text">Decision Support System · Project 2</span>
+      </footer>
+    </main>
+  </div>
 
   <script>
     // เปิดไฟล์ตรง ๆ (file://) จะโหลด CSS/JS/API ไม่ได้ ต้องเปิดผ่านเซิร์ฟเวอร์

@@ -17,7 +17,7 @@ const TIER_LABEL = {
   3: 'ชั้น 3 · พัฒนาเฉพาะทาง',
   4: 'ชั้น 4 · ติดตาม',
 };
-const TIER_COLOR = { 1: '#0f5257', 2: '#2f9e8f', 3: '#e8a33d', 4: '#b8c4c2' };
+const TIER_COLOR = { 1: '#dc2626', 2: '#ea580c', 3: '#2a78d6', 4: '#94a3b8' };
 
 const IND_LABEL = {
   V: 'ปริมาณ (Volume)',
@@ -101,7 +101,7 @@ function setConnStatus(ok) {
   if (ok && !hasData()) {
     el.textContent = 'เชื่อมต่อสำเร็จ · ยังไม่มีข้อมูล';
     el.className = 'conn-status ok';
-    document.getElementById('brand-sub').textContent = 'ตามปริมาณสินค้านำเข้า–ส่งออก';
+    document.getElementById('brand-sub').textContent = 'DSS ท่าเรือ · ยังไม่มีข้อมูล';
     document.getElementById('footer-text').textContent = 'Decision Support System · Project 2 · ยังไม่ได้นำเข้าข้อมูล';
   } else if (ok) {
     const ds = state.data.dataset;
@@ -109,7 +109,8 @@ function setConnStatus(ok) {
     el.className = 'conn-status ok';
     const t = state.data.trends;
     const range = t ? ` · ข้อมูลปี ${t.yearsBE[0]}–${t.yearsBE[t.yearsBE.length - 1]}` : '';
-    document.getElementById('brand-sub').textContent = `ตามปริมาณสินค้านำเข้า–ส่งออก · ${ds.provinces} พื้นที่${range}`;
+    document.getElementById('brand-sub').textContent =
+      `DSS ท่าเรือ · ${t ? `${t.yearsBE[0]}–${t.yearsBE[t.yearsBE.length - 1]}` : `${ds.provinces} พื้นที่`}`;
     document.getElementById('footer-text').textContent =
       `Decision Support System · Project 2 · ชุดข้อมูล: ${ds.fileName || '-'}${range}`;
   } else {
@@ -124,6 +125,15 @@ function showError(msg) {
   box.textContent = msg;
 }
 
+// หัวข้อหน้า (eyebrow / ชื่อหน้า / คำอธิบาย) ของแต่ละขั้นตอน
+const PAGE_META = {
+  import: ['DATA IMPORT / 01', 'นำเข้าข้อมูล', 'อัปโหลดไฟล์ข้อมูลการค้า (CSV) ระบบจะคำนวณตัวชี้วัด คะแนน และอันดับใหม่ทั้งหมดอัตโนมัติ'],
+  overview: ['DASHBOARD / 02', 'แนวโน้มปริมาณการค้า', 'สรุปปริมาณสินค้านำเข้า–ส่งออกและอัตราการเติบโตรายปีของพื้นที่ท่าเรือ (FR1, FR2)'],
+  whatif: ['SCENARIO LAB / 03', 'ปรับน้ำหนัก What-if', 'ปรับน้ำหนัก 5 ตัวชี้วัดและเกณฑ์ปริมาณ เพื่อจำลองมุมมองการลงทุนที่ต่างกัน (FR3)'],
+  ranking: ['PRIORITY RANKING / 04', 'จัดลำดับความสำคัญ', 'จัดอันดับพื้นที่ที่ควรพิจารณาลงทุนก่อน–หลัง พร้อมจัดชั้นตามตารางกฎการตัดสินใจ (FR4, FR5)'],
+  detail: ['INDICATORS / 05', 'คะแนนตัวชี้วัดรายพื้นที่', 'คะแนน V/G/D/B/S (0–100) ของทุกพื้นที่ เทียบกับคะแนนรวมและชั้นความสำคัญ (FR6)'],
+};
+
 function setupTabs() {
   document.querySelectorAll('.tab-btn').forEach((btn) => {
     btn.addEventListener('click', () => goTab(btn.dataset.tab));
@@ -132,12 +142,25 @@ function setupTabs() {
     const link = e.target.closest('[data-goto]');
     if (link) { e.preventDefault(); goTab(link.dataset.goto); }
   });
+  document.getElementById('menu-btn').addEventListener('click', () => document.body.classList.add('menu-open'));
+  document.getElementById('sidebar-backdrop').addEventListener('click', () => document.body.classList.remove('menu-open'));
+  setPageMeta('overview');
+}
+
+function setPageMeta(name) {
+  const [eyebrow, title, desc] = PAGE_META[name];
+  document.getElementById('page-eyebrow').textContent = eyebrow;
+  document.getElementById('page-title').textContent = title;
+  document.getElementById('page-desc').textContent = desc;
+  document.getElementById('crumb-page').textContent = title;
 }
 
 function goTab(name) {
   document.querySelectorAll('.tab-btn').forEach((b) => b.classList.toggle('active', b.dataset.tab === name));
   document.querySelectorAll('.tab-panel').forEach((p) => (p.style.display = 'none'));
   document.getElementById('tab-' + name).style.display = 'flex';
+  setPageMeta(name);
+  document.body.classList.remove('menu-open');
   window.scrollTo({ top: 0 });
 }
 
@@ -289,7 +312,7 @@ function renderDatasetInfo() {
   const modeText = describeSource(ds.mode, ds.providedIndicators ? ds.providedIndicators.split(',') : []);
   const t = state.data.trends;
   document.getElementById('dataset-info').innerHTML = `
-    <div class="kpi-grid">
+    <div class="kpi-grid dataset-kpis">
       <div class="kpi-card"><p class="kpi-label">ไฟล์</p><p class="kpi-value small">${esc(ds.fileName || '-')}</p>
         <p class="kpi-delta">นำเข้าเมื่อ ${ds.importedAt ? new Date(ds.importedAt).toLocaleString('th-TH') : '-'}</p></div>
       <div class="kpi-card"><p class="kpi-label">รูปแบบ</p><p class="kpi-value small">${modeText}</p></div>
@@ -533,11 +556,11 @@ function renderTrendBody() {
   let series;
   if (cat === 'all') {
     series = [
-      { name: 'นำเข้า', color: '#16787f', values: src.import },
-      { name: 'ส่งออก', color: '#e8a33d', values: src.export },
+      { name: 'นำเข้า', color: '#2a78d6', values: src.import },
+      { name: 'ส่งออก', color: '#eb6834', values: src.export },
     ];
   } else {
-    series = [{ name: `${cat} (นำเข้า+ส่งออก)`, color: '#2f6f9e', values: src.byCategory[cat] }];
+    series = [{ name: `${cat} (นำเข้า+ส่งออก)`, color: '#1c5cab', values: src.byCategory[cat] }];
   }
   const totals = yBE.map((_, i) => series.reduce((a, s) => a + s.values[i], 0));
 
@@ -577,7 +600,7 @@ function renderTrendBody() {
 }
 
 function buildBarChart(labels, series) {
-  const W = 720, H = 270, padL = 54, padB = 34, padT = 22, padR = 10;
+  const W = 960, H = 300, padL = 54, padB = 34, padT = 22, padR = 10;
   const plotW = W - padL - padR, plotH = H - padT - padB;
   const maxVal = Math.max(1, ...series.flatMap((s) => s.values)) * 1.12;
   const groupW = plotW / labels.length;
@@ -586,8 +609,8 @@ function buildBarChart(labels, series) {
   let grid = '';
   for (let s = 0; s <= 4; s++) {
     const yy = padT + plotH - (s / 4) * plotH;
-    grid += `<line x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}" stroke="#e3ecea"></line>
-      <text x="${padL - 8}" y="${yy + 4}" text-anchor="end" font-size="11" fill="#8aa19f">${fmtMillion((s / 4) * maxVal)}</text>`;
+    grid += `<line x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}" stroke="#eef2f6"></line>
+      <text x="${padL - 8}" y="${yy + 4}" text-anchor="end" font-size="11" fill="#94a3b8">${fmtMillion((s / 4) * maxVal)}</text>`;
   }
   let bars = '';
   labels.forEach((lab, i) => {
@@ -598,9 +621,9 @@ function buildBarChart(labels, series) {
       const h = (v / maxVal) * plotH;
       const x = startX + j * (barW + 4);
       bars += `<rect x="${x}" y="${padT + plotH - h}" width="${barW}" height="${h}" fill="${s.color}" rx="3"><title>${s.name} ${lab}: ${fmtNum(v)} ตัน</title></rect>
-        <text x="${x + barW / 2}" y="${padT + plotH - h - 6}" text-anchor="middle" font-size="11" fill="#0b3d3f">${fmtMillion(v)}</text>`;
+        <text x="${x + barW / 2}" y="${padT + plotH - h - 6}" text-anchor="middle" font-size="11" fill="#334155">${fmtMillion(v)}</text>`;
     });
-    bars += `<text x="${gx}" y="${H - 10}" text-anchor="middle" font-size="12" fill="#5f7674">${lab}</text>`;
+    bars += `<text x="${gx}" y="${H - 10}" text-anchor="middle" font-size="12" fill="#64748b">${lab}</text>`;
   });
   return `
     <div class="chart-legend">${series.map((s) => `<span><span class="legend-dot" style="background:${s.color}"></span>${esc(s.name)}</span>`).join('')}</div>
@@ -804,14 +827,14 @@ function buildRankChart(list) {
   const bars = list.map((p, i) => {
     const y = 5 + i * rowH;
     const w = Math.max(1, (p.finalScore / 100) * plotW);
-    return `<text x="${padL - 8}" y="${y + 15}" text-anchor="end" font-size="12" fill="#1c2b2a">${esc(p.nameTh)}</text>
+    return `<text x="${padL - 8}" y="${y + 15}" text-anchor="end" font-size="12" fill="#334155">${esc(p.nameTh)}</text>
       <rect x="${padL}" y="${y + 3}" width="${w}" height="${rowH - 7}" rx="3" fill="${TIER_COLOR[p.tier]}"><title>${esc(p.nameTh)}: ${p.finalScore} (ชั้น ${p.tier})</title></rect>
-      <text x="${padL + w + 6}" y="${y + 15}" font-size="11.5" fill="#0b3d3f">${p.finalScore}</text>`;
+      <text x="${padL + w + 6}" y="${y + 15}" font-size="11.5" font-weight="600" fill="#0f172a">${p.finalScore}</text>`;
   }).join('');
   const guides = [50, 65].map((v) => {
     const x = padL + (v / 100) * plotW;
-    return `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="#c0524a" stroke-dasharray="3 3" opacity="0.5"></line>
-      <text x="${x + 3}" y="${H - 2}" font-size="10" fill="#c0524a">${v}</text>`;
+    return `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="#94a3b8" stroke-dasharray="3 3" opacity="0.8"></line>
+      <text x="${x + 3}" y="${H - 2}" font-size="10" fill="#64748b">${v}</text>`;
   }).join('');
   return `<svg viewBox="0 0 ${W} ${H}" class="chart-svg" style="max-width:${W}px">${guides}${bars}</svg>`;
 }
@@ -867,7 +890,7 @@ function renderDetail() {
 function heatCell(v) {
   const a = 0.08 + (Math.max(0, Math.min(100, v)) / 100) * 0.8;
   const dark = a > 0.5;
-  return `<td class="num heat" style="background:rgba(22,120,127,${a.toFixed(2)});color:${dark ? '#fff' : '#0b3d3f'}">${Math.round(v)}</td>`;
+  return `<td class="num heat" style="background:rgba(42,120,214,${a.toFixed(2)});color:${dark ? '#fff' : '#0f172a'}">${Math.round(v)}</td>`;
 }
 
 // ---------------- Utils ----------------
