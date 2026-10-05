@@ -237,6 +237,8 @@ function renderImport() {
       <div id="dataset-info"></div>
     </div>
 
+    ${indicatorGuide()}
+
     <div class="card">
       <p class="section-title">นำเข้า / ปรับปรุงข้อมูลการค้า</p>
       <p class="section-sub">อัปโหลดไฟล์ CSV (เช่น ข้อมูลจาก data.go.th) — ระบบจะ<strong>แทนที่ข้อมูลเดิมทั้งชุด</strong>แล้วคำนวณคะแนนและอันดับใหม่ทั้งหมดอัตโนมัติ
@@ -637,10 +639,12 @@ let recalcTimer = null;
 function renderWhatIfControls() {
   const el = document.getElementById('tab-whatif');
   el.innerHTML = `
+    ${indicatorGuide()}
     <div class="card">
       <p class="section-title">กำหนดน้ำหนักเกณฑ์การให้คะแนน (FR3)</p>
       <p class="section-sub">ลากปรับสัดส่วนความสำคัญของ 5 ตัวชี้วัด (รวมต้องได้ 100%) ระบบคำนวณใหม่ทันที
-        และ<strong>ทุกหน้า</strong> (จัดลำดับ, คะแนนตัวชี้วัด, พื้นที่อันดับ 1) จะใช้น้ำหนักนี้</p>
+        และ<strong>ทุกหน้า</strong> (จัดลำดับ, คะแนนตัวชี้วัด, พื้นที่อันดับ 1) จะใช้น้ำหนักนี้ ·
+        <a href="#" data-goto="detail">ดูความหมายและสูตรของแต่ละตัวชี้วัด →</a></p>
       <div class="preset-row">
         <span class="muted" style="align-self:center">โปรไฟล์ตัวอย่าง:</span>
         ${Object.entries(PRESETS).map(([key, p]) => `<button class="btn btn-outline" data-preset="${key}">${p.label}</button>`).join('')}
@@ -651,10 +655,15 @@ function renderWhatIfControls() {
         <span id="weight-formula" class="muted"></span>
       </div>
       <div class="threshold-row">
-        <label for="threshold-input"><strong>เกณฑ์ปริมาณแยกชั้น 1/2</strong> (ตารางกฎหน้า 11 · ค่าตั้งต้นปรับได้)</label>
+        <label for="threshold-input"><strong>เกณฑ์ปริมาณแยกชั้น 1/2</strong> (ค่านโยบายตามตารางกฎหน้า 11 ไม่ได้คำนวณจากข้อมูล · ตั้งต้น 5 ล้านตัน/ปี ปรับได้)</label>
         <span><input type="number" id="threshold-input" min="0" step="0.1" value="${state.thresholdTon / 1e6}"> ล้านตัน/ปี</span>
       </div>
       <p id="whatif-status" class="whatif-status"></p>
+    </div>
+    <div class="card">
+      <p class="section-title">ตารางกฎการตัดสินใจจัดชั้นความสำคัญ</p>
+      <p class="section-sub">อัปเดตตามเกณฑ์ปริมาณแยกชั้น 1/2 ที่ตั้งด้านบนทันที</p>
+      <div id="whatif-rules">${tierRulesTable(state.thresholdTon)}</div>
     </div>
     <div class="card">
       <p class="section-title">ผลกระทบต่ออันดับ</p>
@@ -675,6 +684,7 @@ function renderWhatIfControls() {
     const v = parseFloat(e.target.value);
     if (!Number.isFinite(v) || v < 0) return;
     state.thresholdTon = Math.round(v * 1e6);
+    document.getElementById('whatif-rules').innerHTML = tierRulesTable(state.thresholdTon);
     scheduleRecalc();
   });
 }
@@ -687,6 +697,7 @@ function renderWeightGrid() {
         <span><span class="w-letter">${k}</span>${IND_LABEL[k]}</span>
         <span id="w-val-${k}">${state.weights[k]}%</span>
       </label>
+      <p class="weight-help">${IND_INFO[k][0]}</p>
       <input type="range" min="0" max="100" step="5" value="${state.weights[k]}" id="w-input-${k}">
     </div>
   `).join('');
@@ -757,6 +768,10 @@ function renderRanking() {
     </div>
     ${weightBanner()}
     <div class="card">
+      <p class="section-title">ตารางกฎการตัดสินใจจัดชั้นความสำคัญ</p>
+      ${tierRulesTable(state.appliedThresholdTon)}
+    </div>
+    <div class="card">
       <div class="card-head">
         <div>
           <p class="section-title">จัดอันดับพื้นที่ที่ควรพิจารณาลงทุนก่อน–หลัง (FR5)</p>
@@ -801,20 +816,6 @@ function renderRanking() {
       </div>
     </div>
 
-    <div class="card">
-      <p class="section-title">ตารางกฎการตัดสินใจจัดชั้นความสำคัญ</p>
-      <div class="table-wrap">
-        <table class="data-table">
-          <thead><tr><th>ชั้น</th><th>เงื่อนไข</th><th>ความหมาย</th></tr></thead>
-          <tbody>
-            <tr><td><span class="tier-badge tier-1">กฎ 1 → ชั้น 1</span></td><td>คะแนน ≥ 65 และปริมาณเฉลี่ย ≥ ${fmtTonShort(state.appliedThresholdTon)}/ปี</td><td>ขยายกำลังรองรับ</td></tr>
-            <tr><td><span class="tier-badge tier-2">กฎ 2 → ชั้น 2</span></td><td>คะแนน ≥ 65 แต่ปริมาณเฉลี่ย &lt; ${fmtTonShort(state.appliedThresholdTon)}/ปี</td><td>พัฒนาเฉพาะทาง</td></tr>
-            <tr><td><span class="tier-badge tier-3">กฎ 3 → ชั้น 3</span></td><td>50 ≤ คะแนน &lt; 65</td><td>พัฒนาเฉพาะทาง</td></tr>
-            <tr><td><span class="tier-badge tier-4">กฎ 4 → ชั้น 4</span></td><td>คะแนน &lt; 50</td><td>ติดตาม</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
   `;
   document.getElementById('btn-csv').addEventListener('click', exportCsv);
   document.getElementById('btn-pdf').addEventListener('click', () => window.print());
@@ -862,6 +863,7 @@ function renderDetail() {
   if (!hasData()) { el.innerHTML = emptyState('คะแนนตัวชี้วัดรายพื้นที่ (FR6)'); return; }
   el.innerHTML = `
     ${weightBanner()}
+    ${indicatorGuide()}
     <div class="card">
       <p class="section-title">คะแนนรายตัวชี้วัด (0–100) ต่อพื้นที่ (FR6)</p>
       <p class="section-sub">ช่องยิ่งเข้ม = คะแนนสูง · V ปริมาณ, G การเติบโต, D ความหลากหลายสินค้า, B ความสมดุลนำเข้า–ส่งออก, S เสถียรภาพ ·
@@ -869,7 +871,7 @@ function renderDetail() {
       <div class="table-wrap">
         <table class="data-table heat-table">
           <thead><tr><th class="num">อันดับ</th><th>พื้นที่</th>
-            ${KEYS.map((k) => `<th class="num">${k}<span class="w-sub">×${state.appliedWeights[k]}%</span></th>`).join('')}
+            ${KEYS.map((k) => `<th class="num" title="${IND_LABEL[k]}: ${IND_INFO[k][0]}">${k}<span class="w-sub">×${state.appliedWeights[k]}%</span></th>`).join('')}
             <th class="num">รวม</th><th>ชั้น</th><th>เทียบฐาน</th></tr></thead>
           <tbody>${state.ranking.map((p) => `
             <tr>
@@ -885,6 +887,54 @@ function renderDetail() {
       </div>
     </div>
   `;
+}
+
+// คำอธิบายตัวชี้วัด 5 ตัว — สูตรตรงกับ server/lib/calc.js (buildProvinceMetrics)
+const IND_INFO = {
+  V: ['ขนาดการขนส่งของพื้นที่', 'log(ปริมาณนำเข้า+ส่งออกเฉลี่ยต่อปี + 1)', 'ใช้ log-scale เพื่อไม่ให้พื้นที่ที่ใหญ่มาก (เช่น ชลบุรี) ข่มพื้นที่อื่นจนคะแนนแยกกันไม่ออก', 'ปริมาณสินค้ามาก'],
+  G: ['แนวโน้มการขยายตัวของปริมาณสินค้า', 'ค่าเฉลี่ยของอัตราการเติบโตรายปี (YoY) = (ปีนี้ − ปีก่อน) ÷ ปีก่อน', 'ค่าเฉลี่ยทางสถิติ', 'ปริมาณเพิ่มขึ้นต่อเนื่อง'],
+  D: ['การกระจายตัวของหมวดสินค้า', '1 − HHI โดย HHI = ผลรวมของ (สัดส่วนแต่ละหมวดสินค้า)²', 'HHI (Herfindahl-Hirschman Index) คือดัชนีวัดการกระจุกตัวทางเศรษฐศาสตร์', 'ไม่พึ่งสินค้าหมวดเดียว'],
+  B: ['ความสมดุลระหว่างนำเข้าและส่งออก', 'ค่าเฉลี่ยรายปีของ 1 − |นำเข้า − ส่งออก| ÷ (นำเข้า + ส่งออก)', 'อัตราส่วน 0–1 (1 = นำเข้าเท่ากับส่งออก)', 'ใช้ท่าเรือได้คุ้มทั้งขาเข้าและขาออก'],
+  S: ['ความสม่ำเสมอของปริมาณในแต่ละปี', '1 ÷ (1 + CV) โดย CV = ส่วนเบี่ยงเบนมาตรฐาน ÷ ค่าเฉลี่ย ของปริมาณรายปี', 'CV (Coefficient of Variation) คือสัมประสิทธิ์การแปรผันทางสถิติ', 'ปริมาณไม่ผันผวน คาดการณ์ได้'],
+};
+
+// การ์ดพับเก็บได้ (เปิดไว้ตั้งต้น) ใช้ในหน้านำเข้าข้อมูล, What-if และคะแนนตัวชี้วัด
+function indicatorGuide() {
+  return `
+    <details class="card guide-details" open>
+      <summary class="section-title">ตัวชี้วัด V / G / D / B / S คืออะไร <span class="summary-hint">(คลิกเพื่อย่อ/ขยาย)</span></summary>
+      <p class="section-sub">ค่าดิบของแต่ละตัวคำนวณจากข้อมูลการค้ารายปีของพื้นที่ จากนั้นปรับเป็นคะแนน 0–100 ด้วย
+        <strong>min-max</strong> = (ค่า − ค่าต่ำสุด) ÷ (ค่าสูงสุด − ค่าต่ำสุด) × 100 เทียบกับทุกพื้นที่ แล้วถ่วงน้ำหนักรวมเป็น Priority Score</p>
+      <div class="guide-grid">${KEYS.map((k) => `
+        <div class="guide-card">
+          <p class="guide-head"><span class="w-chip">${k}</span>${IND_LABEL[k]}</p>
+          <p class="guide-what">${IND_INFO[k][0]}</p>
+          <p class="guide-formula">${esc(IND_INFO[k][1])}</p>
+          <p class="guide-note">${IND_INFO[k][2]}</p>
+          <p class="guide-high">คะแนนสูง = ${IND_INFO[k][3]}</p>
+        </div>`).join('')}
+      </div>
+    </details>`;
+}
+
+// ตารางกฎจัดชั้นตามสไลด์หน้า 11 — เส้นคะแนน 65/50 คงที่ ปรับได้เฉพาะเกณฑ์ปริมาณแยกชั้น 1/2
+function tierRulesTable(thresholdTon) {
+  const t = fmtTonShort(thresholdTon);
+  return `
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>ชั้น</th><th>เงื่อนไข</th><th>ความหมาย</th></tr></thead>
+        <tbody>
+          <tr><td><span class="tier-badge tier-1">กฎ 1 → ชั้น 1</span></td><td>คะแนน ≥ 65 และปริมาณเฉลี่ย ≥ <strong>${t}/ปี</strong></td><td>ขยายกำลังรองรับ</td></tr>
+          <tr><td><span class="tier-badge tier-2">กฎ 2 → ชั้น 2</span></td><td>คะแนน ≥ 65 แต่ปริมาณเฉลี่ย &lt; <strong>${t}/ปี</strong></td><td>พัฒนาเฉพาะทาง</td></tr>
+          <tr><td><span class="tier-badge tier-3">กฎ 3 → ชั้น 3</span></td><td>50 ≤ คะแนน &lt; 65</td><td>พัฒนาเฉพาะทาง</td></tr>
+          <tr><td><span class="tier-badge tier-4">กฎ 4 → ชั้น 4</span></td><td>คะแนน &lt; 50</td><td>ติดตาม</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="rules-note">เส้นคะแนน 65 และ 50 เป็นค่าคงที่ตามตารางกฎ (สไลด์หน้า 11) ·
+      <strong>เกณฑ์ปริมาณแยกชั้น 1/2</strong> ไม่ได้คำนวณจากข้อมูล แต่เป็นค่านโยบาย (ตั้งต้น 5 ล้านตัน/ปี) ใช้แบ่งพื้นที่ที่คะแนน ≥ 65
+      ว่าใหญ่พอจะ "ขยายกำลังรองรับ" (ชั้น 1) หรือควร "พัฒนาเฉพาะทาง" ก่อน (ชั้น 2) — เทียบกับปริมาณนำเข้า+ส่งออกเฉลี่ยต่อปีของพื้นที่</p>`;
 }
 
 function heatCell(v) {
