@@ -285,7 +285,25 @@ function renderImport() {
       </div>
       <div id="import-result"></div>
     </div>
+
+    <div class="card" id="records-card">
+      <p class="section-title">ข้อมูลในระบบ (ตาราง TRADE_RECORD)</p>
+      <p class="section-sub">ข้อมูลการค้าทุกแถวที่นำเข้าแล้ว ใช้ตรวจสอบว่าข้อมูลถูกต้องครบถ้วน — อ่านอย่างเดียว ไม่มีผลต่อการคำนวณ ·
+        ผลรวมน้ำหนักด้านล่างคิดจากแถวที่กรองอยู่ ใช้เทียบกับตัวเลขในหน้าแนวโน้มได้</p>
+      <div class="filters records-filters">
+        <label>ค้นหา<input type="search" id="rec-q" placeholder="พื้นที่ หรือหมวดสินค้า"></label>
+        <label>ปี<select id="rec-year"></select></label>
+        <label>พื้นที่<select id="rec-province"></select></label>
+        <label>ทิศทาง<select id="rec-dir">
+          <option value="all">นำเข้า + ส่งออก</option><option value="import">นำเข้า</option><option value="export">ส่งออก</option>
+        </select></label>
+      </div>
+      <div id="records-body"></div>
+    </div>
   `;
+  ['rec-q', 'rec-year', 'rec-province', 'rec-dir'].forEach((id) => {
+    document.getElementById(id).addEventListener('input', () => { state.recPage = 1; renderRecordsTable(); });
+  });
   renderDatasetInfo();
 
   const input = document.getElementById('file-input');
@@ -303,9 +321,87 @@ function renderImport() {
   document.getElementById('btn-clear').addEventListener('click', doClear);
 }
 
+// ---------- ข้อมูลในระบบ (ดูข้อมูลดิบ ค้นหา/กรอง/แบ่งหน้า ฝั่ง client) ----------
+
+const REC_PAGE_SIZE = 25;
+const DIR_LABEL = { import: 'นำเข้า', export: 'ส่งออก' };
+
+async function loadRecords() {
+  const card = document.getElementById('records-card');
+  state.records = [];
+  state.recPage = 1;
+  if (!hasData() || state.data.dataset.mode === 'indicators') {
+    // ชุดข้อมูลแบบ "ค่าตัวชี้วัด" ไม่มีข้อมูลการค้ารายแถว
+    card.style.display = 'none';
+    return;
+  }
+  card.style.display = '';
+  document.getElementById('records-body').innerHTML = '<p class="muted">กำลังโหลดข้อมูล…</p>';
+  try {
+    state.records = (await fetchJSON('/api/records')).records;
+  } catch (err) {
+    document.getElementById('records-body').innerHTML = `<div class="msg msg-err">โหลดข้อมูลไม่สำเร็จ: ${esc(err.message)}</div>`;
+    return;
+  }
+  const years = [...new Set(state.records.map((r) => r.yearBE))].sort();
+  const provinces = [...new Set(state.records.map((r) => r.provinceTh))].sort((a, b) => a.localeCompare(b, 'th'));
+  document.getElementById('rec-year').innerHTML = '<option value="all">ทุกปี</option>'
+    + years.map((y) => `<option value="${y}">${y}</option>`).join('');
+  document.getElementById('rec-province').innerHTML = `<option value="all">ทุกพื้นที่ (${provinces.length})</option>`
+    + provinces.map((p) => `<option value="${esc(p)}">${esc(p)}</option>`).join('');
+  document.getElementById('rec-q').value = '';
+  document.getElementById('rec-dir').value = 'all';
+  renderRecordsTable();
+}
+
+function renderRecordsTable() {
+  const box = document.getElementById('records-body');
+  if (!state.records.length) return;
+  const q = document.getElementById('rec-q').value.trim().toLowerCase();
+  const year = document.getElementById('rec-year').value;
+  const prov = document.getElementById('rec-province').value;
+  const dir = document.getElementById('rec-dir').value;
+  const rows = state.records.filter((r) => (year === 'all' || String(r.yearBE) === year)
+    && (prov === 'all' || r.provinceTh === prov)
+    && (dir === 'all' || r.direction === dir)
+    && (!q || r.provinceTh.toLowerCase().includes(q) || r.categoryTh.toLowerCase().includes(q)));
+  const total = rows.reduce((a, r) => a + r.weightTon, 0);
+  const pages = Math.max(1, Math.ceil(rows.length / REC_PAGE_SIZE));
+  state.recPage = Math.min(Math.max(1, state.recPage), pages);
+  const start = (state.recPage - 1) * REC_PAGE_SIZE;
+  const shown = rows.slice(start, start + REC_PAGE_SIZE);
+
+  box.innerHTML = `
+    <div class="records-summary">
+      <span>พบ <strong>${fmtNum(rows.length)}</strong> จาก ${fmtNum(state.records.length)} แถว</span>
+      <span>น้ำหนักรวม <strong>${fmtNum(total)}</strong> ตัน (${fmtMillion(total)} ล้านตัน)</span>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table compact">
+        <thead><tr><th class="num">#</th><th class="num">ปี (พ.ศ.)</th><th>พื้นที่</th><th>ทิศทาง</th><th>หมวดสินค้า</th><th class="num">น้ำหนัก (ตัน)</th></tr></thead>
+        <tbody>${shown.length ? shown.map((r, i) => `
+          <tr><td class="num muted">${start + i + 1}</td><td class="num">${r.yearBE}</td><td>${esc(r.provinceTh)}</td>
+            <td>${DIR_LABEL[r.direction] || esc(r.direction)}</td><td>${esc(r.categoryTh)}</td>
+            <td class="num">${r.weightTon.toLocaleString('th-TH', { maximumFractionDigits: 2 })}</td></tr>`).join('')
+          : '<tr><td colspan="6" class="muted" style="text-align:center">ไม่พบข้อมูลตามเงื่อนไข</td></tr>'}
+        </tbody>
+      </table>
+    </div>
+    <div class="pager">
+      <button class="btn btn-outline btn-sm" data-rec-page="${state.recPage - 1}" ${state.recPage <= 1 ? 'disabled' : ''}>← ก่อนหน้า</button>
+      <span>หน้า ${state.recPage} / ${pages}</span>
+      <button class="btn btn-outline btn-sm" data-rec-page="${state.recPage + 1}" ${state.recPage >= pages ? 'disabled' : ''}>ถัดไป →</button>
+    </div>`;
+  box.querySelectorAll('[data-rec-page]').forEach((b) => b.addEventListener('click', () => {
+    state.recPage = Number(b.dataset.recPage);
+    renderRecordsTable();
+  }));
+}
+
 function renderDatasetInfo() {
   const ds = state.data.dataset;
   document.getElementById('btn-clear').style.display = hasData() ? '' : 'none';
+  loadRecords();
   if (!hasData()) {
     document.getElementById('dataset-info').innerHTML =
       '<div class="hint-box">ยังไม่มีข้อมูลในระบบ — เลือกไฟล์ CSV ด้านล่างเพื่อนำเข้า (หรือกด "โหลดชุดข้อมูลตัวอย่าง")</div>';

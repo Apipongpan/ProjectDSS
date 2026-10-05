@@ -309,6 +309,15 @@ const server = http.createServer(async (req, res) => {
       return sendJson(res, 200, { ok: true, dataset: store.loadDatasetInfo() });
     }
 
+    // ข้อมูลการค้าทุกแถวในตาราง TRADE_RECORD (อ่านอย่างเดียว) ให้ผู้ใช้ตรวจสอบชุดข้อมูลที่นำเข้า
+    if (pathname === '/api/records' && req.method === 'GET') {
+      const records = store.loadTradeRecords()
+        .map((r) => ({ yearBE: r.yearBE, provinceTh: r.provinceTh, direction: r.direction, categoryTh: r.categoryTh, weightTon: r.weightTon }))
+        .sort((a, b) => a.yearBE - b.yearBE || a.provinceTh.localeCompare(b.provinceTh, 'th')
+          || a.direction.localeCompare(b.direction) || a.categoryTh.localeCompare(b.categoryTh, 'th'));
+      return sendJson(res, 200, { records });
+    }
+
     if (pathname === '/api/health' && req.method === 'GET') {
       const info = store.loadDatasetInfo();
       return sendJson(res, 200, { ok: true, provinces: info.provinces, records: info.records, dataset: info.fileName });
